@@ -105,8 +105,7 @@ public class KitKitLoggerActivity extends Activity {
         super.onResume();
         Log.d(TAG, "onResume");
         try {
-            //Context context = createPackageContext("todoschoollauncher.enuma.com.todoschoollauncher",0);
-//            Changed the package of Gallery app to "org.cocos2dx.cpp.kitkitlauncher.hindi"
+//            Changed the package of Gallery app to "org.cocos2dx.cpp.pehlalauncher"
             Context context = createPackageContext("com.maq.pehlaschool", 0);
             //this seems working but Context.MODE_MULTI_PROCESS is deprecated since SDK 23. If it has problem, need to change to ContentProvider for sharing data.
             SharedPreferences pref = context.getSharedPreferences("sharedPref", Context.MODE_MULTI_PROCESS);
