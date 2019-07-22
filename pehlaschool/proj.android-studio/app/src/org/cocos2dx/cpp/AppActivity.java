@@ -229,7 +229,7 @@ public class AppActivity extends Cocos2dxActivity {
     public static String getResourceUri(String filename) {
         File fileCheck = new File(Environment.getExternalStorageDirectory() + File.separator + "Android/data/com.maq.pehlaschool.library/files");
         if (fileCheck.exists()) {
-            String appLanguage = Cocos2dxHelper.getStringForKey("appLanguage", "en-us").toLowerCase();
+            String appLanguage = Cocos2dxHelper.getStringForKey("appLanguage", "en-US").toLowerCase();
             String pathExternalRaw = Environment.getExternalStorageDirectory() + File.separator + "Android/data/com.maq.pehlaschool.library/files" + File.separator + appLanguage + File.separator + "res" + File.separator + "raw";
 
             File resourceFile = new File(pathExternalRaw + File.separator + filename + ".mp4");
@@ -469,7 +469,7 @@ public class AppActivity extends Cocos2dxActivity {
         try {
             Context launcherContext = createPackageContext(getPackageName(), 0);
             SharedPreferences pref = launcherContext.getSharedPreferences("sharedPref", Context.MODE_PRIVATE);
-            appLanguage = pref.getString("appLanguage", getString(com.maq.kitkitlogger.R.string.defaultLanguage));
+            appLanguage = pref.getString("appLanguage", "en-US");
             Cocos2dxHelper.setStringForKey("appLanguage", appLanguage);
         } catch (PackageManager.NameNotFoundException ne) {
             Log.e(TAG, ne.toString());
@@ -556,7 +556,7 @@ public class AppActivity extends Cocos2dxActivity {
         try {
             Context context = createPackageContext(getPackageName(), 0);
             SharedPreferences pref = context.getSharedPreferences("sharedPref", Context.MODE_MULTI_PROCESS);
-            String sharedLang = pref.getString("appLanguage", getString(com.maq.kitkitlogger.R.string.defaultLanguage));
+            String sharedLang = pref.getString("appLanguage", "en-US");
 
             if (!appLanguage.equals(sharedLang)) {
                 Cocos2dxHelper.setStringForKey("appLanguage", appLanguage);

@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="defaultLanguage">en-US</string>
+    <item name="iv_thumbnail" type="id"/>
 </resources>

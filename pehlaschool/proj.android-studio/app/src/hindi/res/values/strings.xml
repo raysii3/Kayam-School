@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name">पहला स्कूल - Pehla School</string>
     <string name="content_extraction" translatable="false">यह प्रक्रिया केवल एक बार की जाएगी। इसमें १० मिनट तक का समय लग सकता है।</string>
     <string name="content_extraction_english" translatable="false">This process will be done only once. It can take up to 10 minutes.</string>
     <string name="tools_activity_title">Tools</string>
@@ -40,7 +41,7 @@
     <string name="cancel2">CANCEL</string>
     <string name="enter">ENTER</string>
     <string name="number">number</string>
-    <string name="defaultLanguage">en-US</string>
+    <string name="defaultLanguage">hi-IN</string>
     <string name="drums">Drums\nढोल</string>
     <string name="marimba">Xylophone\nमरिम्बा</string>
     <string name="drawing">Drawing\nचित्रकारी</string>
