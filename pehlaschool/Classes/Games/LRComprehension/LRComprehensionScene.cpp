@@ -256,7 +256,7 @@ void LRComprehensionScene::showProblem()
         } else if (langCode == "ur") {
             displayText = "کہانی سنیں ۔";
         } else if (langCode == "bn") {
-            displayText = "";
+            displayText = "গল্পটা শোনো|";
         } else if (langCode == "sw") {
             displayText = "Sikiliza hadithi.";
         }
@@ -276,7 +276,7 @@ void LRComprehensionScene::showProblem()
         } else if (langCode == "ur") {
             displayText = "کہانی پڑھیں.";
         } else if (langCode == "bn") {
-            displayText = "";
+            displayText = "গল্প পড়ুন|";
         } else if (langCode == "sw") {
             displayText = "Soma hadithi.";
         }

@@ -101,6 +101,9 @@ android {
         urdu {
             applicationIdSuffix ".urdu"
         }
+        bengali{
+            applicationIdSuffix ".bengali"
+        }
     }
     buildTypes {
         release {
