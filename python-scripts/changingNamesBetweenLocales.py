@@ -2,135 +2,101 @@ import csv
 from nltk.tokenize import word_tokenize
 from nltk.tag import pos_tag
 import nltk
-import codecs,cStringIO
 import io
 
-def getProperNouns(fin_fname, fout_fname):
+
+def get_proper_nouns(fin_fname, fout_fname):
     """
-    This function get all the possible proper nouns from the TSV file and list them in the the output file.
+    This function get all the possible proper nouns from the TSV file and list
+    them in the the output file.
     fin_fname: TSV file for the proper nouns
-    fout_fname: output file for the listing proper nouns(not in append mode)[*.txt file]
+    fout_fname: output file for the listing proper nouns(not in append mode)
+                [*.txt file]
     Example:
-        getProperNouns('eggquizliteracy_levels_en.tsv','propernouns3.txt') 
+        get_proper_nouns('eggquizliteracy_levels_en.tsv','propernouns3.txt')
     """
     nltk.download('punkt')
     nltk.download('averaged_perceptron_tagger')
     propernouns = set()
-    with open(fin_fname) as tsvfile:
+    with open(fin_fname, encoding="utf8") as tsvfile:
         reader = csv.reader(tsvfile, delimiter='\t')
         for row in reader:
-            isSentence = False
             for cell in row:
-                    sentence = cell.replace('^',' ')
-                    sentence = sentence.replace('_','')
+                    sentence = cell.replace('^', ' ')
+                    sentence = sentence.replace('_', '')
                     token = word_tokenize(sentence)
-                    #print sentence
-                    #tagged_sent = pos_tag(sentence.split())
+                    # print sentence
+                    # tagged_sent = pos_tag(sentence.split())
                     tagged_sent = pos_tag(token)
-                    for word,pos in tagged_sent:
+                    for word, pos in tagged_sent:
                         if pos == 'NNP':
-                            word = word.replace("'s",'')
+                            word = word.replace("'s", '')
                             if word.isalpha():
                                 propernouns.add(word)
-        print propernouns
-        with open(fout_fname, 'w') as f:
+        print(propernouns)
+        with open(fout_fname, 'w', encoding="utf8") as f:
             for item in propernouns:
-                print >> f, item
+                print(item, file=f)
 
-def mergeProperNounsFiles(fin_files, fout_file):
+
+def merge_proper_nouns_files(fin_files, fout_file):
     """
-    This function get all the  proper nouns and generate fout_file file which will contains all the unique proper nouns
+    This function get all the  proper nouns and generate fout_file file which
+    will contains all the unique proper nouns
     fin_files: List of the files which contains proper nouns
-    fout_file: Output file which will finally contains proper nouns(not opened in append mode)[*.txt file]
+    fout_file: Output file which will finally contains proper nouns(not opened
+    in append mode)[*.txt file]
     Example:
-        mergeProperNounsFiles(["propernouns.txt", "propernouns2.txt"], 'merged_names2.txt')
+        merge_proper_nouns_files(["propernouns.txt", "propernouns2.txt"], 'merged_names2.txt')
     """
     propernouns = set()
     for file in fin_files:
-        f = open(file,"r").readlines()
+        f = open(file, "r", encoding="utf8").readlines()
         for line in f:
             word = line.strip()
             propernouns.add(word)
-    print propernouns
-    with open(fout_file, 'w') as f:
+    print(propernouns)
+    with open(fout_file, 'w', encoding="utf8") as f:
         for item in propernouns:
-            print >> f, item
+            print(item, file=f)
 
-def replaceProperNouns(tsv_in, tsv_out, map_fname):
+
+def replace_proper_nouns(tsv_in, tsv_out, map_fname):
     """
-    This function will change the names in TSV and generate a new file which will contains new names
+    This function will change the names in TSV and generate a new file which
+    will contains new names
     tsv_in: The TSV file where the names are to be changed
-    tsv_out: The TSV file that will be generated which will contains the changed name
-    map_fname: This file will contains tab separated two values as the mapping from the old name to new name
+    tsv_out: The TSV file that will be generated which will contains the
+            changed name
+    map_fname: This file will contains tab separated two values as the mapping
+            from the old name to new name
     Example:
-        replaceProperNouns('wordwindow_level_en.tsv', 'wordwindow_level_en_change.tsv', 'mapping.txt')
+        replace_proper_nouns('wordwindow_level_en.tsv', 'wordwindow_level_en_change.tsv', 'mapping.txt')
     """
-    f_indian =  io.open(map_fname,'r',encoding='utf-8').readlines()
+    f_indian = io.open(map_fname, 'r', encoding='utf-8').readlines()
     names_dict = dict()
     for line in f_indian:
         src_word, dst_word = line.split('\t')
         src_word = src_word.strip()
         dst_word = dst_word.strip()
-        names_dict[src_word]=dst_word
-    #print names_dict
+        names_dict[src_word] = dst_word
+    # print(names_dict)
 
-    class UTF8Recoder:
-        def __init__(self, f, encoding):
-            self.reader = codecs.getreader(encoding)(f)
-        def __iter__(self):
-            return self
-        def next(self):
-            return self.reader.next().encode("utf-8")
-
-    class UnicodeReader:
-        def __init__(self, f, dialect=csv.excel, encoding="utf-8-sig", **kwds):
-            f = UTF8Recoder(f, encoding)
-            self.reader = csv.reader(f, dialect=dialect, **kwds)
-        def next(self):
-            '''next() -> unicode
-            This function reads and returns the next line as a Unicode string.
-            '''
-            row = self.reader.next()
-            return [unicode(s, "utf-8") for s in row]
-        def __iter__(self):
-            return self
-
-    class UnicodeWriter:
-        def __init__(self, f, dialect=csv.excel, encoding="utf-8-sig", **kwds):
-            self.queue = cStringIO.StringIO()
-            self.writer = csv.writer(self.queue, dialect=dialect, **kwds)
-            self.stream = f
-            self.encoder = codecs.getincrementalencoder(encoding)()
-        def writerow(self, row):
-            '''writerow(unicode) -> None
-            This function takes a Unicode string and encodes it to the output.
-            '''
-            self.writer.writerow([s.encode("utf-8") for s in row])
-            data = self.queue.getvalue()
-            data = data.decode("utf-8")
-            data = self.encoder.encode(data)
-            self.stream.write(data)
-            self.queue.truncate(0)
-
-        def writerows(self, rows):
-            for row in rows:
-                self.writerow(row)
-
-    with open(tsv_in,'rb') as fin, open(tsv_out,'wb') as fout:
-        reader = UnicodeReader(fin,delimiter='\t',quoting=csv.QUOTE_NONE)
-        writer = UnicodeWriter(fout,delimiter='\t',quotechar='',quoting=csv.QUOTE_NONE)
+    with open(tsv_in, 'r',  newline='', encoding='utf-8') as fin, open(tsv_out, 'w', newline='', encoding='utf-8') as fout:
+        reader = csv.reader(fin, delimiter='\t', quoting=csv.QUOTE_NONE)
+        writer = csv.writer(fout, delimiter='\t', quotechar='', quoting=csv.QUOTE_NONE)
         for line in reader:
-            length= len(line)
-            if length> 0:
+            length = len(line)
+            if length > 0:
                 for i in range(length):
                     for src_word in names_dict:
                         start_chars = [u' ', u'.', u'^', u'']
-                        last_chars = [u' ',u'.', u',', u'?', u"'s"]
+                        last_chars = [u' ', u'.', u',', u'?', u"'s"]
                         cell = line[i]
                         for start_char in start_chars:
                             for last_char in last_chars:
                                 cell = cell.replace(start_char+src_word+last_char, start_char+names_dict[src_word]+last_char)
-                        line[i]=cell
-                #print line
-                #print length
+                        line[i] = cell
+                # print(line)
+                # print(length)
                 writer.writerow(line)
