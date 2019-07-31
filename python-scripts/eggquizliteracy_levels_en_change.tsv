@@ -1,0 +1,1530 @@
+﻿Column1	Column2	Column3	Column4	Column5	Column6	Column7	Column8	Column9	Column10	Column11	Column12
+PostTest_1	1	1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010									
+			1001	soundonly_word					a	A	B^A^P
+			1002	soundonly_word					h	H	H^K^X
+			1003	soundonly_word					m	M	N^F^M
+			1004	soundonly_word					ई	E	E^U^A
+			1005	soundonly_word					w	W	Z^W^Q
+			1006	soundonly_word					c	c	y^d^c
+			1007	soundonly_word					f	f	g^f^q
+			1008	soundonly_word					b	b	b^r^e
+			1009	soundonly_word					q	q	y^b^q
+			1010	soundonly_word					t	t	t^s^z
+											
+PostTest_1	2	1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020									
+			1011	soundonly_word					ई	E	E^I^B
+			1012	soundonly_word					s	S	G^C^S
+			1013	soundonly_word					d	D	D^B^P
+			1014	soundonly_word					r	R	L^R^U
+			1015	soundonly_word					j	J	J^N^Y
+			1016	soundonly_word					v	v	u^y^v
+			1017	soundonly_word					a	a	e^a^o
+			1018	soundonly_word					i	i	y^f^i
+			1019	soundonly_word					n	n	n^m^l
+			1020	soundonly_word					x	x	x^k^z
+											
+PostTest_2	1	2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010									
+			2001	word_word		F				f	h^f^q
+			2002	word_word		E				e	a^r^e
+			2003	word_word		Y				y	g^y^x
+			2004	word_word		n				N	N^W^M
+			2005	word_word		b				B	P^D^B
+			2006	word_word		h				H	J^T^H
+			2007	image_word		mango.png				mango	fish^mango^nest
+			2008	image_word		cow.png				cow	cow^milk^duck
+			2009	image_word		egg.png				egg	grape^apple^egg
+			2010	image_word		hat.png				hat	jar^hat^bear
+											
+PostTest_2	2	2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020									
+			2011	word_word		T				t	t^y^d
+			2012	word_word		M				m	w^m^u
+			2013	word_word		A				a	p^e^a
+			2014	word_word		q				Q	Z^G^Q
+			2015	word_word		o				O	O^C^U
+			2016	word_word		d				D	L^D^T
+			2017	image_word		truck.png				truck	truck^key^lemon
+			2018	image_word		water.png				water	soap^net^water
+			2019	image_word		zebra.png				zebra	snake^zebra^rabbit
+			2020	image_word		frog.png				frog	frog^camel^quiet
+											
+MiniTest_3_1	1	31001, 31002, 31003, 31004, 31005									
+			31001	word_word		ra				r+a	s+a^r+a^l+a
+			31002	soundonly_word					j	j	j^g^z
+			31003	soundonly_word					ba	ba	va^pa^ba
+			31004	soundonly_image					cat	cat.png	cat.png^duck.png^hen.png
+			31005	soundonly_image					fish	fish.png	fish.png^sun.png^nest.png
+											
+MiniTest_3_1	2	31006, 31007, 31008, 31009, 31010									
+			31006	word_word		ma				m+a	d+a^y+a^m+a
+			31007	soundonly_word					d	d	d^c^p
+			31008	soundonly_word					ge	ge	he^be^ge
+			31009	soundonly_image					duck	duck.png	cat.png^duck.png^hen.png
+			31010	soundonly_image					sun	sun.png	fish.png^nest.png^sun.png
+											
+MiniTest_3_1	3	31011, 31012, 31013, 31014, 31015									
+			31011	word_word		sa				s+a	s+a^j+e^l+a
+			31012	soundonly_word					t	t	d^t^v
+			31013	soundonly_word					fa	fa	fi^fu^fa
+			31014	soundonly_image					hen	hen.png	cat.png^duck.png^hen.png
+			31015	soundonly_image					nest	nest.png	fish.png^nest.png^sun.png
+											
+MiniTest_3_2	1	32001, 32002, 32003, 32004, 32005									
+			32001	word_word		li				l+i	l+i^b+i^h+i
+			32002	word_word		bu				b+u	f+u^j+u^b+u
+			32003	soundonly_word					hu	hu	cu^hu^su
+			32004	soundonly_image					mango	mango.png	mango.png^water.png^yellow.png
+			32005	image_word	_ug	bug.png				b	b^f^h
+											
+MiniTest_3_2	2	32006, 32007, 32008, 32009, 32010									
+			32006	word_word		pi				p+i	p+i^b+i^h+i
+			32007	word_word		hu				h+u	f+u^j+u^h+u
+			32008	soundonly_word					mu	mu	pu^du^mu
+			32009	soundonly_image					yellow	yellow.png	mango.png^water.png^yellow.png
+			32010	image_word	_an	fan.png				f	b^f^h
+											
+MiniTest_3_2	3	32011, 32012, 32013, 32014, 32015									
+			32011	word_word		si				s+i	d+i^t+i^s+i
+			32012	word_word		nu				n+u	s+u^n+u^l+u
+			32013	soundonly_word					to	to	to^bo^zo
+			32014	soundonly_image					water	water.png	mango.png^water.png^yellow.png
+			32015	image_word	_at	hat.png				h	b^f^h
+											
+MiniTest_3_3	1	33001, 33002, 33003, 33004, 33005									
+			33001	soundonly_word					kid	kid	bed^dad^kid
+			33002	soundonly_word					bug	bug	bug^hug^dog
+			33003	soundonly_word					ye	y+e	v+e^y+e^n+e
+			33004	soundonly_image					baby	baby.png	baby.png^leaf.png^fire.png
+			33005	image_word	_un	sun.png				s	s^t^c
+											
+MiniTest_3_3	2	33006, 33007, 33008, 33009, 33010									
+			33006	soundonly_word					dad	dad	bed^dad^kid
+			33007	soundonly_word					dog	dog	bug^hug^dog
+			33008	soundonly_word					zi	z+i	z+i^v+i^s+i
+			33009	soundonly_image					fire	fire.png	baby.png^leaf.png^fire.png
+			33010	image_word	_ug	mug.png				m	l^h^m
+											
+MiniTest_3_3	3	33011, 33012, 33013, 33014, 33015									
+			33011	soundonly_word					bed	bed	bed^dad^kid
+			33012	soundonly_word					hug	hug	bug^hug^dog
+			33013	soundonly_word					po	p+o	f+o^v+o^p+o
+			33014	soundonly_image					leaf	leaf.png	baby.png^leaf.png^fire.png
+			33015	image_word	_ig	pig.png				p	b^p^q
+											
+PostTest_3	1	3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008, 3009, 3010									
+			3001	word_word		ca				c+a	s+a^h+a^c+a
+			3002	word_word		ne				n+e	n+e^l+e^b+e
+			3003	word_word		do				d+o	l+o^d+o^v+o
+			3004	image_word	_at	mat.png				m	b^c^m
+			3005	image_word	b__	bag.png				ag	ug^ag^og
+			3006	soundonly_word					ta	t+a	t+a^b+a^r+a
+			3007	soundonly_word					ge	g+e	j+e^g+e^k+e
+			3008	soundonly_word					fi	f+i	b+i^w+i^f+i
+			3009	soundonly_image					sun	sun.png	sun.png^bus.png^star.png
+			3010	soundonly_image					cow	cow.png	dog.png^pig.png^cow.png
+											
+PostTest_3	2	3011, 3012, 3013, 3014, 3015, 3016, 3017, 3018, 3019, 3020									
+			3011	word_word		va				v+a	v+a^l+a^j+a
+			3012	word_word		se				s+e	f+e^d+e^s+e
+			3013	word_word		hu				h+u	n+u^h+u^c+u
+			3014	image_word	_ug	mug.png				m	m^g^s
+			3015	image_word	f__	fan.png				an	at^an^am
+			3016	soundonly_word					bi	b+i	v+i^k+i^b+i
+			3017	soundonly_word					co	c+o	c+o^f+o^p+o
+			3018	soundonly_word					ju	j+u	t+u^j+u^n+u
+			3019	soundonly_image					bed	bed.png	bus.png^bed.png^box.png
+			3020	soundonly_image					rat	rat.png	bat.png^mat.png^rat.png
+											
+MiniTest_4_1	1	41001, 41002, 41003, 41004, 41005									
+			41001	image_word		bus.png				bus	bug^bus^bat
+			41002	image_word		mom.png				mom	mom^mop^man
+			41003	soundonly_word					zip	zip	cap^net^zip
+			41004	soundonly_word					bed	bed	bed^dad^vet
+			41005	soundonly_word					hat	hat	mat^hat^cat
+											
+MiniTest_4_1	2	41006, 41007, 41008, 41009, 41010									
+			41006	image_word		six.png				six	six^box^fox
+			41007	image_word		dog.png				dog	dot^dog^dad
+			41008	soundonly_word					red	red	red^sad^mad
+			41009	soundonly_word					box	box	fox^six^box
+			41010	soundonly_word					log	log	mug^log^bug
+											
+MiniTest_4_1	3	41011, 41012, 41013, 41014, 41015									
+			41011	image_word		kid.png				kid	bed^kit^kid
+			41012	image_word		rat.png				rat	rat^red^ram
+			41013	soundonly_word					man	man	pan^man^mat
+			41014	soundonly_word					bug	bug	bug^bus^bag
+			41015	soundonly_word					bag	bag	hug^bad^bag
+											
+MiniTest_4_2	1	42001, 42002, 42003, 42004, 42005									
+			42001	image_word	__um	drum.png				dr	cr^dr^br
+			42002	image_word	tr__	tree.png				ee	ee^ie^oa
+			42003	soundonly_word					cake	cake	fake^make^cake
+			42004	soundonly_word					nose	nose	hose^nose^rose
+			42005	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	hand, house	hand, house^bug, ten^jump, fan
+											
+MiniTest_4_2	2	42006, 42007, 42008, 42009, 42010									
+			42006	image_word	__og	frog.png				fr	fr^pr^br
+			42007	image_word	bl__	blue.png				ue	ee^oo^ue
+			42008	soundonly_word					face	face	pace^face^lace
+			42009	soundonly_word					bowl	bowl	bowl^blow^brown
+			42010	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	cat, car	vest, door^hot, girl^cat, car
+											
+MiniTest_4_2	3	42011, 42012, 42013, 42014, 42015									
+			42011	image_word	__ack	black.png				bl	pl^fl^bl
+			42012	image_word	st__	star.png				ar	ir^ar^ur
+			42013	soundonly_word					rice	rice	rice^nice^mice
+			42014	soundonly_word					baby	baby	navy^bake^baby
+			42015	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	zoo, zebra	king, book^zoo, zebra^sad, map
+											
+MiniTest_4_3	1	43001, 43002, 43003, 43004, 43005									
+			43001	word_word		__eep			sheep	sh	sh^ch^th
+			43002	image_word		milk.png				milk	milk^cherry^bread
+			43003	soundonly_word					goat	goat	gift^boat^goat
+			43004	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	under, ugly	under, ugly^enter, ink^and, onion
+			43005	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	what, why	the, shoe^what, why^chain, shape
+											
+MiniTest_4_3	2	43006, 43007, 43008, 43009, 43010									
+			43006	image_word		cow.png				cow	cat^frog^cow
+			43007	word_word		__at			chat	ch	ch^wh^sh
+			43008	soundonly_word					flower	flower	fly^flower^plane
+			43009	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	idea, ice	onion, arm^idea, ice^egg, ant
+			43010	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	choose, chicken	white, chair^ship, chat^choose, chicken
+											
+MiniTest_4_3	3	43011, 43012, 43013, 43014, 43015									
+			43011	word_word		__ip			ship	sh	sh^wh^th
+			43012	image_word		lion.png				lion	lion^tiger^bear
+			43013	soundonly_word					dish	dish	fish^mash^dish
+			43014	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	only, old	only, old^it, ax^uncle, idea
+			43015	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	this, then	what, that^this, then^child, ship
+											
+PostTest_4	1	4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010									
+			4001	image_word		cat.png				cat	rat^dog^cat
+			4002	image_word		duck.png				duck	duck^crab^nest
+			4003	image_word	__og	frog.png				fr	fr^pr^fl
+			4004	image_word	__ue	blue.png				bl	br^bl^pl
+			4005	soundonly_word					chick	chick	chop^ship^chick
+			4006	image_word		l8_boyreading.png				read	read^sing^swim
+			4007	image_word		l6_hedoctor.png				doctor	doctor^teacher^farmer
+			4008	soundonly_word					cream	cream	crown^cream^cloud
+			4009	sentence_sentence		Choose the pair with the same first sound.			Choose the pair with the same first sound.	gas, girl	zebra, salad^door, book^gas, girl
+			4010	sentence_sentence		Choose the pair with the same first sound.			Choose the pair with the same first sound.	water, watch	water, watch^vest, bed^quiet, piano
+											
+PostTest_4	2	4011, 4012, 4013, 4014, 4015, 4016, 4017, 4018, 4019, 4020									
+			4011	image_word		mug.png				mug	hug^mug^mat
+			4012	image_word		rain.png				rain	lamp^nest^rain
+			4013	image_word	__ock	clock.png				cl	fl^pl^cl
+			4014	image_word	__een	green.png				gr	gr^br^pr
+			4015	soundonly_word					shirt	shirt	chin^shirt^short
+			4016	image_word		l8_heswimming.png				swim	read^sing^swim
+			4017	image_word		l6_heteacher.png				teacher	doctor^teacher^farmer
+			4018	soundonly_word					blouse	blouse	flower^yellow^blouse
+			4019	sentence_sentence		Choose the pair with the same first sound.			Choose the pair with the same first sound.	jump, juice	jump, juice^game, dirty^find, visit
+			4020	sentence_sentence		Choose the pair with the same first sound.			Choose the pair with the same first sound.	color, cube	tend, ball^lake, room^color, cube
+											
+MiniTest_5_1	1	51001, 51002, 51003, 51004, 51005									
+			51001	sentence_word		Choose the right one.			nest	nest	best^pest^nest
+			51002	sentence_word		Choose the right one.			snake	snake	snake^smake^spake
+			51003	image_word		cake.png				cake	cake^lake^make
+			51004	soundonly_image					There are five trees	book_en_216_page_5.png	book_en_216_page_5.png^book_en_216_page_6.png^book_en_216_page_3.png
+			51005	sentence_word		Some cats have __________.			Some cats have long ears	long ears	long ears^spots^small eyes
+											
+MiniTest_5_1	2	51006, 51007, 51008, 51009, 51010									
+			51006	sentence_word		Choose the right one.			face	face	vase^face^case
+			51007	sentence_word		Choose the right one.			chair	chair	shair^whair^chair
+			51008	image_word		flower.png				flower	flower^toilet^basket
+			51009	soundonly_image					There are three trees	book_en_216_page_3.png	book_en_216_page_5.png^book_en_216_page_6.png^book_en_216_page_3.png
+			51010	sentence_word		Some cats like _________.			Some cats like the sun	the sun	the moon^the sun^the rain
+											
+MiniTest_5_1	3	51011, 51012, 51013, 51014, 51015									
+			51011	sentence_word		Choose the right one.			ball	ball	ball^fall^call
+			51012	sentence_word		Choose the right one.			train	train	drain^train^crain
+			51013	image_word		helmet.png				helmet	helmet^number^sunset
+			51014	soundonly_image					There are six trees	book_en_216_page_6.png	book_en_216_page_5.png^book_en_216_page_6.png^book_en_216_page_3.png
+			51015	sentence_word		Some cats like _________.			some cats like the moon	the moon	the moon^the sun^the rain
+											
+MiniTest_5_2	1	52001, 52002, 52003, 52004, 52005									
+			52001	sentence_word		Choose the right one.			duck	duck	duck^buck^luck
+			52002	sentence_word		Choose the right one.			heart	heart	hiert^heart^hart
+			52003	soundonly_word					play	play	fly^clay^play
+			52004	sentence_word		This is my ____.			this is my brother	brother	brother^mother^dad
+			52005	sentence_word		Arvind is in his _____.			fred is in his bedroom	bedroom	bedroom^kitchen^house
+											
+MiniTest_5_2	2	52006, 52007, 52008, 52009, 52010									
+			52006	sentence_word		Choose the right one.			news	news	mews^vews^news
+			52007	sentence_word		Choose the right one.			paper	paper	paper^peper^papir
+			52008	soundonly_word					sweet	sweet	sweet^green^brown
+			52009	sentence_word		This is my ____.			this is my mother	mother	brother^mother^dad
+			52010	sentence_word		Richa is in the _____.			cindy is in the kitchen	kitchen	bedroom^kitchen^house
+											
+MiniTest_5_2	3	52011, 52012, 52013, 52014, 52015									
+			52011	sentence_word		Choose the right one.			lion	lion	bion^lion^rion
+			52012	sentence_word		Choose the right one.			water	water	wator^watur^water
+			52013	soundonly_word					boat	boat	boat^lunch^goat
+			52014	sentence_word		This is my ____.			this is my dad	dad	brother^mother^dad
+			52015	sentence_word		We need a ____.			we need a lamp	lamp	chair^picture^lamp
+											
+MiniTest_5_3	1	53001, 53002, 53003, 53004, 53005									
+			53001	sentence_word		Choose the right one.			stick	stick	skick^spick^stick
+			53002	sentence_word		Choose the right one.			father	father	pather^father^fathor
+			53003	soundonly_word					pants	pants	pants^boots^shorts
+			53004	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	flood, fly	grass, cross^flood, fly^drive, crab
+			53005	sentence_word		I want to play near _______.			I want to play near the car	the car	the car^at home^the tent
+											
+MiniTest_5_3	2	53006, 53007, 53008, 53009, 53010									
+			53006	sentence_word		Choose the right one.			floor	floor	floor^bloor^froor
+			53007	sentence_word		Choose the right one.			dress	dress	bress^dress^dres
+			53008	soundonly_word					shorts	shorts	pants^boots^shorts
+			53009	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	black, blow	cold, bear^enter, under^black, blow
+			53010	sentence_word		I want to play _______.			I want to play at home	at home	the car^at home^the tent
+											
+MiniTest_5_3	3	53011, 53012, 53013, 53014, 53015									
+			53011	sentence_word		Choose the right one.			money	money	mony^money^monye
+			53012	sentence_word		Choose the right one.			brush	brush	brush^bruch^blush
+			53013	soundonly_word					boots	boots	pants^boots^shorts
+			53014	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	shake, shirt	shake, shirt^stay, there^blush, snake
+			53015	sentence_word		I want to play in _______.			I want to play in the tent	the tent	the car^at home^the tent
+											
+PostTest_5	1	5001, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010									
+			5001	soundonly_word					fish	fish	dish^fish^farm
+			5002	soundonly_word					chair	chair	shop^church^chair
+			5003	soundonly_word					teacher	teacher	teacher^student^classroom
+			5004	sentence_sentence		Choose the pair with the same first sound.			Choose the pair with the same first sound.	choose, chick	child, that^choose, chick^shape, whale
+			5005	sentence_sentence		Choose the pair with the same first sound.			Choose the pair with the same first sound.	play, plane	play, plane^flood, black^small, crab
+			5006	image_word		yellow.png				yellow	white^black^yellow
+			5007	image_word		house.png				house	house^paper^clock
+			5008	sentence_word		Some animals are ______.			some animals are big	big	tall^big^small
+			5009	sentence_word		These are our ______.			these are our hands	hands	knees^ears^hands
+			5010	sentence_word		Yash rides his bicycle to _________.			Yash rides his bicycle to the store	the store	the store^the market^school
+											
+PostTest_5	2	5011, 5012, 5013, 5014, 5015, 5016, 5017, 5018, 5019, 5020									
+			5011	soundonly_word					lion	lion	lion^frog^duck
+			5012	soundonly_word					snake	snake	stop^snail^snake
+			5013	soundonly_word					student	student	teacher^student^classroom
+			5014	sentence_sentence		Choose the pair with the same first sound.			Choose the pair with the same first sound.	they, them	shoe, chap^what, short^they, them
+			5015	sentence_sentence		Choose the pair with the same first sound.			Choose the pair with the same first sound.	truck, tree	dress, cross^truck, tree^blow, clock
+			5016	image_word		heart.png				heart	heart^grass^stick
+			5017	image_word		river.png				river	mouse^words^river
+			5018	sentence_word		Some animals ______.			some animals walk	walk	walk^swim^fly
+			5019	sentence_word		This is your ______.			this is your head	head	face^hair^head
+			5020	sentence_word		Yash rides his bicycle to _________.			Yash rides his bicycle to the market	the market	the store^the market^school
+											
+MiniTest_6_1	1	61001, 61002, 61003, 61004, 61005									
+			61001	soundonly_word					window	window	window^bathroom^door
+			61002	soundonly_word					rain	rain	rain^storm^earth
+			61003	sentence_word		The ______ are in the sky.			the birds are in the sky	birds	birds^chicken^frogs
+			61004	image_sentence		l1_littlemouse.png			a little mouse	A little mouse.	A little mouse.^An orange dress.^A black book.
+			61005	image_sentence		l1_tallboy.png			a tall boy	A tall boy.	A tall boy.^A tall baby.^A tall girl.
+											
+MiniTest_6_1	2	61006, 61007, 61008, 61009, 61010									
+			61006	soundonly_word					bathroom	bathroom	window^bathroom^door
+			61007	soundonly_word					storm	storm	rain^storm^earth
+			61008	sentence_word		The ______ are in the nest.			the birds are in the nest	birds	birds^chicken^frogs
+			61009	image_sentence		l3_3pails.png			three pails	Three pails.	Two pails.^Three boxes.^Three pails.
+			61010	image_sentence		l1_orangehat.png			an orange hat	An orange hat.	An orange shirt.^An orange hat.^An orange orange.
+											
+MiniTest_6_1	3	61011, 61012, 61013, 61014, 61015									
+			61011	soundonly_word					door	door	window^bathroom^door
+			61012	soundonly_word					earth	earth	rain^storm^earth
+			61013	sentence_word		Naresh cannot ______ high.			brian cannot jump high	jump	run^dance^jump
+			61014	image_sentence		l1_littleant.png			a little ant	A little ant.	A little mouse.^A little ant.^A big cat.
+			61015	image_sentence		l2_blackbear.png			a black bear	A black bear.	A black bear.^A black boot.^A black dog.
+											
+MiniTest_6_2	1	62001, 62002, 62003, 62004, 62005									
+			62001	image_sentence		l4_1boy2chairs.png			a boy and two chairs	A boy and two chairs.	A boy and two chairs.^A spoon and two forks.^Two lemons and a tomato.
+			62002	image_sentence		like_5.png			sam eats	Rehman eats.	Rehman eats.^Dinesh plays.^The plant grows.
+			62003	sentence_word		A _____ bus.			a yellow bus	yellow	yellow^big^black
+			62004	sentence_word		Astha _____ sick.			amy is sick	is	is^are^am
+			62005	soundonly_image					I give our cow water	book_en_314_page_5.png	book_en_314_page_6.png^book_en_314_page_7.png^book_en_314_page_5.png
+											
+MiniTest_6_2	2	62006, 62007, 62008, 62009, 62010									
+			62006	image_sentence		l4_1spoon2forks.png			A spoon and two forks.	A spoon and two forks.	A boy and two chairs.^A spoon and two forks.^Two lemons and a tomato.
+			62007	image_sentence		like_2.png			Dinesh plays.	Dinesh plays.	Rehman eats.^Dinesh plays.^The plant grows.
+			62008	sentence_word		A pink ______.			a pink dress	dress	dress^house^shirt
+			62009	sentence_word		I _____ thirsty.			i am thirsty	am	is^are^am
+			62010	soundonly_image					she likes carrots	book_en_314_page_6.png	book_en_314_page_6.png^book_en_314_page_7.png^book_en_314_page_5.png
+											
+MiniTest_6_2	3	62011, 62012, 62013, 62014, 62015									
+			62011	image_sentence		l4_2lemons1tomato.png			Two lemons and a tomato	Two lemons and a tomato.	A boy and two chairs.^A spoon and two forks.^Two lemons and a tomato.
+			62012	image_sentence		plants_7.png			The plant grows	The plant grows.	Rehman eats.^Dinesh plays.^The plant grows.
+			62013	sentence_word		_____ cups.			four cups	Four	Four^Ten^Clean
+			62014	sentence_word		My brothers _____ students.			my brothers  are students	are	is^are^am
+			62015	soundonly_image					father milks our cow every day	book_en_314_page_7.png	book_en_314_page_6.png^book_en_314_page_7.png^book_en_314_page_5.png
+											
+MiniTest_6_3	1	63001, 63002, 63003, 63004, 63005									
+			63001	sentence_word		Choose the right one.			dolphin	dolphin	dolphin^airplane^sleep
+			63002	sentence_word		Choose the correct sentence.			she walks	She walks.	She walks.^Shewalks.^she walks
+			63003	sentence_word		They are _______.			they are farmers	farmers	farmers^strong^doctors
+			63004	image_sentence		book_en_328_page_2.png			This red food can be hot.	This red food can be hot.	This red food can be hot.^Yellow food can be a drink.^This brown food is sweet.
+			63005	sentence_sentence		_________ Rabbit said.			I'm sorry,rabbit said	I'm sorry,	I'm sad,^I'm happy,^I'm sorry,
+											
+MiniTest_6_3	2	63006, 63007, 63008, 63009, 63010									
+			63006	sentence_word		Choose the right one.			airplane	airplane	dolphin^airplane^sleep
+			63007	sentence_word		Choose the correct sentence.			birds fly	Birds fly.	Birds fly.^Birdsfly.^birds fly
+			63008	sentence_word		He is at _______.			he is at school	school	school^home^the park
+			63009	image_sentence		book_en_328_page_5.png			Yellow food can make a drink.	Yellow food can make a drink.	This red food can be hot.^Yellow food can make a drink.^This brown food is sweet.
+			63010	sentence_sentence		Rabbit said, ____________			Rabbit said. Let's play a game.	Let's play a game.	Let's jump.^Let's play a game.^Let's play ball.
+											
+MiniTest_6_3	3	63011, 63012, 63013, 63014, 63015									
+			63011	sentence_word		Choose the right one.			sleep	sleep	dolphin^airplane^sleep
+			63012	sentence_word		Choose the correct sentence.			He plays.	He plays.	He plays.^Heplays.^he plays
+			63013	sentence_word		He doesn't have a _______.			he doesn't have a pen	pen	pen^sister^car
+			63014	image_sentence		book_en_328_page_8.png			This brown food is sweet.	This brown food is sweet.	This red food can be hot.^Yellow food can make a drink.^This brown food is sweet.
+			63015	sentence_sentence		_________ said Elephant.			Now it is my turn,said elephant	Now it is my turn,	Now it is my turn,^Now let's go,^Now we can play,
+											
+PostTest_6	1	6001, 6002, 6003, 6004, 6005, 6006, 6007, 6008, 6009, 6010									
+			6001	soundonly_word					helmet	helmet	toilet^helmet^sunset
+			6002	image_sentence		l1_orangehat.png			An orange hat.	An orange hat.	An orange shirt.^An orange hat.^A black hat.
+			6003	image_sentence		l4_1lemon2tomatos.png			A lemon and two tomatoes.	A lemon and two tomatoes.	An orange and two tomatoes.^A lemon and two tomatoes.^Two lemons and two tomatoes.
+			6004	image_sentence		l3_5ants.png			Five ants.	Five ants.	Five ants.^Five apples.^Four ants.
+			6005	soundonly_sentence					my house	my house	my desk^my house^your house
+			6006	soundonly_sentence					long snakes	long snakes	long snakes^long pants^long pencils
+			6007	soundonly_sentence					Good morning.	Good morning.	Hello.^Good morning.^Good afternoon.
+			6008	paragraph_sentence	What has no angles?	Let's learn about shapes. A triangle has three sides and three angles. A square has four equal sides and four equal angles. A circle has no angles. It is perfectly round.				A circle.	A triangle.^A square.^A circle.
+			6009	paragraph_sentence	Who milks our cow?	This is our cow. I give our cow water. I give our cow treats. She likes carrots. Father milks our cow every day. We sell some of the milk for money.				Father.	Father.^I.^Our cow.
+			6010	imageseq_sentence		Pomegranates are red.		Papayas are also filled with seeds.	Pomegranates are red. They are full of seeds that taste sweet. Papayas are also filled with seeds.	They are full of seeds that taste sweet.	Some fruit grow on trees.^They are full of seeds that taste sweet.^Some guavas are pink, too
+											
+PostTest_6	2	6011, 6012, 6013, 6014, 6015, 6016, 6017, 6018, 6019, 6020									
+			6011	soundonly_word					sunset	sunset	toilet^helmet^sunset
+			6012	image_sentence		l2_blackbear.png			a black bear	A black bear.	A black bear.^A white bear.^A black dog.
+			6013	image_sentence		l4_2spoons2forks.png			Two spoons and two forks.	Two spoons and two forks.	Two spoons and a fork.^Two spoons and two forks.^A spoon and two forks.
+			6014	image_sentence		l3_2cars.png			Two cars.	Two cars.	Two cars.^Two buses.^Three cars.
+			6015	soundonly_sentence					three dogs	three dogs	three cats^three dogs^four dogs
+			6016	soundonly_sentence					short hair	short hair	short hair^long hair^short skirt
+			6017	soundonly_sentence					It is a truck.	It is a truck.	It is a tree.^It is a car.^It is a truck.
+			6018	paragraph_sentence	What has four equal sides and angles?	Let's learn about shapes. A triangle has three sides and three angles. A square has four equal sides and four equal angles. A circle has no angles. It is perfectly round.				A square.	A triangle.^A square.^A circle.
+			6019	paragraph_sentence	What does our cow like?	This is our cow. I give our cow water. I give our cow treats. She likes carrots. Father milks our cow every day. We see some of the milk for money.				Carrots.	Money.^Milk.^Carrots.
+			6020	imageseq_sentence		Fruits can be sweet.		Vegetables can be crunchy.	Fruits can be sweet. They can be full of vitamins. Vegetables can be crunchy.	They can be full of vitamins.	They can be full of vitamins.^It can make you strong.^Always drink lots of water.
+											
+MiniTest_7_1	1	71001, 71002, 71003, 71004, 71005									
+			71001	image_sentence		l7_hecandrive.png			He can drive.	He can drive.	He can drive.^She can drive.^He can draw.
+			71002	image_sentence		l5_shirtdirty.png			This shirt is dirty.	This shirt is dirty.	This shoe is dirty.^This shirt is clean.^This shirt is dirty.
+			71003	sentence_sentence		Choose the right one.			Choose the right one.	Chinmay can run fast.	Chinmay can run fast.^Chinmay can running fast.^Chinmay runs can fast.
+			71004	sentence_sentence		Choose the right one.			Choose the right one.	She has a mango.	She has a mango.^She have a mango.^She having a mango.
+			71005	soundonly_image					she met a dolphin	book_en_319_page_6.png	book_en_319_page_7.png^book_en_319_page_6.png^book_en_319_page_10.png
+											
+MiniTest_7_1	2	71006, 71007, 71008, 71009, 71010									
+			71006	image_sentence		l6_potato.png			It is a potato.	It is a potato.	It is a tomato.^It is a potato.^These are tomatoes.
+			71007	image_sentence		l5_hesick.png			He looks sick.	He looks sick.	He looks sick.^She looks sick.^He looks happy.
+			71008	sentence_sentence		Choose the right one.			Choose the right one.	Snakes do not have legs.	Snakes do not have legs.^Snakes are not have legs.^Snakes have not legs.
+			71009	sentence_sentence		Choose the right one.			Choose the right one.	They have mangoes.	They have mangoes.^They has mangoes.^They having mangoes.
+			71010	soundonly_image					she met a snail	book_en_319_page_7.png	book_en_319_page_7.png^book_en_319_page_6.png^book_en_319_page_10.png
+											
+MiniTest_7_1	3	71011, 71012, 71013, 71014, 71015									
+			71011	image_sentence		l6_carrots.png			These are carrots.	These are carrots.	This is not a carrot.^There are onions.^These are carrots.
+			71012	image_sentence		l6_shesinger.png			She is a singer.	She is a singer.	She is a teacher.^She is a singer.^She is a nurse.
+			71013	sentence_sentence		Choose the right one.			Choose the right one.	She does not like dogs.	She does not like dogs.^She are not like dogs.^She not like dogs.
+			71014	sentence_sentence		Choose the right one.			Choose the right one.	I want a mango.	I want a mango.^I wants a mango.^I wanting a mango.
+			71015	soundonly_image					she sat on her mom	book_en_319_page_10.png	book_en_319_page_7.png^book_en_319_page_6.png^book_en_319_page_10.png
+											
+MiniTest_7_2	1	72001, 72002, 72003, 72004, 72005									
+			72001	image_sentence		l8_heeatingsalad.png			He is eating salad.	He is eating salad.	He is eating chicken.^He is eating rice.^He is eating salad.
+			72002	image_sentence		l8_sheswimming.png			She is swimming.	She is swimming.	She is shopping.^He is swimming.^She is swimming.
+			72003	sentence_sentence		Choose the right one.			Choose the right one.	The plant is green.	The plant green.^The plant green is.^The plant is green.
+			72004	sentence_sentence		Choose the right one.			Choose the right one.	They eat fast.	They eats fast.^They eat fast.^They eating fast.
+			72005	sentence_word		I need a _____.			I need a paper	paper	paper^pencil^envelope
+											
+MiniTest_7_2	2	72006, 72007, 72008, 72009, 72010									
+			72006	image_sentence		l9_rabbitundertable.png			A rabbit is under the table.	A rabbit is under the table.	A rabbit is on the table.^A rabbit is under the table.^A cat is under the table.
+			72007	image_sentence		l7_hecandrive.png			He can drive.	He can drive.	He can drive.^She can drive.^He can draw.
+			72008	sentence_sentence		Choose the right one.			Choose the right one.	The milk is delicious.	The milk delicious is.^The milk is delicious.^The milk delicious.
+			72009	sentence_sentence		Choose the right one.			Choose the right one.	She runs fast.	She runs fast.^She fast runs.^She running fast.
+			72010	sentence_word		I need a _____.			I need a pencil	pencil	paper^pencil^envelope
+											
+MiniTest_7_2	3	72011, 72012, 72013, 72014, 72015									
+			72011	image_sentence		l9_teachersitschair.png			A teacher sits in the chair.	A teacher sits in the chair.	A teacher sits in the chair.^A teacher cleans the chair.^A boy sits in the chair.
+			72012	image_sentence		l8_heeatingfish.png			He is eating fish.	He is eating fish.	They are eating fish.^He is eating fish.^He is eating salad.
+			72013	sentence_sentence		Choose the right one.			Choose the right one.	He has bananas.	He have bananas.^He has bananas.^He is have bananas.
+			72014	sentence_sentence		Choose the right one.			Choose the right one.	Rehmaneera eats many apples.	Rehmaneera eats many apples.^Rehmaneera many apples eats.^Rehmaneera eating many apples.
+			72015	sentence_word		I need an _____.			I need an envelope	envelope	paper^pencil^envelope
+											
+MiniTest_7_3	1	73001, 73002, 73003, 73004, 73005									
+			73001	soundonly_image					she likes the yellow shoes	l11_shelikesyellowshoes.png	l11_shelikesyellowshoes.png^l11_shelikespinkshoes.png^l11_shelikespinkhat.png
+			73002	soundonly_image					surprised	emotions_6_cropped_surprised.png	emotions_6_cropped_surprised.png^emotions_5_cropped_excited.png^emotions_3_cropped_angry.png
+			73003	sentence_sentence		Choose the right one.			Choose the right one.	Rehmaneera eats an apple.	Rehmaneera eats a apples.^Rehmaneera eats an apple.^Rehmaneera eating apple.
+			73004	sentence_sentence		Mouse said, “Please, Lion. _____________			Mouse said. Please Lion.   Do not eat me.	Do not eat me.	Do not eat me.^I will help you.^That is silly.
+			73005	sentence_sentence		This kitten has _________.			This kitten has four legs	four legs	four legs^two legs^no legs
+											
+MiniTest_7_3	2	73006, 73007, 73008, 73009, 73010									
+			73006	soundonly_image					the girl has green mangoes	l11_girlhasgreenmangoes.png	l11_girlhasgreenbananas.png^l11_girlhasgreenmangoes.png^l11_shehasball.png
+			73007	soundonly_image					excited	emotions_5_cropped_excited.png	emotions_6_cropped_surprised.png^emotions_5_cropped_excited.png^emotions_3_cropped_angry.png
+			73008	sentence_sentence		Choose the right one.			Choose the right one.	He sings a song.	He sings song.^He singing a song.^He sings a song.
+			73009	sentence_sentence		Mouse said, “Let me go. Someday,________			Mouse said. Let me go. Someday. I will help you.	I will help you.	Do not eat me.^I will help you.^That is silly.
+			73010	sentence_sentence		These two fishes do not have _________.			These two fishes do not have legs	legs	legs^eyes^tails
+											
+MiniTest_7_3	3	73011, 73012, 73013, 73014, 73015									
+			73011	soundonly_image					the girl has green bananas	l11_girlhasgreenbananas.png	l11_girlhasgreenbananas.png^l11_girlhasgreenmangoes.png^l11_shehasball.png
+			73012	soundonly_image					angry	emotions_3_cropped_angry.png	emotions_6_cropped_surprised.png^emotions_5_cropped_excited.png^emotions_3_cropped_angry.png
+			73013	sentence_sentence		Choose the right one.			Choose the right one.	They drink milk.	They drink milk.^They milk drink.^They drinking milk.
+			73014	sentence_sentence		Lion said, __________			Lion said. that is silly	That is silly.	Do not eat me.^I will help you.^That is silly.
+			73015	sentence_sentence		These four birds have __________ each.			These four birds have two legs each.	two legs	four legs^two legs^no legs
+											
+PostTest_7	1	7001, 7002, 7003, 7004, 7005, 7006, 7007, 7008, 7009, 7010									
+			7001	sentence_sentence		Who is he?			He is my brother.	He is my brother.	It is a chair.^He is my brother.^I am a student.
+			7002	sentence_sentence		Are you happy?			Yes I am.	Yes, I am.	Yes, I am.^Yes, it is.^Yes, they are.
+			7003	soundonly_image					a cat is under the table	l9_catundertable.png	l9_catundertable.png^l9_dogundertable.png^l9_catonbox.png
+			7004	soundonly_image					the bag is next to the bed	l10_bagnextbed.png	l10_bagonbed.png^l10_bagunderbed.png^l10_bagnextbed.png
+			7005	soundonly_sentence					they are farmers	They are farmers.	He is a farmer.^They are not farmers.^They are farmers.
+			7006	soundonly_sentence					she is not young	She is not young.	She is young.^She is not young.^He is very young.
+			7007	sentence_sentence		Choose the right one.			He swims fast.	He swims fast.	He swim fast.^He swimming fast.^He swims fast.
+			7008	sentence_sentence		Choose the right one.			The dogs run every day.	The dogs run every day.	The dogs runs every day.^The dogs run every day.^The dogs are run every day.
+			7009	imageseq_sentence		Cows make milk.		A baby cow is called a calf.	Cows make milk. Baby cows eat grass. A baby cow is called a calf.	Baby cows eat grass.	Baby cows eat grass.^Som people eat cows.^I don't drink milk.
+			7010	imageseq_image		book_en_349_page_2.png		book_en_349_page_6.png	Kushal and Ajeet wake up with the sun. Ajeet drinks chai. Kushal does too. Kushal and baba watch the sun go down.	book_en_349_page_4.png	book_en_349_page_4.png^book_en_349_page_5.png^book_en_349_page_3.png
+											
+PostTest_7	2	7011, 7012, 7013, 7014, 7015, 7016, 7017, 7018, 7019, 7020									
+			7011	sentence_sentence		What's this?			It's a frog.	It's a frog.	I'm good.^He is sad.^It's a frog.
+			7012	sentence_sentence		Is she a doctor?			No she isn't.	No, she isn't.	No, I am not.^No, she isn't.^No, it isn't.
+			7013	soundonly_image					she stands next to the tree	l9_shestandtree.png	l9_shestandtree.png^l9_theystandtree.png^l9_hestandtree.png
+			7014	soundonly_image					the birds are on the roof	l10_birdsonroof.png	l10_birdsinsky.png^l10_birdsinnest.png^l10_birdsonroof.png
+			7015	soundonly_sentence					he is at school	He is at school.	He is at home.^He is at school.^I am at school.
+			7016	soundonly_sentence					i am not tall	I am not tall.	I am not tall.^I am tall.^He is not tall.
+			7017	sentence_sentence		Choose the right one.			She runs fast.	She runs fast.	She running fast.^She runs fast.^She run fast.
+			7018	sentence_sentence		Choose the right one.			They play a game.	They play a game.	They play a game.^They are play a game.^They plays a game.
+			7019	imageseq_sentence		Kushal and Ajeet wake up with the sun.		Kushal does too.	Kushal and Ajeet wake up with the sun. Ajeet washes his face. Kushal does too.	Ajeet washes his face.	Ajeet washes his face.^Kushal washes his hands.^They work all day.
+			7020	imageseq_image		book_en_347_page_1.png		book_en_347_page_7.png	Good morning cow! Wake up. Some people take care of cows. Cows help people work. Cows live in groups just like people do	book_en_347_page_3.png	book_en_347_page_3.png^book_en_347_page_5.png^book_en_347_page_4.png
+											
+MiniTest_8_1	1	81001, 81002, 81003, 81004, 81005									
+			81001	image_sentence		l13_lionbetweentrees.png			The lion is between the trees.	The lion is between the trees.	The lion is between the trees.^The lion is in front of the trees.^The lion is behind the trees.
+			81002	soundonly_image					he can't cook well	l12_hecantcookwell.png	l12_shecancookwell.png^l12_theycannotcookwell.png^l12_hecantcookwell.png
+			81003	sentence_sentence		Choose the right one.			Choose the right one..	It is not sunny today.	It is not sunny today.^It not sunny today.^It not is sunny today.
+			81004	sentence_sentence		Choose the right one.			Choose the right one.	You have big hands.	You have big hands.^You has big hands.^You are have big hands.
+			81005	soundonly_image					Would you like to be orange like a Fish?	book_en_406_page_3.png	book_en_406_page_4.png^book_en_406_page_3.png^book_en_406_page_2.png
+											
+MiniTest_8_1	2	81006, 81007, 81008, 81009, 81010									
+			81006	image_sentence		l13_oldmanfrontgirl.png			The old man is in front of the girl.	The old man is in front of the girl.	The old man is in front of the girl.^The old man is behind the girl.^The old man is next to the girl.
+			81007	soundonly_image					she cannot read well	l12_shecannotreadwell.png	l12_hecannotreadwell.png^l12_shecannotreadwell.png^l12_shecannotwritewell.png
+			81008	sentence_sentence		Choose the right one.			Choose the right one..	The boys are not tall.	The boys are not tall.^They boys not tall.^The boys not are tall.
+			81009	sentence_sentence		Choose the right one.			Choose the right one.	She has a long neck.	She has a long neck.^She have a long neck.^She is have a long neck.
+			81010	soundonly_image					Would you like to have eight arms like an Octopus?	book_en_406_page_2.png	book_en_406_page_4.png^book_en_406_page_3.png^book_en_406_page_2.png
+											
+MiniTest_8_1	3	81011, 81012, 81013, 81014, 81015									
+			81011	image_sentence		l12_shecannotwritewell.png			She cannot write well.	She cannot write well.	She cannot write well.^She cannot cook well.^She cannot jump well.
+			81012	soundonly_image					the cat is behind the box	l13_catbehindbox.png	l13_catbetweenboxes.png^l13_catfrontbox.png^l13_catbehindbox.png
+			81013	sentence_sentence		Choose the right one.			Choose the right one.	It is not cold today.	It is not cold today.^It not cold today.^It not is cold today.
+			81014	sentence_sentence		Choose the right one.			Choose the right one.	This is my mouth.	This is my mouth.^This are my mouth.^This am my mouth.
+			81015	soundonly_image					Would you like to jump and play like a Dolphin?	book_en_406_page_4.png	book_en_406_page_4.png^book_en_406_page_3.png^book_en_406_page_2.png
+											
+MiniTest_8_2	1	82001, 82002, 82003, 82004, 82005									
+			82001	soundonly_sentence					I was angry.	I was angry.	I was angry.^I did angry.^I were angry.
+			82002	sentence_word		Look at the frogs __________.			look at the frogs on the rock	on the rock	on the rock^in the sky^in the nest
+			82003	sentence_word		This is __________.			this is my bag	my bag	my bag^me bag^I bag.
+			82004	listeningcomp_sentence	Bugs are small. Sometimes. It is hard to see them because they are so small. Some live in the ground. Some live in trees. I see them indoors. I see them outdoors. Bugs are everywhere.	What is this story about?				It is about bugs.	It is about bugs.^It is about food.^It is about people.
+			82005	paragraph_sentence	What does Govind like to do?	Govind likes to cook. He cooks with his mom. They cook dinner for their family. It is nice to cook for family.				He likes to cook.	He likes to cook.^He likes to read.^He likes to jump.
+											
+MiniTest_8_2	2	82006, 82007, 82008, 82009, 82010									
+			82006	soundonly_sentence					he was cute	He was cute.	He was cute.^He were cute.^He did cute.
+			82007	sentence_word		The boy is __________.			the boy is under the table	under the table	under the table^in the room^on the box
+			82008	sentence_word		They are __________.			they are his cats	his cats	his cats^he cats^him cats
+			82009	listeningcomp_sentence	Bugs are small. Sometimes. It is hard to see them because they are so small. Some live in the ground. Some live in trees. I see them indoors. I see them outdoors. Bugs are everywhere.	Where are bugs?				They are everywhere.	They are everywhere.^They are in the ocean.^We cannot see them.
+			82010	paragraph_sentence	Does Govind cook with his dad?	Govind likes to cook. He cooks with his mom. They cook dinner for their family. It is nice to cook for family.				No, he does not.	Yes, he does.^No, he does not.^We do not know.
+											
+MiniTest_8_2	3	82011, 82012, 82013, 82014, 82015									
+			82011	soundonly_sentence					They were kind.	They were kind.	They were kind.^They was kind.^They did kind.
+			82012	sentence_word		The bus stop is _________ the school.			the bus stop is in front of the school	in front of	in front of^between^next to
+			82013	sentence_word		She likes __________.			she likes her dress	her dress	her dress^she dress^you dress
+			82014	listeningcomp_sentence	Bugs are small. Sometimes it is hard to see them because they are so small. Some live in the ground. Some live in trees. I see them indoors. I see them outdoors. Bugs are everywhere.	Why is it sometimes hard to see bugs?				Because they are so small.	Because they are so small.^Because they are so big.^Because they are sad.
+			82015	paragraph_sentence	Does Govind cook dinner with his mom?	Govind likes to cook. He cooks with his mom. They cook dinner for their family. It is nice to cook for family.				Yes, he does.	Yes, he does.^No, he does not.^We do not know.
+											
+MiniTest_8_3	1	83001, 83002, 83003, 83004, 83005									
+			83001	soundonly_image					the boy wants to be a doctor	l16_hewantsdoctor.png	l16_hewantsteacher.png^l16_girlwantsdoctor.png^l16_hewantsdoctor.png
+			83002	sentence_sentence		Choose the right one.			Choose the right one.	She is seven years old.	She is seven years old.^She seven old years.^she is sevenyearsold
+			83003	paragraph_sentence		Sabina loves beans. _____________ She is very happy when her dad cooks beans. Her dad adds just the right amount of salt. The beans are very tasty.			Sabina loves beans. Beans are her favourite food .She is very happy when her dad cooks beans .Her dad add just a right amount of salt. The Beans are very tasty	Beans are her favorite food.	Beans are her favorite food.^She likes mangoes.^Carrots are her favorite food.
+			83004	sentence_sentence		He caught _______.			he caught nothing	nothing	nothing^animals^birds
+			83005	sentence_sentence		Mother says, ______________			mother says. You are too dirty	You are too dirty!	Now I like to wash!^I don't want to wash!^You are too dirty!
+											
+MiniTest_8_3	2	83006, 83007, 83008, 83009, 83010									
+			83006	soundonly_image					the girl wants to be a doctor	l16_girlwantsdoctor.png	l16_hewantsteacher.png^l16_girlwantsdoctor.png^l16_hewantsdoctor.png
+			83007	sentence_sentence		Choose the right one.			Choose the right one.	He has three brothers.	He has three brothers.^He threebrothers has.^he has threebrothers
+			83008	paragraph_sentence		Sabina loves beans. Beans are her favorite food. She is very happy when her dad cooks beans. Her dad adds just the right amount of salt. _________________			Sabina loves beans. Beans are her favourite food .She is very happy when her dad cooks beans .Her dad add just a right amount of salt. The Beans are very tasty	The beans are very tasty.	The beans are very tasty.^The beans are not tasty.^She doesn't like beans.
+			83009	sentence_sentence		Nalini went hunting ________.			masha went hunting at night	at night	in the day^every day^at night
+			83010	sentence_sentence		Juhi says, ___________			nia says. I don't want to wash	I don't want to wash!	Now I like to wash!^I don't want to wash!^You are too dirty!
+											
+MiniTest_8_3	3	83011, 83012, 83013, 83014, 83015									
+			83011	soundonly_image					the boy wants to be a teacher	l16_hewantsteacher.png	l16_hewantsteacher.png^l16_girlwantsdoctor.png^l16_hewantsdoctor.png
+			83012	sentence_sentence		Choose the right one.			Choose the right one..	My mom likes yellow.	My mom likes yellow.^mymom likesyellow.^My mom yellow likes.
+			83013	paragraph_sentence		Sabina loves beans. Beans are her favorite food. _____________ when her dad cooks beans. Her dad adds just the right amount of salt. The beans are very tasty.			Sabina loves beans. Beans are her favourite food .She is very happy when her dad cooks beans .Her dad add just a right amount of salt. The Beans are very tasty	She is happy	She is happy^She is sad^She is scared
+			83014	sentence_sentence		He was scared, but he did not _______.			he was scared but he did not give up	give up	go alone^give up^go hunting
+			83015	sentence_sentence		Juhi says, ___________			nia says. Now I like to wash	Now I like to wash!	Now I like to wash!^I don't want to wash!^You are too dirty!
+											
+PostTest_8	1	8001, 8002, 8003, 8004, 8005, 8006, 8007, 8008, 8009									
+			8001	soundonly_sentence					a cat is on the chair	A cat is on the chair.	A cat is on the chair.^a cat is on the Chair.^A cat is onthechair.
+			8002	sentence_word		He ______ a doctor then.			he was a doctor then	was	was^is^were
+			8003	sentence_word		Arvind ______ scared yesterday.			mark looked scared yesterday	looked	looked^looks^looking
+			8004	soundonly_image					jill plays a game alone	simo_friends_4_cropped_playball.png	simo_friends_4_cropped_playball.png^eating_3.png^elephant_frogs_4_sentence_frogs_2.png
+			8005	paragraph_sentence	What does Worm like to do?	Worm and bird are friends. Worm likes to slide. Bird likes to fly. Worm likes the dirt. Bird  likes the sky. Worm likes the rain. Bird likes the sun. But worm and bird both like to play!				Worm likes to slide.	Worm likes to slide.^Worm likes to fly.^Worm likes to sing.
+			8006	paragraph_sentence	What is true?	Lakshmi has a big family. She has two brothers. One is older. One is younger. She has two sisters. One is older. One is younger. Lakshmi likes to play with her brothers and sisters. They are lots of fun.				Lakshmi has two sisters.	Lakshmi has a small family.^Lakshmi has two older brothers.^Lakshmi has two sisters.
+			8007	paragraph_sentence	What does Deep like to do?	Deep runs to the market. Deep runs very fast. He likes to run fast. Oh no! He falls on a rock. He hurts his knee. Next time Deep goes to the market, he runs slowly. He is more careful.				He likes to run fast.	He likes to run fast.^He likes to fall down.^He likes to drink milk.
+			8008	imageseq_sentence	What best describes the image sequence?	book_en_407_page_1.png	book_en_407_page_6.png	book_en_407_page_7.png		A fawn was running in the forest. The fawn tripped. The fawn cried and cried.	A fawn was running in the forest. He ran faster than the rabbit. The fawn cried and cried.^A fawn was running in the forest. The fawn tripped. The fawn cried and cried.^The fawn ran faster than the rabbit. The fawn tripped. Finally he fawn stopped crying.
+			8009	imageseq_image		book_en_404_page_5.png		book_en_404_page_7.png	Juhi says. I don't want to wash. She kicks the soap. That night she dreams. she is a princess. Dirt monsters attack the castle. The dirt and bugs are all around her.	book_en_404_page_6.png	book_en_404_page_6.png^book_en_404_page_2.png^book_en_404_page_9.png
+											
+PostTest_8	2	8011, 8012, 8013, 8014, 8015, 8016, 8017, 8018, 8019									
+			8011	soundonly_sentence					a dog is on the box	A dog is on the box.	A dog is on the box.^a dog is on the box^A dog is onthebox.
+			8012	sentence_word		You ______ a strong boy then.			you were a strong boy then	were	was^are^were
+			8013	sentence_word		The man ______ his car yesterday.			the man washed his car yesterday	washed	washed^wash^washing
+			8014	soundonly_image					the frogs make noise every night	elephant_frogs_4_sentence_frogs_2.png	simo_friends_4_cropped_playball.png^eating_3.png^elephant_frogs_4_sentence_frogs_2.png
+			8015	paragraph_sentence	What does Bird like?	Worm and bird are friends. Worm likes to slide. Bird likes to fly. Worm likes the dirt. Bird  likes the sky. Worm likes the rain. Bird likes the sun. But worm and bird both like to play!				Bird likes the sky and the sun.	Bird likes the sky and the sun.^Bird likes the rain and the dirt.^Bird likes the dirt and the slide.
+			8016	paragraph_sentence	What is true?	Lakshmi has a big family. She has two brothers. One is older. One is younger. She has two sisters. One is older. One is younger. Lakshmi likes to play with her brothers and sisters. They are lots of fun.				Lakshmi has a big family.	Lakshmi has a big family.^Lakshmi has two older brothers.^Lakshmi has one sister.
+			8017	paragraph_sentence	Does Deep hurt his face?	Deep runs to the market. Deep runs very fast. He likes to run fast. Oh no! He falls on a rock. He hurts his knee. Next time Deep goes to the market, he runs slowly. He is more careful.				No, he doesn't.	Yes, he does.^No, he doesn't.^Yes, he is.
+			8018	imageseq_sentence	What best describes the image sequence?	book_en_407_page_7.png	book_en_407_page_8.png	book_en_407_page_10.png		The fawn hurt his leg. The monkey tried to help him. His mother came and gave him a hug.	The fawn hurt his leg. The monkey tried to help him. His mother came and gave him a hug.^The fawn was running in the forest. He hurt his leg. The monkey tried to help him.^The monkey tried to help the frawn. His mother came and gave him a hug. He hurt his leg.
+			8019	imageseq_image		book_en_408_page_1.png		book_en_408_page_5.png	Today is Varun's birthday. Varun and his friend lele are very happy. Suddenly rain start to fall and s uddenly fishes start to fall from sky. The water reaches Biren's waist. Biren is afraid.	book_en_408_page_4.png	book_en_408_page_6.png^book_en_408_page_2.png^book_en_408_page_4.png
+											
+MiniTest_9_1	1	91001, 91002, 91003, 91004, 91005									
+			91001	soundonly_image					She is reading under the table.	l15_shereadundertable.png	l15_shereadundertable.png^l15_shereadontable.png^l15_shereadundertree.png
+			91002	soundonly_image					the cat is behind the box	l13_catbehindbox.png	l13_catbetweenboxes.png^l13_catfrontbox.png^l13_catbehindbox.png
+			91003	sentence_sentence		Choose the right one.			Choose the right one.	I have a pencil.	I have a pencil.^Ihave apencil.^i have A pencils.
+			91004	listeningcomp_sentence	Mohan is a nurse. He helps people when they are sick. He helps understand what is wrong and give some medicine to help them feel better. He also gives advice to people. so that they can be healthy. Being healthy helps people from getting sick	What is Mohan's job?				He is a nurse.	He is a nurse.^He is a teacher.^He is a farmer.
+			91005	imageseq_sentence		Himani was born in 1940. She grew up on a farm.		When Himani was an old woman. she was given the Nobel Peace Prize.	Himani was born in 1940. She grew up on a farm. Himani began the green belt movement. When Himani was an old woman. she was given the nobel peace prize	Himani began the Green Belt movement.	She led people to plant trees all across the country.^Himani went to university in the United States.^Himani began the Green Belt movement.
+											
+MiniTest_9_1	2	91006, 91007, 91008, 91009, 91010									
+			91006	soundonly_image					she is reading on the table	l15_shereadontable.png	l15_shereadundertable.png^l15_shereadontable.png^l15_shereadundertree.png
+			91007	soundonly_image					the school is next to the park	l13_schoolnextpark.png	l13_schoolnextpark.png^l13_oldmanbtwboys.png^l13_dogbtwgoat_sheep.png
+			91008	sentence_sentence		Choose the right one.			Choose the right one.	She cannot read well.	She cannot read well.^She cannotread well.^She cannot reading well.
+			91009	listeningcomp_sentence	Mohan is a nurse. He helps people when they are sick. He helps understand what is wrong and give some medicine to help them feel better. He also gives advice to people. so that they can be healthy. Being healthy helps people from getting sick	What helps people from getting sick?				Being healthy.	Being healthy.^Being happy.^Being hungry.
+			91010	imageseq_sentence		Himani believed things should be fair.		Himani began the Green Belt movement.	Himani believed that  the things should be fair. Himani knew that plants and animals are important to our world. Himani began the green belt movement	Himani knew that plants and animals are important to our world.	She led people to plant trees all across the country.^Himani went to university in the United States.^Himani knew that plants and animals are important to our world.
+											
+MiniTest_9_1	3	91011, 91012, 91013, 91014, 91015									
+			91011	soundonly_image					she is reading under the tree	l15_shereadundertree.png	l15_shereadundertable.png^l15_shereadontable.png^l15_shereadundertree.png
+			91012	soundonly_image					the cat is behind the box	l13_catbehindbox.png	l13_catbetweenboxes.png^l13_catfrontbox.png^l13_catbehindbox.png
+			91013	sentence_sentence		Choose the right one.			Choose the right one.	Lions don't eat carrots.	Lions don't eat carrots.^Lions doesn't eating carrots.^Lions not eat carrots.
+			91014	listeningcomp_sentence	Mohan is a nurse. He helps people when they are sick. He helps understand what is wrong and give some medicine to help them feel better. He also gives advice to people. so that they can be healthy. Being healthy helps people from getting sick	Is Mohan a doctor?				No, he is not.	No, he is not.^Yes, he is.^We do not know.
+			91015	imageseq_sentence		Himani went to university in the United States.		They made the country more green.	Himani went to university in the United States. She led people to plant trees all across the country. They made the country more green.	She led people to plant trees all across the country.	She fought for the rights to the women in the schools.^She led people to plant trees all across the country.^When Himani was an old woman, she was given the Nobel Peace Prize.
+											
+MiniTest_9_2	1	92001, 92002, 92003, 92004, 92005									
+			92001	soundonly_sentence					he doesn't dance	He doesn't dance.	He doesn't dance.^He dances well.^He doesn't sing.
+			92002	soundonly_image					she is helping her dad carry boxes	l17_shehelpdadcarry.png	l17_shehelpmomdry.png^l17_shehelpmomcook.png^l17_shehelpdadcarry.png
+			92003	sentence_sentence		Choose the right one.			Choose the right one..	They sell milk together.	They sell milk together.^They sells milk together.^They selling milk together.
+			92004	listeningcomp_sentence	Sonia likes to look at the stars. She can see them from her house. She can see them at night. She can see them in the sky. Sonia wants to count all the stars. But there are too many.	Are there many stars in the sky?				Yes, there are.	Yes, there are.^No, there are not.^We do not know.
+			92005	paragraph_sentence		In the morning, Fox went for a walk. He walked _________________________. His stomach rumbled with hunger. He looked all around for something to eat.			In the morning. fox went for a walk. He walked until the sun is high. His stomach rumbled with hunger. He looked all around for something to eat.	until the sun is high	until he met a tree^until he found the sun^until the sun is high
+											
+MiniTest_9_2	2	92006, 92007, 92008, 92009, 92010									
+			92006	soundonly_sentence					she doesn't like cats	She doesn't like cats.	She doesn't like cats.^She likes cats.^She doesn't have dogs.
+			92007	soundonly_image					she is helping her mom cook dinner	l17_shehelpmomcook.png	l17_shehelpmomdry.png^l17_shehelpmomcook.png^l17_shehelpdadcarry.png
+			92008	sentence_sentence		Choose the right one.			Choose the right one.	He drinks milk every day.	He drinking milk every day.^He drink milk every day.^He drinks milk every day.
+			92009	listeningcomp_sentence	Sonia likes to look at the stars. She can see them from her house. She can see them at night. She can see them in the sky. Sonia wants to count all the stars. But there are too many.	What does Sonia like to do?				She likes to look at the stars.	She likes to look at the stars.^She likes to clean the house.^She likes to feed goats.
+			92010	paragraph_sentence		He saw some grapes high in a tree. ____________________ How could he get them? Fox reached with his arms. He could almost taste the grapes!			He saw some grapes high in a tree. They must be so sweet! How could he get them? Fox reached with his arms. He could almost taste the grapes.	They must be so sweet!	They must be too sour!^They must be so sweet!^They must be grapes!
+											
+MiniTest_9_2	3	92011, 92012, 92013, 92014, 92015									
+			92011	soundonly_sentence					they don't eat fish	They don't eat fish.	They don't eat fish.^They are eating fish.^They don't catch frogs.
+			92012	soundonly_image					She is helping her mom dry clothes.	l17_shehelpmomdry.png	l17_shehelpmomdry.png^l17_shehelpmomcook.png^l17_shehelpdadcarry.png
+			92013	sentence_sentence		Choose the right one.			Choose the right one.	The van drives down the road.	The van drive down the road.^The van drives down the road.^The van driving down the road.
+			92014	listeningcomp_sentence	Sonia likes to look at the stars. She can see them from her house. She can see them at night. She can see them in the sky. Sonia wants to count all the stars. But there are too many.	What does Sonia look at each evening?				The stars in the sky.	The stars in the sky.^The house from outside.^Her baby brother.
+			92015	paragraph_sentence		Fox could not get the grapes by jumping. _______________ Could he find another way? We will never know, because Fox stopped trying.			Fox could not get the grapes by jumping. He was getting upset. Could he find another way? We would never know. Because fox stopped trying.	He was getting upset.	He was getting happy.^He was getting upset.^It was getting dark.
+											
+MiniTest_9_3	1	93001, 93002, 93003, 93004, 93005									
+			93001	soundonly_image					the cat is bigger than the bird	l4_catbird.png	l4_dogcat.png^l4_catbird.png^l4_dogbird.png
+			93002	soundonly_image					basket is full of bunches of grapes	l10_grapesinbasket.png	l10_grapesinbasket.png^l10_applesinbasket.png^l10_birdsinnest.png
+			93003	sentence_sentence		Choose the right one.			Choose the right one.	Are they students?	Are they students?^Are they students.^are they students?
+			93004	sentence_sentence		Choose the right one.			Choose the right one.	We had lunch.	We had lunch.^We has lunch.^We haved lunch.
+			93005	paragraph_sentence		Richa was late for school. _________________, but it had already passed her street. Richa yelled for the driver to stop, but the driver didn't hear.			Richa was late for school. She ran to catch the bus. But the bus had already passed her street. Richa yelled for the driver to stop. but the driver didn't hear.	She ran to catch the bus	She walked slowly^She ran to catch the bus^She shouted alone
+											
+MiniTest_9_3	2	93006, 93007, 93008, 93009, 93010									
+			93006	soundonly_image					the bird is smaller than the dog	l4_dogbird.png	l4_dogcat.png^l4_catbird.png^l4_dogbird.png
+			93007	soundonly_image					the basket is full of mellow apples	l10_applesinbasket.png	l10_grapesinbasket.png^l10_applesinbasket.png^l10_birdsinnest.png
+			93008	sentence_sentence		Choose the right one.			Choose the right one.	Does he like bananas?	Does he like bananas?^Does he like bananas.^does he like bananas?
+			93009	sentence_sentence		Choose the right one.			Choose the right one.	They ran fast.	They runs fast.^They runned fast.^They ran fast.
+			93010	paragraph_sentence		Then, a truck passed Richa. _____________, Richa thought. I could learn to drive and drive to school.			Then. A truck passed Richa. If only I had a truck. Richa thought. I could learn to drive. And drive to school.	If only I had a truck	If only I had a truck^If only I had a boat^If only I got up early
+											
+MiniTest_9_3	3	93011, 93012, 93013, 93014, 93015									
+			93011	soundonly_image					the cat is smaller than the dog	l4_dogcat.png	l4_dogcat.png^l4_catbird.png^l4_dogbird.png
+			93012	soundonly_image					nest is full of three yellow birds	l10_birdsinnest.png	l10_grapesinbasket.png^l10_applesinbasket.png^l10_birdsinnest.png
+			93013	sentence_sentence		Choose the right one.			Choose the right one.	Where is the cat?	Where is the cat?^Where is the cat.^where is the cat?
+			93014	sentence_sentence		Choose the right one.			Choose the right one.	She made a chair.	She made a chair.^She maked a chair.^She make a chair.
+			93015	paragraph_sentence		Richa's school wasn't near the water, though. A boat couldn't take Richa to school, either. _________________, Richa asked herself again. I know! I'll take a motorcycle! Richa shouted.			Richa's school wasn't near the water though. A boat couldn't take Richa to school either. How can I get to school.. Richa asked herself again. I know. I will take a motorcycle. Richa shouted.	How can I get to school?	How can I buy a bicycle?^How can I drive a truck?^How can I get to school?
+											
+PostTest_9	1	9001, 9002, 9003, 9004, 9005, 9006, 9007, 9008, 9009, 9010									
+			9001	sentence_sentence		Choose the right one.			Choose the right one.	She is a smart kid.	She is a smart kid.^She is a kid smart kids.^She be a smart kid.
+			9002	sentence_sentence		Choose the right one.			Choose the right one.	The snake moves slowly.	The snake move slowly.^The snakes moves slowly.^The snake moves slowly.
+			9003	soundonly_image					the boy is standing behind chair	l15_boystandbhdchair.png	l15_boystandbhdchair.png^l15_boystandbtwchairs.png^l15_boystandnextchair.png
+			9004	soundonly_image					she is giving the boys milk	l17_shegivingmilk.png	l17_shegivingmilk.png^l17_shegivingbread.png^l17_shegivingwater.png
+			9005	paragraph_sentence		Every morning, Aayushi thinks about the plants she will see on the walk to school. On the way to school, Aayushi walks through a field of flowers. She picks a pretty pink flower. ______________________________. The flower smells sweet.			Every morning. Aayushi thinks about the plants she will see on the walk to school. On the way to school. Aayushi walks through a field of flowers. She picks a pretty pink flower. Aayushi takes a deep breath through her nose . The flower smells sweet.	Aayushi takes a deep breath through her nose.	Aayushi wll eat some fresh fruit.^Aayushi takes away the pink flower.^Aayushi takes a deep breath through her nose.
+			9006	paragraph_sentence		In the morning, Fox went for a walk. He walked until the sun was high. _______________________________. He looked all around for something to eat.			In the morning. Fox went for a walk. He walked until the sun was high. His stomach rumbled with hunger. He looked all around for something to eat.	His stomach rumbled with hunger.	His head was full of fear.^His stomach rumbled with hunger.^He could almost taste the grapes.
+			9007	imageseq_sentence		I am mad. I had a bad day at school.		Your day wasn't all bad.	I am mad. I had a bad day at school. Miss Nitika helped me up. Your day wasn't all bad.	“Miss Nitika helped me up.”	“I tripped over it.”^“Miss Nitika helped me up.”^“This boy laughed at me.”
+			9008	imageseq_sentence		book_en_413_page_4.png		book_en_413_page_8.png	We can bring melons to eat on the moon. We will eat them with spoon. Baldev said to June. Baldev and June built rockets boots with some tools. They ate their breakfast of melon with the spoon.	Baldev and June build rockets boots with some tools.	Baldev and June build rockets boots with some tools.^Baldev and June knew they must be home soon.^They landed back at home around noon.
+			9009	imageseq_image		book_en_507_page_1.png		book_en_507_page_10.png	Once there was a man named Parvez. who was much too tall for his own good. Life was hard for Parvez and the villagers felt bad for him. Now. Parvez is very happy. He lives his life easily and it is all thanks to his friends in the village.	book_en_507_page_5.png	book_en_507_page_8.png^book_en_507_page_5.png^book_en_507_page_9.png
+			9010	paragraph_sentence	Why did Lion summon Elephant to his log?	In the evening, Elephant was thirsty. She went back to the watering hole. When she tried to get a drink, several frogs got in her way. She accidentally stepped on two of them. Lion summoned Elephant to his log. You are very large, he said. You must be careful of the frog because they are very small.			In the evening. Elephant was thirsty. She went back to the watering hole. When she tried to get a drink. several frogs got in her way. She accidentally stepped on two of them. Lion summoned Elephant to his log. You are very large. he said. You must be careful of the frogs. because they are very small.	To tell him to be careful.	To tell him to get a drink.^To tell him to leave the savanna.^To tell him to be careful.
+											
+PostTest_9	2	9011, 9012, 9013, 9014, 9015, 9016, 9017, 9018, 9019, 9020									
+			9011	sentence_sentence		Choose the right one.			Choose the right one.	He is a tall boy.	He is a tall boys.^He is tall boy.^He is a tall boy.
+			9012	sentence_sentence		Choose the right one.			Choose the right one.	They eat an apple every day.	They eats an apple every day.^They eat an apple every day.^They eat apple every day.
+			9013	soundonly_image					the girl wants to go to bed	l16_girlwantsbed.png	l16_girlwantbicycle.png^l16_girlwantsairplane.png^l16_girlwantsbed.png
+			9014	soundonly_image					the oldman is painting the desk white	l17_oldmanpaintingdesk.png	l17_oldmanpaintingdesk.png^l17_youngmanpaintingdesk.png^l17_oldmanpaintingchair.png
+			9015	paragraph_sentence		Aayushi passes a fruit tree. The fruits on the tree are green. The fruits are not ripe yet. Get ripe soon, Aayushi tells the fruit. ___________. Aayushi greets the tree at school.			Aayushi passes a fruit tree. The fruits on the tree are green. The fruits are not ripe yet. Get ripe soon. Aayushi tells the fruit. I am hungry. Aayushi greets the tree at school.	I am hungry!	I am not hungry!^I am hungry!^I am very happy!
+			9016	paragraph_sentence		Fox could not get the grapes by jumping. He was getting upset. Could he find another way? We will never know, _________________________.			Fox could not get the grapes by jumping. He was getting upset. Could he find another way? We will never know. because Fox stopped trying.	because Fox stopped trying	because Fox stopped trying^because Fox walked away feeling sad^because Fox was still hungry
+			9017	imageseq_sentence		Usha first drew a red block.		She forgot to be mad and kept drawing.	Usha first drew a red block. Then Usha drew a picture of her teacher. She forgot to be mad and kept drawing.	Then Usha drew a picture of her teacher.	Usha scowled at the monkeys.^Usha ate the sweet and felt a little better.^Then Usha drew a picture of her teacher.
+			9018	imageseq_sentence		book_en_413_page_1.png		book_en_413_page_10.png	Once there was a boy named Baldev and a girl named June. Baldev and June packed a melon and a spoon. Baldev and June new they must be home soon.	Baldev and June packed a melon and a spoon.	Baldev and June packed a melon and a spoon.^They ate their breakfast of melon with a spoon.^They landed back at home around noon.
+			9019	imageseq_image		book_en_507_page_3.png		book_en_507_page_9.png	Parvez's house was too small for him too. Parvez rode his new bicycle home. smiling at how easy it was to ride and when it was time to go to bed. Parvez even found a new bed with new blankets to match.	book_en_507_page_7.png	book_en_507_page_4.png^book_en_507_page_7.png^book_en_507_page_2.png
+			9020	paragraph_sentence	What was the problem?	In the evening, Elephant was thirsty. She went back to the watering hole. When she tried to get a drink, several frogs got in her way. She accidentally stepped on two of them. Lion summoned Elephant to his log. You are very large, he said. You must be careful of the frogs, because they are very small.			In the evening. Elephant was thirsty. She went back to the watering hole. When she tried to get a drink. several frogs got in her way. She accidentally stepped on two of them. Lion summoned Elephant to his log. You are very large. he said. You must be careful of the frogs. because they are very small.	Elephant stepped on two of the frogs accidentally.	Elephant tried to get a drink in the evening.^Elephant did not want to live with the frogs.^Elephant stepped on two of the frogs accidentally.
+											
+SpecialTest_1	1	10001, 10002, 10003, 10004, 10005									
+			10001	soundonly_word					e	E	A^E^O
+			10002	soundonly_word					g	G	G^J^F
+			10003	soundonly_word					m	m	h^d^m
+			10004	word_word		B				b	w^b^p
+			10005	word_word		y				Y	K^L^Y
+											
+SpecialTest_1	2	10006, 10007, 10008, 10009, 10010									
+			10006	soundonly_word					a	A	A^E^O
+			10007	soundonly_word					f	F	G^J^F
+			10008	soundonly_word					h	h	h^d^m
+			10009	word_word		R				r	r^s^t
+			10010	word_word		n				N	Y^W^N
+											
+SpecialTest_2	1	20001, 20002, 20003, 20004, 20005									
+			20001	soundonly_word					g	g	g^y^s
+			20002	soundonly_word					p	p	c^j^p
+			20003	soundonly_word					l	l	l^m^q
+			20004	soundonly_word					t	t	z^t^o
+			20005	soundonly_word					w	w	v^d^w
+											
+SpecialTest_2	2	20006, 20007, 20008, 20009, 20010									
+			20006	soundonly_word					s	s	g^y^s
+			20007	soundonly_word					c	c	c^j^p
+			20008	soundonly_word					m	m	l^m^q
+			20009	soundonly_word					z	z	z^t^o
+			20010	soundonly_word					v	v	v^d^w
+											
+SpecialTest_3	1	30001, 30002, 30003, 30004, 30005									
+			30001	word_word		_ook			book	b	b^c^h
+			30002	word_word		_ish			fish	f	s^f^t
+			30003	word_word		_ilk			milk	m	m^g^r
+			30004	word_word		_ig			pig	p	w^d^p
+			30005	word_word		_ellow			yellow	y	k^n^y
+											
+SpecialTest_3	2	30006, 30007, 30008, 30009, 30010									
+			30006	word_word		_ake			cake	c	b^c^h
+			30007	word_word		_ister			sister	s	s^f^t
+			30008	word_word		_iver			river	r	m^g^r
+			30009	word_word		_uck			duck	d	w^d^p
+			30010	word_word		_ose			nose	n	k^n^y
+											
+SpecialTest_4	1	40001, 40002, 40003, 40004, 40005									
+			40001	image_word	_ird	bird.png				b	b^t^q
+			40002	image_word	_un	sun.png				s	c^s^z
+			40003	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	can, cake	hat, see^can, cake^girl, wind
+			40004	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	love, lion	mug, nut^mane, cane^love, lion
+			40005	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	chair, chain	chair, chain^shirt, what^this, phone
+											
+SpecialTest_4	2	40006, 40007, 40008, 40009, 40010									
+			40006	image_word	_ouse	mouse.png				m	m^r^l
+			40007	image_word	_at	cat.png				c	c^s^z
+			40008	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	jug, jump	lake, cake^jug, jump^hen, pen
+			40009	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	tent, toy	man, pan^egg, goat^tent, toy
+			40010	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	shine, show	chid, then^thin, when^shine, show
+											
+SpecialTest_5	1	50001, 50002, 50003, 50004, 50005									
+			50001	word_word		_og			dog	d	f^w^d
+			50002	word_word		sa_			sad	d	n^d^s
+			50003	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	pass, pot	gold, cold^pass, pot^king, sing
+			50004	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	wet, wing	king, make^tank, pink^wet, wing
+			50005	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	church, chop	church, chop^shop, snake^tiger, that
+											
+SpecialTest_5	2	50006, 50007, 50008, 50009, 50010									
+			50006	word_word		_ile			pile	p	p^b^v
+			50007	word_word		to_			top	p	m^p ^z
+			50008	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	rain, rat	ham, mom^rain, rat^zoo, sea
+			50009	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	made, mice	duck, king^walk, jump^made, mice
+			50010	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	sheep, shoes	sheep, shoes^cow, chart^why, voice
+											
+SpecialTest_6	1	60001, 60002, 60003, 60004, 60005									
+			60001	soundonly_word					nose	nose	nose^mouth^chin
+			60002	soundonly_word					cheek	cheek	eye^cheek^face
+			60003	image_word		eye.png				eye	eye^cheek^nose
+			60004	image_word		mouth.png				mouth	face^chin^mouth
+			60005	soundonly_image					forehead	forehead.png	nose.png^forehead.png^cheek.png
+											
+SpecialTest_6	2	60006, 60007, 60008, 60009, 60010									
+			60006	soundonly_word					mouth	mouth	mouth^nose^chin
+			60007	soundonly_word					eye	eye	cheek^face^eye
+			60008	image_word		nose.png				nose	eye^cheek^nose
+			60009	image_word		chin.png				chin	face^chin^mouth
+			60010	soundonly_image					cheek	cheek.png	nose.png^forehead.png^cheek.png
+											
+SpecialTest_7	1	70001, 70002, 70003, 70004, 70005									
+			70001	soundonly_word					head	head	knees^head^ears
+			70002	soundonly_word					knees	knees	chest^knees^hands
+			70003	image_word		hand.png				hand	hand^foot^leg
+			70004	image_word		foot.png				foot	hand^foot^leg
+			70005	soundonly_image					shoulders	shoulders.png	feet.png^hands.png^shoulders.png
+											
+SpecialTest_7	2	70006, 70007, 70008, 70009, 70010									
+			70006	soundonly_word					hair	hair	chest^knees^hair
+			70007	soundonly_word					ear	ear	knee^head^ear
+			70008	image_word		head.png				head	neck^head^foot
+			70009	image_word		neck.png				neck	neck^head^foot
+			70010	soundonly_image					knees	knees.png	knees.png^hands.png^shoulders.png
+											
+SpecialTest_8	1	80001, 80002, 80003, 80004, 80005									
+			80001	soundonly_word					father	father	father^mother^brother
+			80002	soundonly_word					brother	brother	father^mother^brother
+			80003	image_word		grandmother.png				grandmother	grandfather^grandmother^grandchild
+			80004	image_word		baby.png				baby	baby^mom^dad
+			80005	soundonly_image					mother	mother.png	father.png^mother.png^brother.png
+											
+SpecialTest_8	2	80006, 80007, 80008, 80009, 80010									
+			80006	soundonly_word					mom	mom	dad^mom^baby
+			80007	soundonly_word					dad	dad	dad^mom^baby
+			80008	image_word		grandfather.png				grandfather	grandfather^grandmother^grandchild
+			80009	image_word		brother.png				brother	sister^mother^brother
+			80010	soundonly_image					sister	sister.png	sister.png^brother.png^father.png
+											
+SpecialTest_9	1	90001, 90002, 90003, 90004, 90005									
+			90001	sentence_word		What time do you ___________?			what time do you wake up	wake up	wake up^eat lunch^go to bed
+			90002	sentence_word		He goes to ________.			he goes to school	school	bed^lunch^school
+			90003	sentence_word		We have to eat ________ now.			we have to eat breakfast now	breakfast	breakfast^hands ^teeth
+			90004	image_sentence		l14_boyreadsbook.png			the boy reads a book	The boy reads a book.	The boy reads a book.^The boy eats fish.^The boy brushes his teeth.
+			90005	image_sentence		l8_heeatingsalad.png			He is eating salad.	He is eating salad.	He is jumping.^He is reading a book.^He is eating salad.
+											
+SpecialTest_9	2	90006, 90007, 90008, 90009, 90010									
+			90006	sentence_word		What time do you ___________?			what time do you go to bed	go to bed	wake up^eat lunch^go to bed
+			90007	sentence_word		They ________ fish.			they eat fish	eat	go to^eat ^brush
+			90008	sentence_word		Did you _______ your hands?			did you wash your hands	wash	wash^eat^make
+			90009	image_sentence		l8_boyreading.png			the boy is reading	The boy is reading.	The boy is reading.^The boy is waking up.^The boy brushes his teeth.
+			90010	image_sentence		l8_heeatingfish.png			He is eating fish.	He is eating fish.	He is swimming.^He is reading a book.^He is eating fish.
+											
+SpecialTest_10	1	100001, 100002, 100003, 100004, 100005									
+			100001	soundonly_image					a cat is under the table	l9_catundertable.png	l9_catundertable.png^l9_catinbox.png^l10_ballonchair.png
+			100002	soundonly_image					the birds are in the nest	l10_birdsinnest.png	l10_froginwater.png^l10_applesunderbasket.png^l10_birdsinnest.png
+			100003	sentence_word		The boy is _______ the table.			the boy is under the table	under	next to^in^under
+			100004	sentence_word		The goats are ________ the tree.			the goats are in front of the tree	in front of	behind^next to^in front of
+			100005	image_sentence		l13_lionnexttree.png			The lion is next to the tree.	The lion is next to the tree.	The lion is next to the tree.^The cat is in front of the box.^The birds are in the nest.
+											
+SpecialTest_10	2	100006, 100007, 100008, 100009, 100010									
+			100006	soundonly_image					the ball is on the chair	l10_ballonchair.png	l9_catundertable.png^l9_catinbox.png^l10_ballonchair.png
+			100007	soundonly_image					the apples are under the basket	l10_applesunderbasket.png	l10_froginwater.png^l10_applesunderbasket.png^l10_birdsinnest.png
+			100008	sentence_word		Many books are _______ the desk.			many books are on the desk	on	on^behind^under
+			100009	sentence_word		The lion is ________ the tree.			the lion is behind the tree	behind	behind^next to^in front of
+			100010	image_sentence		l13_catfrontbox.png			the cat is in front of the box	The cat is in front of the box.	The lion is next to the tree.^The cat is in front of the box.^The birds are in the nest.
+											
+SpecialTest_11	1	110001, 110002, 110003, 110004, 110005									
+			110001	word_word		ba				b+a	s+o^b+a^t+e
+			110002	word_word		ri				r+i	r+i^z+o^m+u
+			110003	soundonly_word					ye	y+e	j+o^y+e^m+i
+			110004	soundonly_word					du	d+u	w+i^r+e^d+u
+			110005	soundonly_word					po	p+o	p+o^h+i^g+e
+											
+SpecialTest_11	2	110006, 110007, 110008, 110009, 110010									
+			110006	word_word		te				t+e	s+o^b+a^t+e
+			110007	word_word		ca				c+a	c+a^z+o^m+u
+			110008	soundonly_word					mi	m+i	m+i^j+e^n+u
+			110009	soundonly_word					ru	r+u	w+i^r+u^d+a
+			110010	soundonly_word					bo	b+o	b+o^h+i^g+e
+											
+SpecialTest_12	1	120001, 120002, 120003, 120004, 120005									
+			120001	soundonly_word					tree	tree	sun^tree^dog
+			120002	soundonly_word					house	house	happy^road^house
+			120003	soundonly_word					girl	girl	man ^girl^boy
+			120004	sentence_word		______ are tall.			you are tall	You	I^He^You
+			120005	sentence_word		We ______ Darpan.			we like mike	like	like^walk ^want
+											
+SpecialTest_12	2	120006, 120007, 120008, 120009, 120010									
+			120006	soundonly_word					sun	sun	sun^tree^dog
+			120007	soundonly_word					happy	happy	happy^road^house
+			120008	soundonly_word					boy	boy	man ^girl^boy
+			120009	sentence_word		______ is sick.			He is sick	He	I^He^You
+			120010	sentence_word		I ______ an egg.			I want an egg	want	like^walk ^want
+											
+SpecialTest_13	1	130001, 130002, 130003, 130004, 130005									
+			130001	sentence_word		Choose the opposite of 'small'.			Choose the opposite of 'small'.	big	big^cold^clean
+			130002	sentence_word		Choose the opposite of 'day'.			Choose the opposite of 'day'.	night	happy^sun^night
+			130003	sentence_word		Choose the opposite of 'tall'.			Choose the opposite of 'tall'.	short	fat^short^full
+			130004	sentence_word		Choose the opposite of 'fast'.			Choose the opposite of 'fast'.	slow	slow^sick^good
+			130005	sentence_word		Choose the opposite of 'hot'.			Choose the opposite of 'hot'.	cold	dirty^cold^thin
+											
+SpecialTest_13	2	130006, 130007, 130008, 130009, 130010									
+			130006	sentence_word		Choose the opposite of 'big'.			Choose the opposite of 'big'.	small	small^cold^clean
+			130007	sentence_word		Choose the opposite of 'night'.			Choose the opposite of 'night'.	day	happy^sun^day
+			130008	sentence_word		Choose the opposite of 'short'.			Choose the opposite of 'short'.	tall	fat^tall^full
+			130009	sentence_word		Choose the opposite of 'slow'.			Choose the opposite of 'slow'.	fast	fast^sick^good
+			130010	sentence_word		Choose the opposite of 'cold'.			Choose the opposite of 'cold'.	hot	dirty^hot^thin
+											
+SpecialTest_14	1	140001, 140002, 140003, 140004, 140005									
+			140001	soundonly_word					bif	bif	bif^gal^wah
+			140002	soundonly_word					hiz	hiz	rim^hiz^lat
+			140003	soundonly_word					dat	dat	bif^hin^dat
+			140004	soundonly_word					jen	jen	jen^mol^nad
+			140005	soundonly_word					min	min	gal^sen^min
+											
+SpecialTest_14	2	140006, 140007, 140008, 140009, 140010									
+			140006	soundonly_word					wah	wah	bif^gal^wah
+			140007	soundonly_word					lat	lat	rim^hiz^lat
+			140008	soundonly_word					hin	hin	bif^hin^dat
+			140009	soundonly_word					nad	nad	jen^mol^nad
+			140010	soundonly_word					sen	sen	gal^sen^min
+											
+SpecialTest_15	1	150001, 150002, 150003, 150004, 150005									
+			150001	soundonly_word					mat	mat	sat^hut^mat
+			150002	soundonly_word					fun	fun	fun^vet^jam
+			150003	word_word		__at			cat	c	l^c^h
+			150004	word_word		d__g			dog	o	i^d^o
+			150005	word_word		pe__			pen	n	a^n^x
+											
+SpecialTest_15	2	150006, 150007, 150008, 150009, 150010									
+			150006	soundonly_word					hug	hug	sat^hug^mat
+			150007	soundonly_word					jam	jam	fun^vet^jam
+			150008	word_word		__op			top	t	t^r^c
+			150009	word_word		r__t			rat	a	u^a ^r
+			150010	word_word		mu__			mug	g	m^g^o
+											
+SpecialTest_16	1	160001, 160002, 160003, 160004, 160005									
+			160001	soundonly_word					dad	dad	egg^sea^dad
+			160002	soundonly_word					fish	fish	tree^fish^lion
+			160003	word_word		b___k			book	oo	ai^oo^ea
+			160004	word_word		ne___			nest	st	mp^st^ck
+			160005	word_word		___ack			black	bl	pr^gr^bl
+											
+SpecialTest_16	2	160006, 160007, 160008, 160009, 160010									
+			160006	soundonly_word					egg	egg	egg^sea^dad
+			160007	soundonly_word					lion	lion	tree^fish^lion
+			160008	word_word		bl___			blue	ue	ai^ea^ue
+			160009	word_word		du___			duck	ck	mp^st^ck
+			160010	word_word		___een			green	gr	pr^gr^bl
+											
+SpecialTest_17	1	170001, 170002, 170003, 170004, 170005									
+			170001	sentence_word		____ are tall.			you are tall	You	you^YoU^You
+			170002	sentence_word		____ like Anil.			I like josh	I	i^I ^iI
+			170003	sentence_sentence		Choose the right one.			Choose the right one.	He is a boy.	he is a boy.^He is a boy.^He is A BOy.
+			170004	sentence_sentence		Choose the right one.			Choose the right one.	Birds fly.	Birds fly.^birds fly.^biRds flY.
+			170005	sentence_sentence		Choose the right one.			Choose the right one.	This is Kirti.	this is ann.^This is Kirti.^this is Kirti.
+											
+SpecialTest_17	2	170006, 170007, 170008, 170009, 170010									
+			170006	sentence_word		____ walks.			she walks	She	She ^she ^SHe
+			170007	sentence_word		____ at the sun.			look at the sun	Look	look^looK^Look
+			170008	sentence_sentence		Choose the right one.			Choose the right one.	They are full.	they are full.^They are FulL.^They are full.
+			170009	sentence_sentence		Choose the right one.			Choose the right one.	Frogs swim.	Frogs swiM.^frogs swim.^Frogs swim.
+			170010	sentence_sentence		Choose the right one.			Choose the right one.	This is Hari.	this is tony.^this is Hari.^This is Hari.
+											
+SpecialTest_18	1	180001, 180002, 180003, 180004, 180005									
+			180001	sentence_word		I ____ little.			I am little	am	am^are^is
+			180002	sentence_word		We ____ fast.			we are fast	are	am^are^is
+			180003	sentence_word		He ____ sick.			he is sick	is	am^are^is
+			180004	sentence_sentence		Choose the right one.			Choose the right one.	I am a student.	I am a student.^I are a student.^I is a student.
+			180005	sentence_sentence		Choose the right one.			Choose the right one.	You are kind.	You am kind.^You are kind.^You is kind.
+											
+SpecialTest_18	2	180006, 180007, 180008, 180009, 180010									
+			180006	sentence_word		I ____ a girl.			iam a girl	am	am^are^is
+			180007	sentence_word		They ____ big.			they are big	are	am^are^is
+			180008	sentence_word		She ____ happy.			she is happy	is	am^are^is
+			180009	sentence_sentence		Choose the right one.			Choose the right one.	He is my teacher.	He am my teacher.^He are my teacher.^He is my teacher.
+			180010	sentence_sentence		Choose the right one.			Choose the right one.	We are hungry.	We am hungry.^We are hungry.^We is hungry.
+											
+SpecialTest_19	1	190001, 190002, 190003, 190004, 190005									
+			190001	sentence_word		This is ___________.			this is my bag	my bag	mybag^my Bag^my bag
+			190002	sentence_word		We need __________.			we need a lamp	a lamp	alamp^a lamp^an lamp
+			190003	sentence_word		___________ is on the chair.			the ball is on the chair	The ball	the ball^Theball^The ball
+			190004	sentence_sentence		Choose the right one.			Choose the right one.	He walks.	he walks.^Hewalks^He walks.
+			190005	sentence_sentence		Choose the right one.			Choose the right one.	I like mangoes.	i like mangoes.^I likemangoes.^I like mangoes.
+											
+SpecialTest_19	2	190006, 190007, 190008, 190009, 190010									
+			190006	sentence_word		They are ___________.			they are his cats	his cats	hiscats^his cats^his Cats
+			190007	sentence_word		A cat is on __________.			a cat is on the box	the box	thebox^the box^the Box
+			190008	sentence_word		__________ is on the box.			a dog is on the box	A dog	a dog^Adog^A dog
+			190009	sentence_sentence		Choose the right one.			Choose the right one.	They play.	they play.^Theyplay^They play.
+			190010	sentence_sentence		Choose the right one.			Choose the right one.	She can jump high.	she can jump high.^She canjumphigh.^She can jump high.
+											
+SpecialTest_20	1	200001, 200002, 200003, 200004, 200005									
+			200001	sentence_word		They are students__			they are students	.	.^?^,
+			200002	sentence_word		Are they students__			are they students?	?	.^?^,
+			200003	sentence_word		Where is the cat__			where is the cat?	?	.^?^,
+			200004	sentence_sentence		Choose the right one.			Choose the right one.	He sings.	He sings^He sings,^He sings.
+			200005	sentence_sentence		Choose the right one.			Choose the right one.	Are you full?	Are you full?^Are you full.^Are you full,
+											
+SpecialTest_20	2	200006, 200007, 200008, 200009, 200010									
+			200006	sentence_word		We like bananas__			we like bananas	.	.^?^,
+			200007	sentence_word		Do you like bananas__			do you like bananas?	?	.^?^,
+			200008	sentence_word		Who is she__			who is she?	?	.^?^,
+			200009	sentence_sentence		Choose the right one.			Choose the right one.	She eats.	She eats^She eats,^She eats.
+			200010	sentence_sentence		Choose the right one.			Choose the right one.	Is he young?	Is he young?^Is he young.^Is he young,
+											
+SpecialTest_21	1	210001, 210002, 210003, 210004, 210005									
+			210001	soundonly_sentence					She is reading under the table.	She is reading under the table.	She is reading under the table.^He is sitting on the table.^She is eating on the chair.
+			210002	soundonly_sentence					they will go fishing	They will go fishing.	The boy is fishing now.^They will take a bus.^They will go fishing.
+			210003	ordering_sentence	Put the sentences in order.	The sun is bright.It is very hot.During the day sun shines very bright and hot.				The sun is bright.^It is very hot.^During the day, the sun shines very bright and hot.	The sun is bright.^It is very hot.^During the day, the sun shines very bright and hot.
+			210004	listeningcomp_sentence	Sahil is a teacher.He has a wife. His wife is also a teacher.Both love teaching	What does Sahil do?				He is a teacher.	He is a teacher.^He is a nurse.^He is a student.
+			210005	listeningcomp_sentence	Cats are not large,but they are fast.Cats like to chase mice.They are fast when they chase mice.	Are cats fast?				Yes, they are.	Yes, they are.^No, they are not.^We do not know.
+											
+SpecialTest_21	2	210006, 210007, 210008, 210009, 210010									
+			210006	soundonly_sentence					Rabbits eat carrots.	Rabbits eat carrots.	Rabbits eat carrots.^Lions don't eat carrots.^People like carrots.
+			210007	soundonly_sentence					The boy wants to be a doctor.	The boy wants to be a doctor.	The boy wants to be a doctor.^The doctor is tall and kind.^The girl wants to be a teacher.
+			210008	ordering_sentence	Put the sentences in order.	Faraz wanted to buy a donkey. He did not have enough money to buy a donkey. Faraz was sad.				Faraz wanted to buy a donkey.^He did not have enough money to buy a donkey.^Faraz was sad.	Faraz wanted to buy a donkey.^He did not have enough money to buy a donkey.^Faraz was sad.
+			210009	listeningcomp_sentence	Sahil is a teacher.He has a wife. His wife is also a teacher.Both love teaching	What does Sahil's wife do?				She is a teacher.	She is a teacher.^She is a nurse.^She is a student.
+			210010	listeningcomp_sentence	Cats are not large,but they are fast.Cats like to chase mice.They are fast when they chase mice.	Are cats large?				No, they are not.	Yes, they are.^No, they are not.^We do not know.
+											
+SpecialTest_22	1	220001, 220002, 220003, 220004, 220005									
+			220001	soundonly_sentence					there are mangoes in the basket	There are mangoes in the basket.	There are mangoes in the basket.^There are oranges in the box.^There are grapes under the box.
+			220002	listeningcomp_sentence	Govind is 9 years old. He likes to help his mom cook. He likes to cook vegetables for his family to eat.	How old is Govind?				He is nine years old.	He is nine years old.^He is seven years old.^He is eight years old.
+			220003	listeningcomp_sentence	Mitesh can write well.He writes letters to his family and friends.His letters are not long but they are very nice letters.	What can Mitesh do well?				He can write well.	He can write well.^He can read well.^He can sing well.
+			220004	listeningcomp_sentence	Frog was very happy. it was starting to rain. frog really likes the rain.he likes to jump in the rain. he likes to splash in the water. Jump!jump! splash!splash.	How did Frog feel?				He was happy.	He was happy.^He was sad.^He was tired.
+			220005	listeningcomp_sentence	My family has cows. The cows look for food. They walk and look for food. I walk with the cows. I take care of the cows.	What does my family have?				My family has cows.	My family has cows.^My family has dogs.^My family has chickens.
+											
+SpecialTest_22	2	220006, 220007, 220008, 220009, 220010									
+			220006	soundonly_sentence					the nurse is taking care of a baby	The nurse is taking care of a baby.	The nurse is taking care of a baby.^The doctor is taking care of a boy.^The woman is taking care of a girl.
+			220007	listeningcomp_sentence	Govind is 9 years old. He likes to help his mom cook. He likes to cook vegetables for his family to eat.	What does Govind like to cook?				He likes to cook vegetables.	He likes to cook vegetables.^He likes to help his dad.^He never cooks.
+			220008	listeningcomp_sentence	Mitesh can write well.He writes letters to his family and friends.His letters are not long but they are very nice letters.	How are Mitesh's letters?				They are nice letters.	They are nice letters.^They are long letters.^They are boring letters.
+			220009	listeningcomp_sentence	Frog was very happy. it was starting to rain. frog really likes the rain.he likes to jump in the rain. he likes to splash in the water. Jump!jump! splash!splash.	What does Frog like to do?				He likes to jump in the rain.	He likes to jump in the rain.^He likes to sing in the rain.^He likes to dance in the rain.
+			220010	listeningcomp_sentence	Kanika will visit her sister .Her sister is 35 years old . She is a doctor who lives and works in the big city. Kanika will take the bus and visit her sister for the weekend	What does Kanika's sister do?				She is a doctor.	She is a doctor.^She is a teacher.^She is a nurse.
+											
+SpecialTest_23	1	230001, 230002, 230003, 230004, 230005									
+			230001	image_sentence		l17_shehelpmomdry.png			She is helping her mom dry clothes.	She is helping her mom dry clothes.	She is helping her mom dry clothes.^She is helping her dad carry boxes.^She is helping her mom cook dinner.
+			230002	paragraph_sentence	Does Faraz like all animals?	Faraz likes animals. He likes small animals. He likes big animals. Faraz likes all animals.				Yes, he does.	Yes, he does.^No, he does not.^We don't know.
+			230003	paragraph_sentence		______________ Mangoes can be yellow, green or red. They are good to eat.			Mangoes are a type of fruit. Mangoes can be yellow, green or red. They are good to eat.	Mangoes are a type of fruit.	Mangoes are a type of fruit.^Mangoes are not a fruit.^Mangoes have only one color.
+			230004	paragraph_sentence	What does the rat like to do?	The rat is small. It likes to eat. The rat eats a lot. The rat sleeps a lot too.				It likes to eat.	It likes to eat.^It likes to play.^It likes to dance.
+			230005	paragraph_sentence		Mother is sick. Mother did all the work. Kabeer and I go to school. He has a good idea. ________________ I will help Mother feel better.			Mother is sick. Mother did all the work. Kabeer and I go to school. He has a good idea. Today I will do the work. I will help Mother feel better.	Today I will do the work.	Today I will do the work.^Today I will be sick.^Today my mom will do the work.
+											
+SpecialTest_23	2	230006, 230007, 230008, 230009, 230010									
+			230006	image_sentence		l17_shehelpdadcarry.png			she is helping her dad carry boxes	She is helping her dad carry boxes.	She is helping her mom dry clothes.^She is helping her dad carry boxes.^She is helping her dad cook dinner.
+			230007	paragraph_sentence	Does Faraz like big animals?	Faraz likes animals. He likes small animals. He likes big animals. Faraz likes all animals.				Yes, he does.	Yes, he does.^No, he does not.^We do not know.
+			230008	paragraph_sentence		______________ Fruits can be sweet. Fruits can be sour.			Fruit is a type of food. Fruits can be sweet. Fruits can be sour.	Fruit is a type of food.	Fruit is a type of food.^Fruit is only sweet.^Fruit is never sour.
+			230009	paragraph_sentence	Does the rat sleep a lot?	The rat is small. It likes to eat. The rat eats a lot. The rat sleeps a lot too.				Yes, it does.	Yes, it does.^No, it does not.^We don't know.
+			230010	paragraph_sentence		_____________ Mother did all the work. Kabeer and I go to school. He has a good idea. Today I will do the work. I will help Mother feel better.			Mother is sick. Mother did all the work. Kabeer and I go to school. He has a good idea. Today I will do the work. I will help Mother feel better.	Mother is sick.	Mother is sick.^Father is sick.^Kabeer is sick.
+											
+SpecialTest_24	1	240001, 240002, 240003, 240004, 240005									
+			240001	paragraph_sentence	What does Himanshu take care of?	Himanshu has chickens. Himanshu feeds the chickens. The chickens lay eggs. Himanshu collects the eggs. Himanshu takes care of the chickens.				He takes care of chickens.	He takes care of chickens.^He takes care of his brother.^He takes care of cows.
+			240002	paragraph_sentence	Which is true?	Kanika has a sister. Her sister is a doctor. Her sister is thirty years old. She is a doctor in the city. Kanika likes to visit her sister in the city.				Kanika has a sister.	Kanika is a doctor.^Kanika's sister is a teacher.^Kanika has a sister.
+			240003	paragraph_sentence	Who likes to cry?	Narmada has a baby brother. Her baby brother is small. Her baby brother likes to cry. Her baby brother likes to sleep. Narmada loves her baby brother.				Narmada's brother.	Narmada's brother.^Narmada.^Narmada and her brother.
+			240004	imageseq_sentence	What best describes the image sequence?	book_en_307_page_2.png	book_en_307_page_6.png	book_en_307_page_8.png		I write a letter. I put on a stamp on the envelope. My friend got her letter.	I write a letter. I put on a stamp on the envelope. My friend got her letter.^My friend got her letter. I write a letter. I put on a stamp on the envelope.^I put on a stamp on the envelope. I write a letter to my friend. My friend got her letter.
+			240005	paragraph_sentence	Which is true?	I take care of our cow. I give our cow water. Father milks our cow every day. We sell some of the milk for money.				Father milks our cow.	Father milks our cow.^We sell cows.^I milk our cow.
+											
+SpecialTest_24	2	240006, 240007, 240008, 240009, 240010									
+			240006	paragraph_sentence	Who feeds the chickens?	Himanshu has chickens. Himanshu feeds the chickens. The chickens lay eggs. Himanshu collects the eggs. Himanshu takes care of the chickens.				Himanshu feeds them.	Himanshu feeds them.^Himanshu's mom feeds them.^Nobody feeds them.
+			240007	paragraph_sentence	Which is true?	Kanika has a sister. Her sister is a doctor. Her sister is thirty years old. She is a doctor in the city. Kanika likes to visit her sister in the city.				Kanika's sister is a doctor.	Kanika's sister is a doctor.^Kanika is thirty years old.^Kanika is a doctor.
+			240008	paragraph_sentence	Is Narmada's brother big?	Narmada has a baby brother. Her baby brother is small. Her baby brother likes to cry. Her baby brother likes to sleep. Narmada loves her baby brother.				No, he isn't.	Yes, he is.^No, he isn't.^We don't know.
+			240009	imageseq_sentence	What best describes the image sequence?	book_en_314_page_2.png	book_en_314_page_5.png	book_en_314_page_7.png		This is our cow. I give our cow water. Father milks our cow.	This is our cow. I give our cow water. Father milks our cow.^This is our village. Father milks our cow. I give our cow water.^This is our cow. I drink milk. We sell milk.
+			240010	paragraph_sentence	Which is true?	I take care of our cow. I give our cow water. Father milks our cow every day. We sell some of the milk for money.				I give our cow water.	We sell our cow.^I give our cow water.^I milk our cow.
+											
+SpecialTest_25	1	250001, 250002, 250003, 250004, 250005									
+			250001	paragraph_sentence	Where does Aabha live?	Aabha and her father live next to the ocean. They catch fish. They catch fish with a net. They catch many fish each day. They eat the fish. They sell some fish at the market.				Near the ocean.	Near the ocean.^In the city.^On the hill.
+			250002	paragraph_sentence	Which is true?	I love elephants. They are very big. They have very long trunks. They need to eat a lot of food. They eat grass, leaves, and other plants.				Elephants are big.	Elephants eat meat.^Elephants are small.^Elephants are big.
+			250003	paragraph_sentence	What does Upasana like to do?	Upasana likes to draw. She draws what she can see. She draws her house. She draws the sun. She draws a tree. She draws her family. Upasana can draw all day!				She likes drawing.	She likes drawing.^She likes climbing.^She likes playing.
+			250004	paragraph_sentence	Which is true?	Aayushi loves the ocean. The ocean is big. The ocean is full of water. Aayushi sees boats on the ocean. Aayushi sees fish in the ocean. Aayushi can swim in the ocean. She is very happy to live near the ocean.				Aayushi can swim.	Aayushi can swim.^Aayushi likes stars.^The ocean is full of sand.
+			250005	paragraph_sentence	Which is true?	Sonia likes to look at the stars. She can see them from her house. She can see them at night. She can see them in the sky. Sonia wants to count all the stars, but there are too many.				Sonia can see the stars at night.	Harpreet can see the stars at night.^Harpreet can touch the stars.^There are not many stars.
+											
+SpecialTest_25	2	250006, 250007, 250008, 250009, 250010									
+			250006	paragraph_sentence	Where do they sell the fish?	Aabha and her father live next to the ocean. They catch fish. They catch fish with a net. They catch many fish each day. They eat the fish. They sell some fish at the market.				At the market.	At shcool.^At the market.^At their shop.
+			250007	paragraph_sentence	Which is true?	I love elephants. They are very big. They have very long trunks. They need to eat a lot of food. They eat grass, leaves, and other plants.				Elephants have long trunks.	Elephants have long trunks.^Elephants eat meat.^I love trees.
+			250008	paragraph_sentence	What does Upasana draw?	Upasana likes to draw. She draws what she can see. She draws her house. She draws the sun. She draws a tree. She draws her family. Upasana can draw all day!				She draws what she can see.	She draws what she can see.^She draws what she can feel.^She draws what she can smell.
+			250009	paragraph_sentence	Which is true?	Aayushi loves the ocean. The ocean is big. The ocean is full of water. Aayushi sees boats on the ocean. Aayushi sees fish in the ocean. Aayushi can swim in the ocean. She is very happy to live near the ocean.				The ocean is full of water.	Aayushi lives on the boat.^The ocean is small.^The ocean is full of water.
+			250010	paragraph_sentence	Which is true?	Sonia likes to look at the stars. She can see them from her house. She can see them at night. She can see them in the sky. Sonia wants to count all the stars, but there are too many.				There are too many stars.	There are too many stars.^There are not many stars.^Sonia likes the flowers.
+											
+FishTest_1_1	1	1100001, 1100002, 1100003, 1100004, 1100005									
+			1100001	word_word		A				A	A^X^K
+			1100002	word_word		H				H	F^P^H
+			1100003	soundonly_word					e	E	E^O^I
+			1100004	soundonly_word					f	F	G^F^T
+			1100005	soundonly_word					b	B	B^R^E
+											
+FishTest_1_1	2	1100006, 1100007, 1100008, 1100009, 1100010									
+			1100006	word_word		N				N	N^Z^L
+			1100007	word_word		F				F	F^P^J
+			1100008	soundonly_word					s	S	S^R^K
+			1100009	soundonly_word					c	C	Y^B^C
+			1100010	soundonly_word					q	Q	Q^W^D
+											
+FishTest_1_2	1	1200001, 1200002, 1200003, 1200004, 1200005									
+			1200001	word_word		v				v	v^r^u
+			1200002	word_word		l				l	l^t^a
+			1200003	soundonly_word					o	o	e^o^i
+			1200004	soundonly_word					w	w	w^m^u
+			1200005	soundonly_word					y	y	s^q^y
+											
+FishTest_1_2	2	1200006, 1200007, 1200008, 1200009, 1200010									
+			1200006	word_word		n				n	n^u^d
+			1200007	word_word		j				j	j^y^k
+			1200008	soundonly_word					k	k	k^f^p
+			1200009	soundonly_word					d	d	d^j^h
+			1200010	soundonly_word					z	z	z^f^m
+											
+FishTest_2_1	1	2100001, 2100002, 2100003, 2100004, 2100005									
+			2100001	soundonly_word					b	B	L^R^B
+			2100002	soundonly_word					g	G	G^Q^O
+			2100003	soundonly_word					x	x	x^k^v
+			2100004	soundonly_word					a	a	e^a^u
+			2100005	word_word		A → B → C → __ → E				D	D^G^R
+											
+FishTest_2_1	2	2100006, 2100007, 2100008, 2100009, 2100010									
+			2100006	soundonly_word					t	T	T^P^N
+			2100007	soundonly_word					h	H	H^M^B
+			2100008	soundonly_word					p	p	p^f^s
+			2100009	soundonly_word					o	o	e^o^u
+			2100010	word_word		a → b → __ → d → e				c	c^k^w
+											
+FishTest_2_2	1	2200001, 2200002, 2200003, 2200004, 2200005									
+			2200001	soundonly_word					k	K	L^R^K
+			2200002	soundonly_word					n	N	N^U^W
+			2200003	soundonly_word					i	i	e^i^u
+			2200004	word_word		F → G → __ → I → J				H	H^P^B
+			2200005	word_word		K → L → __ → N → O				M	M^G^X
+											
+FishTest_2_2	2	2200006, 2200007, 2200008, 2200009, 2200010									
+			2200006	soundonly_word					s	S	S^F^M
+			2200007	soundonly_word					c	C	C^O^P
+			2200008	soundonly_word					u	u	e^i^u
+			2200009	word_word		p → q → __ → s → t				r	r^y^d
+			2200010	word_word		v → w → __ → y → z				x	x^q^b
+											
+FishTest_3_1	1	3100001, 3100002, 3100003, 3100004, 3100005									
+			3100001	word_word		c				C	P^C^D
+			3100002	word_word		e				E	A^E^U
+			3100003	image_word		bear.png				bear	bear^dog^cow
+			3100004	image_word		cow.png				cow	cow^cat^duck
+			3100005	image_word		gift.png				gift	gift^apple^egg
+											
+FishTest_3_1	2	3100006, 3100007, 3100008, 3100009, 3100010									
+			3100006	word_word		a				A	A^E^U
+			3100007	word_word		f				F	M^D^F
+			3100008	image_word		apple.png				apple	apple^fish^mango
+			3100009	image_word		duck.png				duck	frog^hat^duck
+			3100010	image_word		house.png				house	house^dress^shirt
+											
+FishTest_3_2	1	3200001, 3200002, 3200003, 3200004, 3200005									
+			3200001	word_word		K				k	k^j^h
+			3200002	word_word		M				m	m^y^w
+			3200003	image_word		mango.png				mango	fish^mango^nest
+			3200004	image_word		lemon.png				lemon	lemon^onion^apple
+			3200005	image_word		rabbit.png				rabbit	rabbit^bear^leopard
+											
+FishTest_3_2	2	3200006, 3200007, 3200008, 3200009, 3200010									
+			3200006	word_word		T				t	t^s^v
+			3200007	word_word		W				w	w^u^y
+			3200008	image_word		teeth.png				teeth	teeth^snake^vest
+			3200009	image_word		vase.png				vase	vase^fox^zebra
+			3200010	image_word		water.png				water	water^yellow^umbrella
+											
+FishTest_4_1	1	4100001, 4100002, 4100003, 4100004, 4100005									
+			4100001	word_word		ra				r+a	s+a^r+a^l+a
+			4100002	soundonly_word					j	j	j^g^z
+			4100003	soundonly_word					ba	ba	va^pa^ba
+			4100004	soundonly_image					cat	cat.png	cat.png^duck.png^hen.png
+			4100005	soundonly_image					fish	fish.png	fish.png^sun.png^nest.png
+											
+FishTest_4_1	2	4100006, 4100007, 4100008, 4100009, 4100010									
+			4100006	word_word		ma				m+a	d+a^y+a^m+a
+			4100007	soundonly_word					d	d	d^c^p
+			4100008	soundonly_word					ge	ge	he^be^ge
+			4100009	soundonly_image					duck	duck.png	cat.png^duck.png^hen.png
+			4100010	soundonly_image					sun	sun.png	fish.png^nest.png^sun.png
+											
+FishTest_4_1	3	4100011, 4100012, 4100013, 4100014, 4100015									
+			4100011	word_word		sa				s+a	s+a^j+e^l+a
+			4100012	soundonly_word					t	t	d^t^v
+			4100013	soundonly_word					fa	fa	fi^fu^fa
+			4100014	soundonly_image					hen	hen.png	cat.png^duck.png^hen.png
+			4100015	soundonly_image					nest	nest.png	fish.png^nest.png^sun.png
+											
+FishTest_4_2	1	4200001, 4200002, 4200003, 4200004, 4200005									
+			4200001	word_word		li				l+i	l+i^b+i^h+i
+			4200002	word_word		bu				b+u	f+u^j+u^b+u
+			4200003	soundonly_word					hu	hu	cu^hu^su
+			4200004	soundonly_image					mango	mango.png	mango.png^water.png^yellow.png
+			4200005	image_word	_ug	bug.png				b	b^f^h
+											
+FishTest_4_2	2	4200006, 4200007, 4200008, 4200009, 4200010									
+			4200006	word_word		pi				p+i	p+i^b+i^h+i
+			4200007	word_word		hu				h+u	f+u^j+u^h+u
+			4200008	soundonly_word					mu	mu	pu^du^mu
+			4200009	soundonly_image					yellow	yellow.png	mango.png^water.png^yellow.png
+			4200010	image_word	_an	fan.png				f	b^f^h
+											
+FishTest_4_2	3	4200011, 4200012, 4200013, 4200014, 4200015									
+			4200011	word_word		si				s+i	d+i^t+i^s+i
+			4200012	word_word		nu				n+u	s+u^n+u^l+u
+			4200013	soundonly_word					to	to	to^bo^zo
+			4200014	soundonly_image					water	water.png	mango.png^water.png^yellow.png
+			4200015	image_word	_at	hat.png				h	b^f^h
+											
+FishTest_4_3	1	4300001, 4300002, 4300003, 4300004, 4300005									
+			4300001	soundonly_word					kid	kid	bed^dad^kid
+			4300002	soundonly_word					bug	bug	bug^hug^dog
+			4300003	soundonly_word					ye	y+e	v+e^y+e^n+e
+			4300004	soundonly_image					baby	baby.png	baby.png^leaf.png^fire.png
+			4300005	image_word	_un	sun.png				s	s^t^c
+											
+FishTest_4_3	2	4300006, 4300007, 4300008, 4300009, 4300010									
+			4300006	soundonly_word					dad	dad	bed^dad^kid
+			4300007	soundonly_word					dog	dog	bug^hug^dog
+			4300008	soundonly_word					zi	z+i	z+i^v+i^s+i
+			4300009	soundonly_image					fire	fire.png	baby.png^leaf.png^fire.png
+			4300010	image_word	_ug	mug.png				m	l^h^m
+											
+FishTest_4_3	3	4300011, 4300012, 4300013, 4300014, 4300015									
+			4300011	soundonly_word					bed	bed	bed^dad^kid
+			4300012	soundonly_word					hug	hug	bug^hug^dog
+			4300013	soundonly_word					po	p+o	f+o^v+o^p+o
+			4300014	soundonly_image					leaf	leaf.png	baby.png^leaf.png^fire.png
+			4300015	image_word	_ig	pig.png				p	b^p^q
+											
+FishTest_5_1	1	5100001, 5100002, 5100003, 5100004, 5100005									
+			5100001	image_word		bus.png				bus	bug^bus^bat
+			5100002	image_word		mom.png				mom	mom^mop^man
+			5100003	soundonly_word					zip	zip	cap^net^zip
+			5100004	soundonly_word					bed	bed	bed^dad^vet
+			5100005	soundonly_word					hat	hat	mat^hat^cat
+											
+FishTest_5_1	2	5100006, 5100007, 5100008, 5100009, 5100010									
+			5100006	image_word		six.png				six	six^box^fox
+			5100007	image_word		dog.png				dog	dot^dog^dad
+			5100008	soundonly_word					red	red	red^sad^mad
+			5100009	soundonly_word					box	box	fox^six^box
+			5100010	soundonly_word					log	log	mug^log^bug
+											
+FishTest_5_1	3	5100011, 5100012, 5100013, 5100014, 5100015									
+			5100011	image_word		kid.png				kid	bed^kit^kid
+			5100012	image_word		rat.png				rat	rat^red^ram
+			5100013	soundonly_word					man	man	pan^man^mat
+			5100014	soundonly_word					bug	bug	bug^bus^bag
+			5100015	soundonly_word					bag	bag	hug^bad^bag
+											
+FishTest_5_2	1	5200001, 5200002, 5200003, 5200004, 5200005									
+			5200001	image_word	__um	drum.png				dr	cr^dr^br
+			5200002	image_word	tr__	tree.png				ee	ee^ie^oa
+			5200003	soundonly_word					cake	cake	fake^make^cake
+			5200004	soundonly_word					nose	nose	hose^nose^rose
+			5200005	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	hand, house	hand, house^bug, ten^jump, fan
+											
+FishTest_5_2	2	5200006, 5200007, 5200008, 5200009, 5200010									
+			5200006	image_word	__og	frog.png				fr	fr^pr^br
+			5200007	image_word	bl__	blue.png				ue	ee^oo^ue
+			5200008	soundonly_word					face	face	pace^face^lace
+			5200009	soundonly_word					bowl	bowl	bowl^blow^brown
+			5200010	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	cat, car	vest, door^hot, girl^cat, car
+											
+FishTest_5_2	3	5200011, 5200012, 5200013, 5200014, 5200015									
+			5200011	image_word	__ack	black.png				bl	pl^fl^bl
+			5200012	image_word	st__	star.png				ar	ir^ar^ur
+			5200013	soundonly_word					rice	rice	rice^nice^mice
+			5200014	soundonly_word					baby	baby	navy^bake^baby
+			5200015	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	zoo, zebra	king, book^zoo, zebra^sad, map
+											
+FishTest_5_3	1	5300001, 5300002, 5300003, 5300004, 5300005									
+			5300001	word_word		__eep			sheep	sh	sh^ch^th
+			5300002	image_word		milk.png				milk	milk^cherry^bread
+			5300003	soundonly_word					goat	goat	gift^boat^goat
+			5300004	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	under, ugly	under, ugly^enter, ink^and, onion
+			5300005	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	what, why	the, shoe^what, why^chain, shape
+											
+FishTest_5_3	2	5300006, 5300007, 5300008, 5300009, 5300010									
+			5300006	image_word		cow.png				cow	cat^frog^cow
+			5300007	word_word		__at			chat	ch	ch^wh^sh
+			5300008	soundonly_word					flower	flower	fly^flower^plane
+			5300009	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	idea, ice	onion, arm^idea, ice^egg, ant
+			5300010	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	choose, chicken	white, chair^ship, chat^choose, chicken
+											
+FishTest_5_3	3	5300011, 5300012, 5300013, 5300014, 5300015									
+			5300011	word_word		__ip			ship	sh	sh^wh^th
+			5300012	image_word		lion.png				lion	lion^tiger^bear
+			5300013	soundonly_word					dish	dish	fish^mash^dish
+			5300014	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	only, old	only, old^it, ax^uncle, idea
+			5300015	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	this, then	what, that^this, then^child, ship
+											
+FishTest_6_1	1	6100001, 6100002, 6100003, 6100004, 6100005									
+			6100001	image_word		cat.png				cat	rat^dog^cat
+			6100002	image_word		duck.png				duck	duck^crab^nest
+			6100003	image_word	__og	frog.png				fr	fr^pr^fl
+			6100004	image_word	__ue	blue.png				bl	br^bl^pl
+			6100005	soundonly_word					chick	chick	chop^ship^chick
+				image_word		l8_boyreading.png				read	read^sing^swim
+FishTest_6_1	2	6100006, 6100007, 6100008, 6100009, 6100010		image_word		l6_hedoctor.png				doctor	doctor^teacher^farmer
+			6100006	soundonly_word					cream	cream	crown^cream^cloud
+			6100007	sentence_sentence		Choose the pair with the same first sound.			Choose the pair with the same first sound.	gas, girl	zebra, salad^door, book^gas, girl
+			6100008	sentence_sentence		Choose the pair with the same first sound.			Choose the pair with the same first sound.	water, watch	water, watch^vest, bed^quiet, piano
+			6100009								
+			6100010								
+				image_word		mug.png				mug	hug^mug^mat
+FishTest_6_1	3	6100011, 6100012, 6100013, 6100014, 6100015		image_word		rain.png				rain	lamp^nest^rain
+			6100011	image_word	__ock	clock.png				cl	fl^pl^cl
+			6100012	image_word	__een	green.png				gr	gr^br^pr
+			6100013	soundonly_word					shirt	shirt	chin^shirt^short
+			6100014	image_word		l8_heswimming.png				swim	read^sing^swim
+			6100015	image_word		l6_heteacher.png				teacher	doctor^teacher^farmer
+				soundonly_word					blouse	blouse	flower^yellow^blouse
+FishTest_6_2	1	6200001, 6200002, 6200003, 6200004, 6200005		sentence_sentence		Choose the pair with the same first sound.			Choose the pair with the same first sound.	jump, juice	jump, juice^game, dirty^find, visit
+			6200001	sentence_sentence		Choose the pair with the same first sound.			Choose the pair with the same first sound.	color, cube	tend, ball^lake, room^color, cube
+			6200002	sentence_word		Choose the right one.			heart	heart	hiert^heart^hart
+			6200003	soundonly_word					play	play	fly^clay^play
+			6200004	sentence_word		This is my ____.			this is my brother	brother	brother^mother^dad
+			6200005	sentence_word		Arvind is in his _____.			fred is in his bedroom	bedroom	bedroom^kitchen^house
+											
+FishTest_6_2	2	6200006, 6200007, 6200008, 6200009, 6200010									
+			6200006	sentence_word		Choose the right one.			news	news	mews^vews^news
+			6200007	sentence_word		Choose the right one.			paper	paper	paper^peper^papir
+			6200008	soundonly_word					sweet	sweet	sweet^green^brown
+			6200009	sentence_word		This is my ____.			this is my mother	mother	brother^mother^dad
+			6200010	sentence_word		Richa is in the _____.			cindy is in the kitchen	kitchen	bedroom^kitchen^house
+											
+FishTest_6_2	3	6200011, 6200012, 6200013, 6200014, 6200015									
+			6200011	sentence_word		Choose the right one.			lion	lion	bion^lion^rion
+			6200012	sentence_word		Choose the right one.			water	water	wator^watur^water
+			6200013	soundonly_word					boat	boat	boat^lunch^goat
+			6200014	sentence_word		This is my ____.			this is my dad	dad	brother^mother^dad
+			6200015	sentence_word		We need a ____.			we need a lamp	lamp	chair^picture^lamp
+											
+FishTest_6_3	1	6300001, 6300002, 6300003, 6300004, 6300005									
+			6300001	sentence_word		Choose the right one.			stick	stick	skick^spick^stick
+			6300002	sentence_word		Choose the right one.			father	father	pather^father^fathor
+			6300003	soundonly_word					pants	pants	pants^boots^shorts
+			6300004	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	flood, fly	grass, cross^flood, fly^drive, crab
+			6300005	sentence_word		I want to play near _______.			I want to play near the car.	the car	the car^at home^the tent
+											
+FishTest_6_3	2	6300006, 6300007, 6300008, 6300009, 6300010									
+			6300006	sentence_word		Choose the right one.			floor	floor	floor^bloor^froor
+			6300007	sentence_word		Choose the right one.			dress	dress	bress^dress^dres
+			6300008	soundonly_word					shorts	shorts	pants^boots^shorts
+			6300009	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	black, blow	cold, bear^enter, under^black, blow
+			6300010	sentence_word		I want to play _______.			I want to play at home.	at home	the car^at home^the tent
+											
+FishTest_6_3	3	6300011, 6300012, 6300013, 6300014, 6300015									
+			6300011	sentence_word		Choose the right one.			money	money	mony^money^monye
+			6300012	sentence_word		Choose the right one.			brush	brush	brush^bruch^blush
+			6300013	soundonly_word					boots	boots	pants^boots^shorts
+			6300014	sentence_word		Choose the pair with the same first sound.			Choose the pair with the same first sound.	shake, shirt	shake, shirt^stay, there^blush, snake
+			6300015	sentence_word		I want to play in _______.			I want to play in the Tent.	the tent	the car^at home^the tent
+											
+FishTest_7_1	1	7100001, 7100002, 7100003, 7100004, 7100005									
+			7100001	soundonly_word					window	window	window^bathroom^door
+			7100002	soundonly_word					rain	rain	rain^storm^earth
+			7100003	sentence_word		The ______ are in the sky.			the birds are in the sky	birds	birds^chicken^frogs
+			7100004	image_sentence		l1_littlemouse.png			a little mouse	A little mouse.	A little mouse.^An orange dress.^A black book.
+			7100005	image_sentence		l1_tallboy.png			a tall boy	A tall boy.	A tall boy.^A tall baby.^A tall girl.
+											
+FishTest_7_1	2	7100006, 7100007, 7100008, 7100009, 7100010									
+			7100006	soundonly_word					bathroom	bathroom	window^bathroom^door
+			7100007	soundonly_word					storm	storm	rain^storm^earth
+			7100008	sentence_word		The ______ are in the nest.			the birds are in the nest	birds	birds^chicken^frogs
+			7100009	image_sentence		l3_3pails.png			three pails	Three pails.	Two pails.^Three boxes.^Three pails.
+			7100010	image_sentence		l1_orangehat.png			an orange hat	An orange hat.	An orange shirt.^An orange hat.^An orange orange.
+											
+FishTest_7_1	3	7100011, 7100012, 7100013, 7100014, 7100015									
+			7100011	soundonly_word					door	door	window^bathroom^door
+			7100012	soundonly_word					earth	earth	rain^storm^earth
+			7100013	sentence_word		Naresh cannot ______ high.			brian cannot jump high	jump	run^dance^jump
+			7100014	image_sentence		l1_littleant.png			a little ant	A little ant.	A little mouse.^A little ant.^A big cat.
+			7100015	image_sentence		l2_blackbear.png			a black bear	A black bear.	A black bear.^A black boot.^A black dog.
+											
+FishTest_7_2	1	7200001, 7200002, 7200003, 7200004, 7200005									
+			7200001	image_sentence		l4_1boy2chairs.png			a boy and two chairs	A boy and two chairs.	A boy and two chairs.^A spoon and two forks.^Two lemons and a tomato.
+			7200002	image_sentence		like_5.png			sam eats	Rehman eats.	Rehman eats.^Dinesh plays.^The plant grows.
+			7200003	sentence_word		A _____ bus.			a yellow bus	yellow	yellow^big^black
+			7200004	sentence_word		Astha _____ sick.			amy is sick	is	is^are^am
+			7200005	soundonly_image					I give our cow water	book_en_314_page_5.png	book_en_314_page_6.png^book_en_314_page_7.png^book_en_314_page_5.png
+											
+FishTest_7_2	2	7200006, 7200007, 7200008, 7200009, 7200010									
+			7200006	image_sentence		l4_1spoon2forks.png			A spoon and two forks.	A spoon and two forks.	A boy and two chairs.^A spoon and two forks.^Two lemons and a tomato.
+			7200007	image_sentence		like_2.png			mac plays	Dinesh plays.	Rehman eats.^Dinesh plays.^The plant grows.
+			7200008	sentence_word		A pink ______.			a pink dress	dress	dress^house^shirt
+			7200009	sentence_word		I _____ thirsty.			i am thirsty	am	is^are^am
+			7200010	soundonly_image					she likes carrots	book_en_314_page_6.png	book_en_314_page_6.png^book_en_314_page_7.png^book_en_314_page_5.png
+											
+FishTest_7_2	3	7200011, 7200012, 7200013, 7200014, 7200015									
+			7200011	image_sentence		l4_2lemons1tomato.png			two lemons and a tomato	Two lemons and a tomato.	A boy and two chairs.^A spoon and two forks.^Two lemons and a tomato.
+			7200012	image_sentence		plants_7.png			the plant grows	The plant grows.	Rehman eats.^Dinesh plays.^The plant grows.
+			7200013	sentence_word		_____ cups.			four cups	Four	Four^Ten^Clean
+			7200014	sentence_word		My brothers _____ students.			my brothers  are students	are	is^are^am
+			7200015	soundonly_image					father milks our cow everyday	book_en_314_page_7.png	book_en_314_page_6.png^book_en_314_page_7.png^book_en_314_page_5.png
+											
+FishTest_7_3	1	7300001, 7300002, 7300003, 7300004, 7300005									
+			7300001	sentence_word		Choose the right one.			dolphin	dolphin	dolphin^airplane^sleep
+			7300002	sentence_word		Choose the correct sentence.			she walks	She walks.	She walks.^Shewalks.^she walks
+			7300003	sentence_word		They are _______.			they are farmers	farmers	farmers^strong^doctors
+			7300004	image_sentence		book_en_328_page_2.png			This red food can be hot.	This red food can be hot.	This red food can be hot.^Yellow food can be a drink.^This brown food is sweet.
+			7300005	sentence_sentence		_________ Rabbit said.			I am sorry. Rabbit said.	I'm sorry,	I'm sad,^I'm happy,^I'm sorry,
+											
+FishTest_7_3	2	7300006, 7300007, 7300008, 7300009, 7300010									
+			7300006	sentence_word		Choose the right one.			air plane	airplane	dolphin^airplane^sleep
+			7300007	sentence_word		Choose the correct sentence.			birds fly	Birds fly.	Birds fly.^Birdsfly.^birds fly
+			7300008	sentence_word		He is at _______.			he is at school	school	school^home^the park
+			7300009	image_sentence		book_en_328_page_5.png			Yellow food can make a drink.	Yellow food can make a drink.	This red food can be hot.^Yellow food can make a drink.^This brown food is sweet.
+			7300010	sentence_sentence		Rabbit said, ____________			Rabit said. Let's play a game.	Let's play a game.	Let's jump.^Let's play a game.^Let's play ball.
+											
+FishTest_7_3	3	7300011, 7300012, 7300013, 7300014, 7300015									
+			7300011	sentence_word		Choose the right one.			sleep	sleep	dolphin^airplane^sleep
+			7300012	sentence_word		Choose the correct sentence.			he plays	He plays.	He plays.^Heplays.^he plays
+			7300013	sentence_word		He doesn't have a _______.			He doesn't have a pen.	pen	pen^sister^car
+			7300014	image_sentence		book_en_328_page_8.png			This brown food is sweet.	This brown food is sweet.	This red food can be hot.^Yellow food can make a drink.^This brown food is sweet.
+			7300015	sentence_sentence		_________ said Elephant.			Now it is my turn said Elephant.	Now it is my turn,	Now it is my turn,^Now let's go,^Now we can play,
+											
+FishTest_8_1	1	8100001, 8100002, 8100003, 8100004, 8100005									
+			8100001	image_sentence		l7_hecandrive.png			he can drive	He can drive.	He can drive.^She can drive.^He can draw.
+			8100002	image_sentence		l5_shirtdirty.png			this shirt is dirty	This shirt is dirty.	This shoe is dirty.^This shirt is clean.^This shirt is dirty.
+			8100003	sentence_sentence		Choose the right one.			Choose the right one.	Chinmay can run fast.	Chinmay can run fast.^Chinmay can running fast.^Chinmay runs can fast.
+			8100004	sentence_sentence		Choose the right one.			Choose the right one.	She has a mango.	She has a mango.^She have a mango.^She having a mango.
+			8100005	soundonly_image					she met a dolphin	book_en_319_page_6.png	book_en_319_page_7.png^book_en_319_page_6.png^book_en_319_page_10.png
+											
+FishTest_8_1	2	8100006, 8100007, 8100008, 8100009, 8100010									
+			8100006	image_sentence		l6_potato.png			it is a potato	It is a potato.	It is a tomato.^It is a potato.^These are tomatoes.
+			8100007	image_sentence		l5_hesick.png			he looks sick	He looks sick.	He looks sick.^She looks sick.^He looks happy.
+			8100008	sentence_sentence		Choose the right one.			Choose the right one.	Snakes do not have legs.	Snakes do not have legs.^Snakes are not have legs.^Snakes have not legs.
+			8100009	sentence_sentence		Choose the right one.			Choose the right one.	They have mangoes.	They have mangoes.^They has mangoes.^They having mangoes.
+			8100010	soundonly_image					she met a snail	book_en_319_page_7.png	book_en_319_page_7.png^book_en_319_page_6.png^book_en_319_page_10.png
+											
+FishTest_8_1	3	8100011, 8100012, 8100013, 8100014, 8100015									
+			8100011	image_sentence		l6_carrots.png			these are carrots	These are carrots.	This is not a carrot.^There are onions.^These are carrots.
+			8100012	image_sentence		l6_shesinger.png			she is a singer	She is a singer.	She is a teacher.^She is a singer.^She is a nurse.
+			8100013	sentence_sentence		Choose the right one.			Choose the right one.	She does not like dogs.	She does not like dogs.^She are not like dogs.^She not like dogs.
+			8100014	sentence_sentence		Choose the right one.			Choose the right one.	I want a mango.	I want a mango.^I wants a mango.^I wanting a mango.
+			8100015	soundonly_image					she sat on her mom	book_en_319_page_10.png	book_en_319_page_7.png^book_en_319_page_6.png^book_en_319_page_10.png
+											
+FishTest_8_2	1	8200001, 8200002, 8200003, 8200004, 8200005									
+			8200001	image_sentence		l8_heeatingsalad.png			he is eating salad	He is eating salad.	He is eating chicken.^He is eating rice.^He is eating salad.
+			8200002	image_sentence		l8_sheswimming.png			she is swimming	She is swimming.	She is shopping.^He is swimming.^She is swimming.
+			8200003	sentence_sentence		Choose the right one.			Choose the right one.	The plant is green.	The plant green.^The plant green is.^The plant is green.
+			8200004	sentence_sentence		Choose the right one.			Choose the right one..	They eat fast.	They eats fast.^They eat fast.^They eating fast.
+			8200005	sentence_word		I need a _____.			I need paper	paper	paper^pencil^envelope
+											
+FishTest_8_2	2	8200006, 8200007, 8200008, 8200009, 8200010									
+			8200006	image_sentence		l9_rabbitundertable.png			a rabbit is under the table	A rabbit is under the table.	A rabbit is on the table.^A rabbit is under the table.^A cat is under the table.
+			8200007	image_sentence		l7_hecandrive.png			he can drive	He can drive.	He can drive.^She can drive.^He can draw.
+			8200008	sentence_sentence		Choose the right one.			Choose the right one.	The milk is delicious.	The milk delicious is.^The milk is delicious.^The milk delicious.
+			8200009	sentence_sentence		Choose the right one.			Choose the right one.	She runs fast.	She runs fast.^She fast runs.^She running fast.
+			8200010	sentence_word		I need a _____.			I need a pencil	pencil	paper^pencil^envelope
+											
+FishTest_8_2	3	8200011, 8200012, 8200013, 8200014, 8200015									
+			8200011	image_sentence		l9_teachersitschair.png			a teacher sits in the chair	A teacher sits in the chair.	A teacher sits in the chair.^A teacher cleans the chair.^A boy sits in the chair.
+			8200012	image_sentence		l8_heeatingfish.png			he is eating fish	He is eating fish.	They are eating fish.^He is eating fish.^He is eating salad.
+			8200013	sentence_sentence		Choose the right one.			Choose the right one.	He has bananas.	He have bananas.^He has bananas.^He is have bananas.
+			8200014	sentence_sentence		Choose the right one.			Choose the right one.	Rehmaneera eats many apples.	Rehmaneera eats many apples.^Rehmaneera many apples eats.^Rehmaneera eating many apples.
+			8200015	sentence_word		I need an _____.			i need an envelope	envelope	paper^pencil^envelope
+											
+FishTest_8_3	1	8300001, 8300002, 8300003, 8300004, 8300005									
+			8300001	soundonly_image					she likes the yellow shoes	l11_shelikesyellowshoes.png	l11_shelikesyellowshoes.png^l11_shelikespinkshoes.png^l11_shelikespinkhat.png
+			8300002	soundonly_image					surprised	emotions_6_cropped_surprised.png	emotions_6_cropped_surprised.png^emotions_5_cropped_excited.png^emotions_3_cropped_angry.png
+			8300003	sentence_sentence		Choose the right one.			Choose the right one.	Rehmaneera eats an apple.	Rehmaneera eats a apples.^Rehmaneera eats an apple.^Rehmaneera eating apple.
+			8300004	sentence_sentence		Mouse said, Please Lion. ______________			Mouse said. Please Lion   do not eat me.	Do not eat me.	Do not eat me.^I will help you.^That is silly.
+			8300005	sentence_sentence		This kitten has _________.			This kitten has four legs.	four legs	four legs^two legs^no legs
+											
+FishTest_8_3	2	8300006, 8300007, 8300008, 8300009, 8300010									
+			8300006	soundonly_image					the girl has green mangoes	l11_girlhasgreenmangoes.png	l11_girlhasgreenbananas.png^l11_girlhasgreenmangoes.png^l11_shehasball.png
+			8300007	soundonly_image					excited	emotions_5_cropped_excited.png	emotions_6_cropped_surprised.png^emotions_5_cropped_excited.png^emotions_3_cropped_angry.png
+			8300008	sentence_sentence		Choose the right one.			Choose the right one.	He sings a song.	He sings song.^He singing a song.^He sings a song.
+			8300009	sentence_sentence		Mouse said, “Let me go. Someday, ________			Mouse said. Let me go. Someday. I will help you.	I will help you.	Do not eat me.^I will help you.^That is silly.
+			8300010	sentence_sentence		These two fishes do not have _________.			These two fishes do not have legs.	legs	legs^eyes^tails
+											
+FishTest_8_3	3	8300011, 8300012, 8300013, 8300014, 8300015									
+			8300011	soundonly_image					the girl has green bananas	l11_girlhasgreenbananas.png	l11_girlhasgreenbananas.png^l11_girlhasgreenmangoes.png^l11_shehasball.png
+			8300012	soundonly_image					angry	emotions_3_cropped_angry.png	emotions_6_cropped_surprised.png^emotions_5_cropped_excited.png^emotions_3_cropped_angry.png
+			8300013	sentence_sentence		Choose the right one.			Choose the right one.	They drink milk.	They drink milk.^They milk drink.^They drinking milk.
+			8300014	sentence_sentence		Lion said, __________			Lion said. That is silly.	That is silly.	Do not eat me.^I will help you.^That is silly.
+			8300015	sentence_sentence		These four birds have __________ each.			These four birds have two legs each.	two legs	four legs^two legs^no legs
+											
+FishTest_9_1	1	9100001, 9100002, 9100003, 9100004, 9100005									
+			9100001	image_sentence		l13_lionbetweentrees.png			The lion is between the trees.	The lion is between the trees.	The lion is between the trees.^The lion is in front of the trees.^The lion is behind the trees.
+			9100002	soundonly_image					he can't cook well	l12_hecantcookwell.png	l12_shecancookwell.png^l12_theycannotcookwell.png^l12_hecantcookwell.png
+			9100003	sentence_sentence		Choose the right one.			Choose the right one.	It is not sunny today.	It is not sunny today.^It not sunny today.^It not is sunny today.
+			9100004	sentence_sentence		Choose the right one.			Choose the right one.	You have big hands.	You have big hands.^You has big hands.^You are have big hands.
+			9100005	soundonly_image					Would you like to be orange like a Fish?	book_en_406_page_3.png	book_en_406_page_4.png^book_en_406_page_3.png^book_en_406_page_2.png
+											
+FishTest_9_1	2	9100006, 9100007, 9100008, 9100009, 9100010									
+			9100006	image_sentence		l13_oldmanfrontgirl.png			The old man is in front of the girl.	The old man is in front of the girl.	The old man is in front of the girl.^The old man is behind the girl.^The old man is next to the girl.
+			9100007	soundonly_image					she cannot read well	l12_shecannotreadwell.png	l12_hecannotreadwell.png^l12_shecannotreadwell.png^l12_shecannotwritewell.png
+			9100008	sentence_sentence		Choose the right one.			Choose the right one.	The boys are not tall.	The boys are not tall.^They boys not tall.^The boys not are tall.
+			9100009	sentence_sentence		Choose the right one.			Choose the right one.	She has a long neck.	She has a long neck.^She have a long neck.^She is have a long neck.
+			9100010	soundonly_image					Would you like to have eight arms like an Octopus?	book_en_406_page_2.png	book_en_406_page_4.png^book_en_406_page_3.png^book_en_406_page_2.png
+											
+FishTest_9_1	3	9100011, 9100012, 9100013, 9100014, 9100015									
+			9100011	image_sentence		l12_shecannotwritewell.png			She cannot write well.	She cannot write well.	She cannot write well.^She cannot cook well.^She cannot jump well.
+			9100012	soundonly_image					the cat is behind the box	l13_catbehindbox.png	l13_catbetweenboxes.png^l13_catfrontbox.png^l13_catbehindbox.png
+			9100013	sentence_sentence		Choose the right one.			Choose the right one.	It is not cold today.	It is not cold today.^It not cold today.^It not is cold today.
+			9100014	sentence_sentence		Choose the right one.			Choose the right one.	This is my mouth.	This is my mouth.^This are my mouth.^This am my mouth.
+			9100015	soundonly_image					Would you like to jump and play like a Dolphin?	book_en_406_page_4.png	book_en_406_page_4.png^book_en_406_page_3.png^book_en_406_page_2.png
+											
+FishTest_9_2	1	9200001, 9200002, 9200003, 9200004, 9200005									
+			9200001	soundonly_sentence					I was angry	I was angry.	I was angry.^I did angry.^I were angry.
+			9200002	sentence_word		Look at the frogs __________.			look at the frogs on the rock	on the rock	on the rock^in the sky^in the nest
+			9200003	sentence_word		This is __________.			this is my bag	my bag	my bag^me bag^I bag.
+			9200004	listeningcomp_sentence	Bugs are small. Sometimes it is hard to see them because they are so small .some live in the ground .some live in trees. I see them indoors. I see them outdoors. bugs are everywhere	What is this story about?				It is about bugs.	It is about bugs.^It is about food.^It is about people.
+			9200005	paragraph_sentence	What does Govind like to do?	Govind likes to cook. He cooks with his mom. They cook dinner for their family. It is nice to cook for family.				He likes to cook.	He likes to cook.^He likes to read.^He likes to jump.
+											
+FishTest_9_2	2	9200006, 9200007, 9200008, 9200009, 9200010									
+			9200006	soundonly_sentence					he was cute	He was cute.	He was cute.^He were cute.^He did cute.
+			9200007	sentence_word		The boy is __________.			the boy is under the table	under the table	under the table^in the room^on the box
+			9200008	sentence_word		They are __________.			they are his cats	his cats	his cats^he cats^him cats
+			9200009	listeningcomp_sentence	Bugs are small. Sometimes it is hard to see them because they are so small .some live in the ground .some live in trees. I see them indoors. I see them outdoors. bugs are everywhere	Where are bugs?				They are everywhere.	They are everywhere.^They are in the ocean.^We cannot see them.
+			9200010	paragraph_sentence	Does Govind cook with his dad?	Govind likes to cook. He cooks with his mom. They cook dinner for their family. It is nice to cook for family.				No, he does not.	Yes, he does.^No, he does not.^We do not know.
+											
+FishTest_9_2	3	9200011, 9200012, 9200013, 9200014, 9200015									
+			9200011	soundonly_sentence					They were kind.	They were kind.	They were kind.^They was kind.^They did kind.
+			9200012	sentence_word		The bus stop is _________ the school.			the bus stop is in front of the school	in front of	in front of^between^next to
+			9200013	sentence_word		She likes __________.			she likes her dress	her dress	her dress^she dress^you dress
+			9200014	listeningcomp_sentence	Bugs are small. Sometimes it is hard to see them because they are so small .some live in the ground .some live in trees. I see them indoors. I see them outdoors. bugs are everywhere	Why is it sometimes hard to see bugs?				Because they are so small.	Because they are so small.^Because they are so big.^Because they are sad.
+			9200015	paragraph_sentence	Does Govind cook dinner with his mom?	Govind likes to cook. He cooks with his mom. They cook dinner for their family. It is nice to cook for family.				Yes, he does.	Yes, he does.^No, he does not.^We do not know.
+											
+FishTest_9_3	1	9300001, 9300002, 9300003, 9300004, 9300005									
+			9300001	soundonly_image					the boy wants to be a doctor	l16_hewantsdoctor.png	l16_hewantsteacher.png^l16_girlwantsdoctor.png^l16_hewantsdoctor.png
+			9300002	sentence_sentence		Choose the right one.			Choose the right one.	She is seven years old.	She is seven years old.^She seven old years.^she is sevenyearsold
+			9300003	paragraph_sentence		Sabina loves beans. _____________ She is very happy when her dad cooks beans. Her dad adds just the right amount of salt. The beans are very tasty.			Sabina loves beans. Beans are her favourite food .She is very happy when her dad cooks beans .Her dad add just a right amount of salt. The Beans are very tasty	Beans are her favorite food.	Beans are her favorite food.^She likes mangoes.^Carrots are her favorite food.
+			9300004	sentence_sentence		He caught _______.			he caught nothing	nothing	nothing^animals^birds
+			9300005	sentence_sentence		Mother says, ______________			mother says you are too dirty	You are too dirty!	Now I like to wash!^I don't want to wash!^You are too dirty!
+											
+FishTest_9_3	2	9300006, 9300007, 9300008, 9300009, 9300010									
+			9300006	soundonly_image					the girl wants to be a doctor	l16_girlwantsdoctor.png	l16_hewantsteacher.png^l16_girlwantsdoctor.png^l16_hewantsdoctor.png
+			9300007	sentence_sentence		Choose the right one.			Choose the right one.	He has three brothers.	He has three brothers.^He three brothers has.^he has threebrothers
+			9300008	paragraph_sentence		Sabina loves beans. Beans are her favorite food. She is very happy when her dad cooks beans. Her dad adds just the right amount of salt. _________________			Sabina loves beans. Beans are her favourite food .She is very happy when her dad cooks beans .Her dad add just a right amount of salt. The Beans are very tasty	The beans are very tasty.	The beans are very tasty.^The beans are not tasty.^She doesn't like beans.
+			9300009	sentence_sentence		Nalini went hunting ________.			masha went hunting at night	at night	in the day^every day^at night
+			9300010	sentence_sentence		Juhi says, ___________			nia says. I don't want to wash	I don't want to wash!	Now I like to wash!^I don't want to wash!^You are too dirty!
+											
+FishTest_9_3	3	9300011, 9300012, 9300013, 9300014, 9300015									
+			9300011	soundonly_image					the boy wants to be a teacher	l16_hewantsteacher.png	l16_hewantsteacher.png^l16_girlwantsdoctor.png^l16_hewantsdoctor.png
+			9300012	sentence_sentence		Choose the right one.			Choose the right one.	My mom likes yellow.	My mom likes yellow.^mymom likesyellow.^My mom yellow likes.
+			9300013	paragraph_sentence		Sabina loves beans. Beans are her favorite food. _____________ when her dad cooks beans. Her dad adds just the right amount of salt. The beans are very tasty.			Sabina loves beans. Beans are her favourite food .She is very happy when her dad cooks beans .Her dad add just a right amount of salt. The Beans are very tasty	She is happy	She is happy^She is sad^She is scared
+			9300014	sentence_sentence		He was scared, but he did not _______.			he was scared but he did not give up	give up	go alone^give up^go hunting
+			9300015	sentence_sentence		Juhi says, ___________			nia says. Now I like to wash	Now I like to wash!	Now I like to wash!^I don't want to wash!^You are too dirty!
+											
+FishTest_10_1	1	10100001, 10100002, 10100003, 10100004, 10100005									
+			10100001	soundonly_image					she is reading under the table	l15_shereadundertable.png	l15_shereadundertable.png^l15_shereadontable.png^l15_shereadundertree.png
+			10100002	soundonly_image					the cat is behind the box	l13_catbehindbox.png	l13_catbetweenboxes.png^l13_catfrontbox.png^l13_catbehindbox.png
+			10100003	sentence_sentence		Choose the right one.			Choose the right one.	I have a pencil.	I have a pencil.^Ihave apencil.^i have A pencils.
+			10100004	listeningcomp_sentence	Mohan is a nurse. He helps people when they are sick. He helps understand what is wrong and give some medicine to help them feel better. He also gives advice to people. so that they can be healthy. Being healthy helps people from getting  sick	What is Mohan's job?				He is a nurse.	He is a nurse.^He is a teacher.^He is a farmer.
+			10100005	imageseq_sentence		Himani was born in 1940. She grew up on a farm.		When Himani was an old woman, she was given the Nobel Peace Prize.	Himani was born in 1940. She grew up on a farm. Himani began the Green Belt movement. When Himani was an old woman, she was given the Nobel Peace Prize.	Himani began the Green Belt movement.	She led people to plant trees all across the country.^Himani went to university in the United States.^Himani began the Green Belt movement.
+											
+FishTest_10_1	2	10100006, 10100007, 10100008, 10100009, 10100010									
+			10100006	soundonly_image					she is reading on the table	l15_shereadontable.png	l15_shereadundertable.png^l15_shereadontable.png^l15_shereadundertree.png
+			10100007	soundonly_image					the school is next to the park	l13_schoolnextpark.png	l13_schoolnextpark.png^l13_oldmanbtwboys.png^l13_dogbtwgoat_sheep.png
+			10100008	sentence_sentence		Choose the right one.			Choose the right one.	She cannot read well.	She cannot read well.^She cannotread well.^She cannot reading well.
+			10100009	listeningcomp_sentence	Mohan is a nurse. He helps people when they are sick. He helps understand what is wrong and give some medicine to help them feel better. He also gives advice to people. so that they can be healthy. being healthy helps people from getting sick	What helps people from getting sick?				Being healthy.	Being healthy.^Being happy.^Being hungry.
+			10100010	imageseq_sentence		Himani believed things should be fair.		Himani began the Green Belt movement.	Himani believed things should be fair. Himani knew that plants and animals are important to our world. Himani began the Green Belt movement.	Himani knew that plants and animals are improtant to our world.	She led people to plant trees all across the country.^Himani went to university in the United States.^Himani knew that plants and animals are improtant to our world.
+											
+FishTest_10_1	3	10100011, 10100012, 10100013, 10100014, 10100015									
+			10100011	soundonly_image					she is reading under the tree	l15_shereadundertree.png	l15_shereadundertable.png^l15_shereadontable.png^l15_shereadundertree.png
+			10100012	soundonly_image					the cat is behind the box	l13_catbehindbox.png	l13_catbetweenboxes.png^l13_catfrontbox.png^l13_catbehindbox.png
+			10100013	sentence_sentence		Choose the right one.			Choose the right one.	Lions don't eat carrots.	Lions don't eat carrots.^Lions doesn't eating carrots.^Lions not eat carrots.
+			10100014	listeningcomp_sentence	Mohan is a nurse. He helps people when they are sick. He helps understand what is wrong and give some medicine to help them feel better. He also gives advice to people. so that they can be healthy. being healthy helps people from getting sick	Is Mohan a doctor?				No, he is not.	No, he is not.^Yes, he is.^We do not know.
+			10100015	imageseq_sentence		Himani went to university in the United States.		They made the country more green.	Himani went to university in the United States. She led people to plant trees all across the country. They made the country more green.	She led people to plant trees all across the country.	She fought for the rights to the women in the schools.^She led people to plant trees all across the country.^When Himani was an old woman, she was given the Nobel Peace Prize.
+											
+FishTest_10_2	1	10200001, 10200002, 10200003, 10200004, 10200005									
+			10200001	soundonly_sentence					he doesn't dance	He doesn't dance.	He doesn't dance.^He dances well.^He doesn't sing.
+			10200002	soundonly_image					she is helping her dad carry boxes	l17_shehelpdadcarry.png	l17_shehelpmomdry.png^l17_shehelpmomcook.png^l17_shehelpdadcarry.png
+			10200003	sentence_sentence		Choose the right one.			Choose the right one.	They sell milk together.	They sell milk together.^They sells milk together.^They selling milk together.
+			10200004	listeningcomp_sentence	Sonia likes to look at the stars. She can see them from her house. She can see them at night. She can see them in the sky. Sonia wants to count all the stars, but there are too many.	Are there many stars in the sky?				Yes, there are.	Yes, there are.^No, there are not.^We do not know.
+			10200005	paragraph_sentence		In the morning, Fox went for a walk. He walked _________________________. His stomach rumbled with hunger. He looked all around for something to eat.			In the morning, Fox went for a walk. He walked until the sun was high. His stomach rumbled with hunger. He looked all around for something to eat.	until the sun is high	until he met a tree^until he found the sun^until the sun is high
+											
+FishTest_10_2	2	10200006, 10200007, 10200008, 10200009, 10200010									
+			10200006	soundonly_sentence					she doesn't like cats	She doesn't like cats.	She doesn't like cats.^She likes cats.^She doesn't have dogs.
+			10200007	soundonly_image					she is helping her mom cook dinner	l17_shehelpmomcook.png	l17_shehelpmomdry.png^l17_shehelpmomcook.png^l17_shehelpdadcarry.png
+			10200008	sentence_sentence		Choose the right one.			Choose the right one.	He drinks milk every day.	He drinking milk every day.^He drink milk every day.^He drinks milk every day.
+			10200009	listeningcomp_sentence	Sonia likes to look at the stars. She can see them from her house. She can see them at night. She can see them in the sky. Sonia wants to count all the stars, but there are too many.	What does Sonia like to do?				She likes to look at the stars.	She likes to look at the stars.^She likes to clean the house.^She likes to feed goats.
+			10200010	paragraph_sentence		He saw some grapes high in a tree. ____________________ How could he get them? Fox reached with his arms. He could almost taste the grapes!			He saw some grapes high in a tree. They must be so sweet, How could he get them? Fox reached with his arms. He could almost taste the grapes!	They must be so sweet!	They must be too sour!^They must be so sweet!^They must be grapes!
+											
+FishTest_10_2	3	10200011, 10200012, 10200013, 10200014, 10200015									
+			10200011	soundonly_sentence					they don't eat fish	They don't eat fish.	They don't eat fish.^They are eating fish.^They don't catch frogs.
+			10200012	soundonly_image					she is helping her mom dry clothes	l17_shehelpmomdry.png	l17_shehelpmomdry.png^l17_shehelpmomcook.png^l17_shehelpdadcarry.png
+			10200013	sentence_sentence		Choose the right one.			Choose the right one..	The van drives down the road.	The van drive down the road.^The van drives down the road.^The van driving down the road.
+			10200014	listeningcomp_sentence	Sonia likes to look at the stars. She can see them from her house. She can see them at night. She can see them in the sky. Sonia wants to count all the stars, but there are too many.	What does Sonia look at each evening?				The stars in the sky.	The stars in the sky.^The house from outside.^Her baby brother.
+			10200015	paragraph_sentence		Fox could not get the grapes by jumping. _______________ Could he find another way? We will never know, because Fox stopped trying.			Fox could not get the grapes by jumping. He was getting upset, Could he find another way? We will never know, because Fox stopped trying.	He was getting upset.	He was getting happy.^He was getting upset.^It was getting dark.
+											
+FishTest_10_3	1	10300001, 10300002, 10300003, 10300004, 10300005									
+			10300001	soundonly_image					the cat is bigger than the bird	l4_catbird.png	l4_dogcat.png^l4_catbird.png^l4_dogbird.png
+			10300002	soundonly_image					basket is full of bunches of grapes	l10_grapesinbasket.png	l10_grapesinbasket.png^l10_applesinbasket.png^l10_birdsinnest.png
+			10300003	sentence_sentence		Choose the right one.			Choose the right one.	Are they students?	Are they students?^Are they students.^are they students?
+			10300004	sentence_sentence		Choose the right one.			Choose the right one.	We had lunch.	We had lunch.^We has lunch.^We haved lunch.
+			10300005	paragraph_sentence		Richa was late for school. _________________, but it had already passed her street. Richa yelled for the driver to stop, but the driver didn't hear.			Richa was late for school. She ran to catch the bus. but it had already passed her street. Richa yelled for the driver to stop. but the driver didn't hear.	She ran to catch the bus	She walked slowly^She ran to catch the bus^She shouted alone
+											
+FishTest_10_3	2	10300006, 10300007, 10300008, 10300009, 10300010									
+			10300006	soundonly_image					the bird is smaller than the dog.	l4_dogbird.png	l4_dogcat.png^l4_catbird.png^l4_dogbird.png
+			10300007	soundonly_image					the basket is full of mellow apples	l10_applesinbasket.png	l10_grapesinbasket.png^l10_applesinbasket.png^l10_birdsinnest.png
+			10300008	sentence_sentence		Choose the right one.			Choose the right one.	Does he like bananas?	Does he like bananas?^Does he like bananas.^does he like bananas?
+			10300009	sentence_sentence		Choose the right one.			Choose the right one.	They ran fast.	They runs fast.^They runned fast.^They ran fast.
+			10300010	paragraph_sentence		Then, a truck passed Richa. _____________, Richa thought. I could learn to drive and drive to school.			Then. a truck passed Richa. If only I had a truck. Richa thought. I could learn to drive and drive to school.	If only I had a truck	If only I had a truck^If only I had a boat^If only I got up early
+											
+FishTest_10_3	3	10300011, 10300012, 10300013, 10300014, 10300015									
+			10300011	soundonly_image					the cat is smaller than the dog	l4_dogcat.png	l4_dogcat.png^l4_catbird.png^l4_dogbird.png
+			10300012	soundonly_image					nest is full of three yellow birds	l10_birdsinnest.png	l10_grapesinbasket.png^l10_applesinbasket.png^l10_birdsinnest.png
+			10300013	sentence_sentence		Choose the right one.			Choose the right one.	Where is the cat?	Where is the cat?^Where is the cat.^where is the cat?
+			10300014	sentence_sentence		Choose the right one.			Choose the right one.	She made a chair.	She made a chair.^She maked a chair.^She make a chair.
+			10300015	paragraph_sentence		Richa's school wasn't near the water, though. A boat couldn't take Richa to school, either. _________________, Richa asked herself again. I know! I'll take a motorcycle! Richa shouted.			Richa's school wasn't near the water, though. A boat couldn't take Richa to school, either. How can I get to school, Richa asked herself again. I know! I'll take a motorcycle! Richa shouted.	How can I get to school?	How can I buy a bicycle?^How can I drive a truck?^How can I get to school?
