@@ -82,7 +82,7 @@ def replace_proper_nouns(tsv_in, tsv_out, map_fname):
         names_dict[src_word] = dst_word
     # print(names_dict)
 
-    with open(tsv_in, 'r',  newline='', encoding='utf-8') as fin, open(tsv_out, 'w', newline='', encoding='utf-8') as fout:
+    with open(tsv_in, 'r',  newline='', encoding='utf-8-sig') as fin, open(tsv_out, 'w', newline='', encoding='utf-8') as fout:
         reader = csv.reader(fin, delimiter='\t', quoting=csv.QUOTE_NONE)
         writer = csv.writer(fout, delimiter='\t', quotechar='', quoting=csv.QUOTE_NONE)
         for line in reader:
