@@ -1,3 +1,7 @@
+""""
+This script contains functions which help in creating txt file which contains
+proper nouns from tsv, merging proper nouns txt files, and to rename names in TSVs
+"""
 import csv
 from nltk.tokenize import word_tokenize
 from nltk.tag import pos_tag
@@ -18,6 +22,7 @@ def get_proper_nouns(fin_fname, fout_fname):
     nltk.download('punkt')
     nltk.download('averaged_perceptron_tagger')
     propernouns = set()
+    # Read the sentences from the TSV and use NLTK Tagger to tag each of the word
     with open(fin_fname, encoding="utf8") as tsvfile:
         reader = csv.reader(tsvfile, delimiter='\t')
         for row in reader:
@@ -33,7 +38,9 @@ def get_proper_nouns(fin_fname, fout_fname):
                             word = word.replace("'s", '')
                             if word.isalpha():
                                 propernouns.add(word)
+        # List of proper nouns
         print(propernouns)
+        # Creating a new file named fout_fname to store proper nouns
         with open(fout_fname, 'w', encoding="utf8") as f:
             for item in propernouns:
                 print(item, file=f)
@@ -50,11 +57,13 @@ def merge_proper_nouns_files(fin_files, fout_file):
         merge_proper_nouns_files(["propernouns.txt", "propernouns2.txt"], 'merged_names2.txt')
     """
     propernouns = set()
+    # Reading each of the proper nouns from the each of the txt file
     for file in fin_files:
         f = open(file, "r", encoding="utf8").readlines()
         for line in f:
             word = line.strip()
             propernouns.add(word)
+    # Creating a new file which stores all the unique proper nouns
     print(propernouns)
     with open(fout_file, 'w', encoding="utf8") as f:
         for item in propernouns:
@@ -73,6 +82,7 @@ def replace_proper_nouns(tsv_in, tsv_out, map_fname):
     Example:
         replace_proper_nouns('wordwindow_level_en.tsv', 'wordwindow_level_en_change.tsv', 'mapping.txt')
     """
+    # Reading each line from the mapping file and creating a map for the old name and new name
     f_indian = io.open(map_fname, 'r', encoding='utf-8').readlines()
     names_dict = dict()
     for line in f_indian:
@@ -82,21 +92,21 @@ def replace_proper_nouns(tsv_in, tsv_out, map_fname):
         names_dict[src_word] = dst_word
     # print(names_dict)
 
+    # Reading the rows from the SRC TSV file and updating the cells and writing the new cells into DEST TSV file
     with open(tsv_in, 'r',  newline='', encoding='utf-8-sig') as fin, open(tsv_out, 'w', newline='', encoding='utf-8') as fout:
         reader = csv.reader(fin, delimiter='\t', quoting=csv.QUOTE_NONE)
         writer = csv.writer(fout, delimiter='\t', quotechar='', quoting=csv.QUOTE_NONE)
         for line in reader:
             length = len(line)
-            if length > 0:
-                for i in range(length):
-                    for src_word in names_dict:
-                        start_chars = [u' ', u'.', u'^', u'']
-                        last_chars = [u' ', u'.', u',', u'?', u"'s"]
-                        cell = line[i]
-                        for start_char in start_chars:
-                            for last_char in last_chars:
-                                cell = cell.replace(start_char+src_word+last_char, start_char+names_dict[src_word]+last_char)
-                        line[i] = cell
-                # print(line)
-                # print(length)
-                writer.writerow(line)
+            for i in range(length):
+                for src_word in names_dict:
+                    start_chars = [u' ', u'.', u'^', u'']
+                    last_chars = [u' ', u'.', u',', u'?', u"'s"]
+                    cell = line[i]
+                    for start_char in start_chars:
+                        for last_char in last_chars:
+                            cell = cell.replace(start_char+src_word+last_char, start_char+names_dict[src_word]+last_char)
+                    line[i] = cell
+            # print(line)
+            # print(length)
+            writer.writerow(line)
