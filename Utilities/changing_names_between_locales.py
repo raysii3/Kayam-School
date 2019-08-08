@@ -110,3 +110,10 @@ def replace_proper_nouns(tsv_in, tsv_out, map_fname):
             # print(line)
             # print(length)
             writer.writerow(line)
+
+replace_proper_nouns('original/eggquizliteracy_levels_en.tsv', 'changed/eggquizliteracy_levels_en.tsv', 'mapping.txt')
+replace_proper_nouns('original/eggquizliteracy_levels_hi.tsv', 'changed/eggquizliteracy_levels_hi.tsv', 'mapping.txt')
+replace_proper_nouns('original/eggquizmath_levels_en.tsv', 'changed/eggquizmath_levels_en.tsv', 'mapping.txt')
+replace_proper_nouns('original/eggquizmath_levels_hi.tsv', 'changed/eggquizmath_levels_hi.tsv', 'mapping.txt')
+replace_proper_nouns('original/wordwindow_level_en.tsv', 'changed/wordwindow_level_en.tsv', 'mapping.txt')
+replace_proper_nouns('original/wordwindow_level_hi.tsv', 'changed/wordwindow_level_hi.tsv', 'mapping.txt')
