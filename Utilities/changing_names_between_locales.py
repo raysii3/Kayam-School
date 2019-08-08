@@ -27,10 +27,8 @@ def get_proper_nouns(fin_fname, fout_fname):
         reader = csv.reader(tsvfile, delimiter='\t')
         for row in reader:
             for cell in row:
-                    sentence = cell.replace('^', ' ')
-                    sentence = sentence.replace('_', '')
+                    sentence = cell.replace('^', ' ').replace('_', '')
                     token = word_tokenize(sentence)
-                    # print sentence
                     # tagged_sent = pos_tag(sentence.split())
                     tagged_sent = pos_tag(token)
                     for word, pos in tagged_sent:
@@ -90,7 +88,6 @@ def replace_proper_nouns(tsv_in, tsv_out, map_fname):
         src_word = src_word.strip()
         dst_word = dst_word.strip()
         names_dict[src_word] = dst_word
-    # print(names_dict)
 
     # Reading the rows from the SRC TSV file and updating the cells and writing the new cells into DEST TSV file
     with open(tsv_in, 'r',  newline='', encoding='utf-8-sig') as fin, open(tsv_out, 'w', newline='', encoding='utf-8') as fout:
@@ -107,9 +104,8 @@ def replace_proper_nouns(tsv_in, tsv_out, map_fname):
                         for last_char in last_chars:
                             cell = cell.replace(start_char+src_word+last_char, start_char+names_dict[src_word]+last_char)
                     line[i] = cell
-            # print(line)
-            # print(length)
             writer.writerow(line)
+
 
 replace_proper_nouns('original/eggquizliteracy_levels_en.tsv', 'changed/eggquizliteracy_levels_en.tsv', 'mapping.txt')
 replace_proper_nouns('original/eggquizliteracy_levels_hi.tsv', 'changed/eggquizliteracy_levels_hi.tsv', 'mapping.txt')
