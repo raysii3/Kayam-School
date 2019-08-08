@@ -21,7 +21,7 @@ def get_proper_nouns(fin_fname, fout_fname):
     """
     nltk.download('punkt')
     nltk.download('averaged_perceptron_tagger')
-    propernouns = set()
+    proper_nouns = set()
     # Read the sentences from the TSV and use NLTK Tagger to tag each of the word
     with open(fin_fname, encoding="utf8") as tsvfile:
         reader = csv.reader(tsvfile, delimiter='\t')
@@ -54,7 +54,7 @@ def merge_proper_nouns_files(fin_files, fout_file):
     Example:
         merge_proper_nouns_files(["propernouns.txt", "propernouns2.txt"], 'merged_names2.txt')
     """
-    propernouns = set()
+    proper_nouns = set()
     # Reading each of the proper nouns from the each of the txt file
     for file in fin_files:
         f = open(file, "r", encoding="utf8").readlines()
@@ -94,8 +94,7 @@ def replace_proper_nouns(tsv_in, tsv_out, map_fname):
         reader = csv.reader(fin, delimiter='\t', quoting=csv.QUOTE_NONE)
         writer = csv.writer(fout, delimiter='\t', quotechar='', quoting=csv.QUOTE_NONE)
         for line in reader:
-            length = len(line)
-            for i in range(length):
+            for i in range(len(line)):
                 for src_word in names_dict:
                     start_chars = [u' ', u'.', u'^', u'']
                     last_chars = [u' ', u'.', u',', u'?', u"'s"]
@@ -107,9 +106,9 @@ def replace_proper_nouns(tsv_in, tsv_out, map_fname):
             writer.writerow(line)
 
 
-replace_proper_nouns('original/eggquizliteracy_levels_en.tsv', 'changed/eggquizliteracy_levels_en.tsv', 'mapping.txt')
-replace_proper_nouns('original/eggquizliteracy_levels_hi.tsv', 'changed/eggquizliteracy_levels_hi.tsv', 'mapping.txt')
-replace_proper_nouns('original/eggquizmath_levels_en.tsv', 'changed/eggquizmath_levels_en.tsv', 'mapping.txt')
-replace_proper_nouns('original/eggquizmath_levels_hi.tsv', 'changed/eggquizmath_levels_hi.tsv', 'mapping.txt')
-replace_proper_nouns('original/wordwindow_level_en.tsv', 'changed/wordwindow_level_en.tsv', 'mapping.txt')
-replace_proper_nouns('original/wordwindow_level_hi.tsv', 'changed/wordwindow_level_hi.tsv', 'mapping.txt')
+mapping_file = 'mapping.txt'
+locale_list = ['en', 'hi']
+for locale in locale_list:
+    replace_proper_nouns('original/eggquizliteracy_levels_' + locale + '.tsv', 'changed/eggquizliteracy_levels_' + locale + '.tsv', mapping_file)
+    replace_proper_nouns('original/eggquizmath_levels_' + locale + '.tsv', 'changed/eggquizmath_levels_' + locale + '.tsv', mapping_file)
+    replace_proper_nouns('original/wordwindow_level_' + locale + '.tsv', 'changed/wordwindow_level_' + locale + '.tsv', mapping_file)
