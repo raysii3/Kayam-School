@@ -7,7 +7,8 @@ from nltk.tokenize import word_tokenize
 from nltk.tag import pos_tag
 import nltk
 import io
-
+import regex
+import xlrd
 
 def get_proper_nouns(fin_fname, fout_fname):
     """
@@ -68,7 +69,7 @@ def merge_proper_nouns_files(fin_files, fout_file):
             print(item, file=f)
 
 
-def replace_proper_nouns(tsv_in, tsv_out, map_fname):
+def replace_proper_nouns(tsv_in, tsv_out, ref_excel, sheet_name="Sheet1"):
     """
     This function will change the names in TSV and generate a new file which
     will contains new names
@@ -81,13 +82,43 @@ def replace_proper_nouns(tsv_in, tsv_out, map_fname):
         replace_proper_nouns('wordwindow_level_en.tsv', 'wordwindow_level_en_change.tsv', 'mapping.txt')
     """
     # Reading each line from the mapping file and creating a map for the old name and new name
-    f_indian = io.open(map_fname, 'r', encoding='utf-8').readlines()
+    # column name for the old name
+    locales = ['en', 'hi']
     names_dict = dict()
-    for line in f_indian:
-        src_word, dst_word = line.split('\t')
-        src_word = src_word.strip()
-        dst_word = dst_word.strip()
-        names_dict[src_word] = dst_word
+    for locale in locales:
+        src_key = locale+'_old'
+        # key of the target that needed to be changed
+        target_key = locale+'_new'
+        # Read the Excel sheet to create a dictionary
+        wb = xlrd.open_workbook(ref_excel)
+        sheet = wb.sheet_by_name(sheet_name)
+        rowCount = sheet.nrows
+        colCount = sheet.ncols
+        # Get the column index of identity and new title column in Excel
+        old_name_index = -1
+        new_name_index = -1
+        for i in range(colCount):
+            if old_name_index == -1 and src_key == sheet.cell_value(0, i):
+                old_name_index = i
+            if new_name_index == -1 and target_key == sheet.cell_value(0, i):
+                new_name_index = i
+            if old_name_index != -1 and new_name_index != -1:
+                break
+        print('Sheet: ', sheet_name)
+        print('old_name_index: ', old_name_index)
+        print('new_name_index: ', new_name_index)
+        print('Rows count: ', rowCount)
+        print('Columns count: ', colCount)
+        # Create a dictionary between the identity key and the new value
+        for i in range(1, rowCount):
+            old_name = sheet.cell_value(i, old_name_index)
+            new_name = sheet.cell_value(i, new_name_index)
+            old_name = old_name.strip()
+            new_name = new_name.strip()
+            if len(old_name) > 0 and len(new_name):
+                names_dict[old_name] = new_name
+                if(locale == 'en'):
+                    names_dict[old_name.lower()] = new_name.lower()
 
     # Reading the rows from the SRC TSV file and updating the cells and writing the new cells into DEST TSV file
     with open(tsv_in, 'r',  newline='', encoding='utf-8-sig') as fin, open(tsv_out, 'w', newline='', encoding='utf-8') as fout:
@@ -95,20 +126,18 @@ def replace_proper_nouns(tsv_in, tsv_out, map_fname):
         writer = csv.writer(fout, delimiter='\t', quotechar='', quoting=csv.QUOTE_NONE)
         for line in reader:
             for i in range(len(line)):
+                if(line[i] == u"image_word" or line[i] == u"soundonly_word"):
+                    break
                 for src_word in names_dict:
-                    start_chars = [u' ', u'.', u'^', u'']
-                    last_chars = [u' ', u'.', u',', u'?', u"'s"]
                     cell = line[i]
-                    for start_char in start_chars:
-                        for last_char in last_chars:
-                            cell = cell.replace(start_char+src_word+last_char, start_char+names_dict[src_word]+last_char)
+                    cell = regex.sub(r'(?u)\b'+src_word+r'(?u)\b', names_dict[src_word], cell)
                     line[i] = cell
             writer.writerow(line)
 
 
-mapping_file = 'mapping.txt'
+mapping_file = 'ProposedNames.xlsx'
 locale_list = ['en', 'hi']
 for locale in locale_list:
-    replace_proper_nouns('original/eggquizliteracy_levels_' + locale + '.tsv', 'changed/eggquizliteracy_levels_' + locale + '.tsv', mapping_file)
-    replace_proper_nouns('original/eggquizmath_levels_' + locale + '.tsv', 'changed/eggquizmath_levels_' + locale + '.tsv', mapping_file)
-    replace_proper_nouns('original/wordwindow_level_' + locale + '.tsv', 'changed/wordwindow_level_' + locale + '.tsv', mapping_file)
+    replace_proper_nouns('original/eggquizliteracy_levels_' + locale + '.tsv', 'test_changed/eggquizliteracy_levels_' + locale + '.tsv', mapping_file)
+    replace_proper_nouns('original/eggquizmath_levels_' + locale + '.tsv', 'test_changed/eggquizmath_levels_' + locale + '.tsv', mapping_file)
+    replace_proper_nouns('original/wordwindow_level_' + locale + '.tsv', 'test_changed/wordwindow_level_' + locale + '.tsv',  mapping_file)
