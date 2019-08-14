@@ -359,7 +359,7 @@ void LanguageManager::initLocalizationMap()
     _localizationMapEnglish["Math"] = "Math";
     _localizationMapHindi["Math"] = "गणित";
     _localizationMapUrdu["Math"] = "ریاضی";
-    _localizationMapBengali["Math"] = "ম্যাথ";
+    _localizationMapBengali["Math"] = "গণিত";
     _localizationMapSwahili["Math"] = "Hesabu";
 
     _localizationMapEnglish["TutorialTrace"] = "Line Tracing";

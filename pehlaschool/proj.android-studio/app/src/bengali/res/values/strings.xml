@@ -6,8 +6,8 @@
     <string name="content_extraction_english" translatable="false">This process will be done only once. It can take up to 10 minutes.</string>
     <string name="launcher_title">পহেলা স্কুল - Pehla School</string>
     <string name="start">\tStart\nশুরু করুন।</string>
-    <string name="library">Library\nলাইব্রেরি</string>
-    <string name="tools">Tools \nটুল</string>
+    <string name="library">Library\nগ্রন্থাগার</string>
+    <string name="tools">Tools \nসরঞ্জাম</string>
     <string name="defaultLanguage">bn-IN</string>
     <string name="drums">Drums\nড্রামস</string>
     <string name="marimba">Xylophone\nক্সাইলফোন</string>
