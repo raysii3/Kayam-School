@@ -27,11 +27,10 @@ import java.io.File;
 import java.io.IOException;
 import java.util.zip.ZipFile;
 
-import kitkitschool.DownloadExpansionFile;
 import utils.Zip;
 
 import static com.maq.pehlaschool.library.SelectActivity.locale;
-import static kitkitschool.DownloadExpansionFile.xAPKS;
+import static com.maq.pehlaschool.library.DownloadExpansionFile.xAPKS;
 
 
 public class SplashScreenActivity extends AppCompatActivity {

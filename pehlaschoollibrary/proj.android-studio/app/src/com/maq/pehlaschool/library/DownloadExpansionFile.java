@@ -1,4 +1,4 @@
-package kitkitschool;
+package com.maq.pehlaschool.library;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -24,8 +24,6 @@ import com.google.android.vending.expansion.downloader.Helpers;
 import com.google.android.vending.expansion.downloader.IDownloaderClient;
 import com.google.android.vending.expansion.downloader.IDownloaderService;
 import com.google.android.vending.expansion.downloader.IStub;
-import com.maq.pehlaschool.library.MainActivity;
-import com.maq.pehlaschool.library.R;
 
 import java.io.DataInputStream;
 import java.io.IOException;

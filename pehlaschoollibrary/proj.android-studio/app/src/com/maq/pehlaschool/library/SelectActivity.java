@@ -19,9 +19,7 @@ import android.widget.TextView;
 
 import com.maq.kitkitlogger.KitKitLoggerActivity;
 
-import kitkitschool.DownloadExpansionFile;
-
-import static kitkitschool.DownloadExpansionFile.xAPKS;
+import static com.maq.pehlaschool.library.DownloadExpansionFile.xAPKS;
 
 /**
  * Created by ingtellect on 9/7/17.
