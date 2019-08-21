@@ -479,7 +479,7 @@ void DailyScene2::Mango::setupShape(int birdID, string levelID, int day, bool cr
 //    this->addChild(_labelGlow);
 
 
-    _label = TodoUtil::createLabel(TodoUtil::itos(day), 100, Size::ZERO, defaultFont, Color4B(49, 16, 0, 255));
+    _label = TodoUtil::createLabel(TodoUtil::itos(day), 65, Size::ZERO, "fonts/TodoMainCurly.ttf", Color4B(49, 16, 0, 255));
     _label->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
     this->addChild(_label);
 

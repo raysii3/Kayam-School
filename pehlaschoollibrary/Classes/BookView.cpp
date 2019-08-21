@@ -231,8 +231,8 @@ bool BookView::init(const Size &size, std::string &bookPath, bool checkCompleteC
         backBtn->getEventDispatcher()->addEventListenerWithSceneGraphPriority(keyListener, backBtn);
         backBtn->addClickEventListener([this](Ref*){
             LogManager::getInstance()->logEvent(_book->bookTitle, "back_pressed", "", _currentPage);
-            GameSoundManager::getInstance()->playEffectSound("Common/Sounds/Effect/SFX_GUIBack.m4a");
-            this->popBookScene();
+            // Finish the current activity and go back to Main screen.
+            finishActivity();
         });
         
         backBtn->setAnchorPoint(Vec2::ANCHOR_TOP_LEFT);
@@ -324,9 +324,6 @@ void BookView::onExit()
     Node::onExit();
     GameSoundManager::getInstance()->stopAllEffects();
     GameSoundManager::getInstance()->unloadAllEffect();
-    
-
-    
 }
 
 void BookView::setBook(TodoBook *book)
@@ -444,17 +441,11 @@ void BookView::nextPage()
                                                             _currentPage);
                                                     CompletePopup::create()->show(0.0, [this]() {
                                                         _isReadAll = true;
-                                                        
-                                                        if (_checkCompleteCondition)
-                                                        {
-                                                            CCAppController::sharedAppController()->handleGameComplete(1);
-                                                        }
-                                                        else
-                                                        {
-                                                            CCAppController::sharedAppController()->handleGameQuit();
-                                                        }
-                                                        
-                                                        //TodoSchoolBackButton::popGameScene();
+
+                                                        //Finish the current activity and go back to Main screen
+                                                        finishActivity();
+                                                        viewTitle(turnDuration*2);
+                                                        showPageButton();
                                                     });
                                                 } else {
                                                     showPageButton();
@@ -468,9 +459,6 @@ void BookView::nextPage()
                                                 oldPage->removeFromParent();
                                             }),
                                             nullptr));
-        
-        
-        
 
     } else {
 
@@ -634,20 +622,17 @@ void BookView::popBookScene()
 
 
 #else
+
         Director::getInstance()->end();
 #endif
-        
+
     } else {
         if (_finishReading) {
             LogManager::getInstance()->logEvent(_book->bookTitle, "finish_read", "", _currentPage);
-            CCAppController::sharedAppController()->handleGameComplete(1);
-
-        } else {
-            //(Director::getInstance())->popScene();
-            CCAppController::sharedAppController()->handleGameQuit();
         }
-    }
-
+            //Finish the current activity and go back to Main screen
+            finishActivity();
+        }
 }
 
 //void BookView::setSoundButton(bool isSelect, ui::ImageView *imageButton, Label *textLabel) {
@@ -709,6 +694,17 @@ bool BookView::getSoundSetting() {
     return result;
      */
     
+}
+
+void BookView::finishActivity() {
+    //function to wrap the JNI caller for the AppActivity.finishActivity
+    JniMethodInfo t;
+    bool result = JniHelper::getStaticMethodInfo(t, "org/cocos2dx/cpp/AppActivity", "finishActivity", "()V");
+    if (result)
+    {
+        t.env->CallStaticVoidMethod(t.classID, t.methodID);
+        t.env->DeleteLocalRef(t.classID);
+    }
 }
 
 void BookView::setSoundSetting(bool enable) {

@@ -103,13 +103,13 @@ android {
         }
         urdu {
             applicationIdSuffix ".urdu"
-            versionCode 9
-            versionName '3.5.3'
+            versionCode 10
+            versionName '3.5.4'
         }
         bengali {
             applicationIdSuffix ".bengali"
-            versionCode 6
-            versionName '3.5.1'
+            versionCode 7
+            versionName '3.5.2'
         }
     }
     buildTypes {
