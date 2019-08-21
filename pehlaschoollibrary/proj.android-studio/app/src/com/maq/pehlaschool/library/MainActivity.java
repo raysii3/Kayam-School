@@ -52,15 +52,13 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 
-import static com.maq.pehlaschool.library.SelectActivity.locale;
-
-
 /**
  * Created by ingtellect on 11/18/16.
  */
 
 public class MainActivity extends KitKitLoggerActivity {
 
+    String locale;
     static boolean useExternalData = false;
     static String appLanguage;
     static String pathExternalAsset = "";
@@ -109,7 +107,18 @@ public class MainActivity extends KitKitLoggerActivity {
 
         Log.d(TAG, "onCreate()");
         Util.hideSystemUI(this);
-
+        Intent libraryIntent = getIntent();
+        Bundle extras = libraryIntent.getExtras();
+        if (extras != null && extras.getString("locale") != null && !extras.getString("locale").isEmpty()) {
+            locale = extras.getString("locale").toLowerCase();
+            // clear the library intent by removing the extended data from the intent
+            // this is done to get the latest extended data of the intent
+            libraryIntent.removeExtra("locale");
+            setIntent(libraryIntent);
+        } else {
+            // set the default value of the variable on successive calls
+            locale = "english";
+        }
         appLanguage = "en-us";
 
         mbSignLanguageMode = isSignLanguageMode();
@@ -118,7 +127,7 @@ public class MainActivity extends KitKitLoggerActivity {
         }
 
         Log.i(TAG, "appLanguage : " + appLanguage + ", mbSignLanguageMode : " + mbSignLanguageMode);
-
+        SelectActivity.updateStringLocale(this, locale);
         checkExternalData();
         setContentView(R.layout.activity_main);
 
@@ -166,7 +175,8 @@ public class MainActivity extends KitKitLoggerActivity {
         params = new LayoutParams(viewWidth, LayoutParams.WRAP_CONTENT);
 
         viewPager.setCurrentItem(getIntent().getIntExtra("tab", 0));
-
+        Log.d("MainActivityLocale", getResources().getConfiguration().locale.toString());
+        Log.d("MainActivityVarLocale", locale);
     }
 
     private boolean isSignLanguageMode() {

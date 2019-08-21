@@ -30,7 +30,7 @@ import static com.maq.pehlaschool.library.DownloadExpansionFile.xAPKS;
  */
 
 public class SelectActivity extends KitKitLoggerActivity {
-    public static String locale = "english";
+    public String locale = "english";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,6 +89,7 @@ public class SelectActivity extends KitKitLoggerActivity {
 
     private void startSplashScreenActivity() {
         Intent intent = new Intent(SelectActivity.this, SplashScreenActivity.class);
+        intent.putExtra("locale", locale);
         startActivity(intent);
         finish();
     }
@@ -115,12 +116,14 @@ public class SelectActivity extends KitKitLoggerActivity {
     public void onClickBook(View v) {
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("tab", 1);
+        intent.putExtra("locale", locale);
         startActivity(intent);
     }
 
     public void onClickVideo(View v) {
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("tab", 0);
+        intent.putExtra("locale", locale);
         startActivity(intent);
 
     }
@@ -230,6 +233,7 @@ public class SelectActivity extends KitKitLoggerActivity {
                 currConfig.setLocale(new Locale("bn"));
                 break;
             default: // Do nothing as English text is set by default
+                currConfig.setLocale(new Locale("en"));
                 break;
         }
         //set the locale with the updated configuration
