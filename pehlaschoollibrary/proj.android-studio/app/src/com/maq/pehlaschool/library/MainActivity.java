@@ -52,8 +52,8 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 
-import static com.maq.pehlaschool.library.SelectActivity.locale;
-
+import static com.maq.pehlaschool.library.SelectActivity.updateStringLocale;
+import static com.maq.pehlaschool.library.SelectActivity.getLocalefromIntent;
 
 /**
  * Created by ingtellect on 11/18/16.
@@ -61,6 +61,7 @@ import static com.maq.pehlaschool.library.SelectActivity.locale;
 
 public class MainActivity extends KitKitLoggerActivity {
 
+    String locale;
     static boolean useExternalData = false;
     static String appLanguage;
     static String pathExternalAsset = "";
@@ -109,7 +110,8 @@ public class MainActivity extends KitKitLoggerActivity {
 
         Log.d(TAG, "onCreate()");
         Util.hideSystemUI(this);
-
+        //get locale from the intent
+        locale = getLocalefromIntent(getIntent());
         appLanguage = "en-us";
 
         mbSignLanguageMode = isSignLanguageMode();
@@ -118,7 +120,8 @@ public class MainActivity extends KitKitLoggerActivity {
         }
 
         Log.i(TAG, "appLanguage : " + appLanguage + ", mbSignLanguageMode : " + mbSignLanguageMode);
-
+        //update the locale of the activity
+        updateStringLocale(this, locale);
         checkExternalData();
         setContentView(R.layout.activity_main);
 
@@ -166,7 +169,6 @@ public class MainActivity extends KitKitLoggerActivity {
         params = new LayoutParams(viewWidth, LayoutParams.WRAP_CONTENT);
 
         viewPager.setCurrentItem(getIntent().getIntExtra("tab", 0));
-
     }
 
     private boolean isSignLanguageMode() {

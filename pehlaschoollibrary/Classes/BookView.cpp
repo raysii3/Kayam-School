@@ -633,8 +633,6 @@ void BookView::popBookScene()
             //Finish the current activity and go back to Main screen
             finishActivity();
         }
-    }
-
 }
 
 //void BookView::setSoundButton(bool isSelect, ui::ImageView *imageButton, Label *textLabel) {

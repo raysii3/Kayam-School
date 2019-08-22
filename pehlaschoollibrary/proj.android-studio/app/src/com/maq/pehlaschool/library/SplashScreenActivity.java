@@ -25,15 +25,13 @@ import java.io.File;
 import java.io.IOException;
 import java.util.zip.ZipFile;
 
-import kitkitschool.DownloadExpansionFile;
 import utils.Zip;
 
-import static com.maq.pehlaschool.library.SelectActivity.locale;
-import static kitkitschool.DownloadExpansionFile.xAPKS;
-
-
+import static com.maq.pehlaschool.library.DownloadExpansionFile.xAPKS;
+import static com.maq.pehlaschool.library.SelectActivity.updateStringLocale;
+import static com.maq.pehlaschool.library.SelectActivity.getLocalefromIntent;
 public class SplashScreenActivity extends AppCompatActivity {
-
+    String locale;
     Intent intent = null;
     String expansionFilePath;
     File expansionFile;
@@ -50,6 +48,10 @@ public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //get the locale from the intent
+        locale = getLocalefromIntent(getIntent());
+        //set the locale of the activity
+        updateStringLocale(this, locale);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         View decorView = this.getWindow().getDecorView();
