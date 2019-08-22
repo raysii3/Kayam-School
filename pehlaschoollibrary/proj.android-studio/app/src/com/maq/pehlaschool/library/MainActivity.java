@@ -52,6 +52,9 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 
+import static com.maq.pehlaschool.library.SelectActivity.updateStringLocale;
+import static com.maq.pehlaschool.library.SelectActivity.getLocalefromIntent;
+
 /**
  * Created by ingtellect on 11/18/16.
  */
@@ -107,14 +110,8 @@ public class MainActivity extends KitKitLoggerActivity {
 
         Log.d(TAG, "onCreate()");
         Util.hideSystemUI(this);
-        Intent localeIntent = getIntent();
-        Bundle extras = localeIntent.getExtras();
-        if (extras != null && extras.getString("locale") != null && !extras.getString("locale").isEmpty()) {
-            locale = extras.getString("locale").toLowerCase();
-        } else {
-            // set the default value of the variable on successive calls
-            locale = "english";
-        }
+        //get locale from the intent
+        locale = getLocalefromIntent(getIntent());
         appLanguage = "en-us";
 
         mbSignLanguageMode = isSignLanguageMode();
@@ -123,7 +120,8 @@ public class MainActivity extends KitKitLoggerActivity {
         }
 
         Log.i(TAG, "appLanguage : " + appLanguage + ", mbSignLanguageMode : " + mbSignLanguageMode);
-        SelectActivity.updateStringLocale(this, locale);
+        //update the locale of the activity
+        updateStringLocale(this, locale);
         checkExternalData();
         setContentView(R.layout.activity_main);
 

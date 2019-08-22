@@ -29,7 +29,7 @@ import utils.Zip;
 
 import static com.maq.pehlaschool.library.DownloadExpansionFile.xAPKS;
 import static com.maq.pehlaschool.library.SelectActivity.updateStringLocale;
-
+import static com.maq.pehlaschool.library.SelectActivity.getLocalefromIntent;
 public class SplashScreenActivity extends AppCompatActivity {
     String locale;
     Intent intent = null;
@@ -48,14 +48,9 @@ public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Intent localeIntent = getIntent();
-        Bundle extras = localeIntent.getExtras();
-        if (extras != null && extras.getString("locale") != null && !extras.getString("locale").isEmpty()) {
-            locale = extras.getString("locale").toLowerCase();
-        } else {
-            // set the default value of the variable on successive calls
-            locale = "english";
-        }
+        //get the locale from the intent
+        locale = getLocalefromIntent(getIntent());
+        //set the locale of the activity
         updateStringLocale(this, locale);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);

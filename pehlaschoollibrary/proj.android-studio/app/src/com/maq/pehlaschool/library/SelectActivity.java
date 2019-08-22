@@ -240,4 +240,15 @@ public class SelectActivity extends KitKitLoggerActivity {
         currRes.updateConfiguration(currConfig, currDispMetrics);
     }
 
+    public static String getLocalefromIntent(Intent localeIntent){
+        String locale;
+        Bundle extras = localeIntent.getExtras();
+            if (extras != null && extras.getString("locale") != null && !extras.getString("locale").isEmpty()) {
+            locale = extras.getString("locale").toLowerCase();
+        } else {
+                // set the default value of the variable on successive calls
+                locale = "english";
+            }
+            return locale;
+    }
 }
