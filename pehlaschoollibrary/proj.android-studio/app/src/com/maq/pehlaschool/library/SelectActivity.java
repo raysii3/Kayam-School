@@ -232,7 +232,7 @@ public class SelectActivity extends KitKitLoggerActivity {
             case "bengali":
                 currConfig.setLocale(new Locale("bn"));
                 break;
-            default: // Do nothing as English text is set by default
+            default: 
                 currConfig.setLocale(new Locale("en"));
                 break;
         }
