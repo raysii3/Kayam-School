@@ -222,6 +222,7 @@ public class SelectActivity extends KitKitLoggerActivity {
         //get the current configuration
         android.content.res.Configuration currConfig = currRes.getConfiguration();
         //update the locale if there is value in locale
+        //TODO: Remove the switch statement after the intent call update
         switch (locale) {
             case "hindi":
                 currConfig.setLocale(new Locale("hi"));
@@ -240,6 +241,7 @@ public class SelectActivity extends KitKitLoggerActivity {
         currRes.updateConfiguration(currConfig, currDispMetrics);
     }
 
+    // get the value of Locale passed from the caller Activity through Intent
     public static String getLocalefromIntent(Intent localeIntent){
         String locale;
         Bundle extras = localeIntent.getExtras();
