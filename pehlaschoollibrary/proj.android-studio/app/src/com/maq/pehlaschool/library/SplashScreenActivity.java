@@ -28,7 +28,7 @@ import java.util.zip.ZipFile;
 import utils.Zip;
 
 import static com.maq.pehlaschool.library.DownloadExpansionFile.xAPKS;
-
+import static com.maq.pehlaschool.library.SelectActivity.updateStringLocale;
 
 public class SplashScreenActivity extends AppCompatActivity {
     String locale;
@@ -48,18 +48,15 @@ public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Intent libraryIntent = getIntent();
-        Bundle extras = libraryIntent.getExtras();
+        Intent localeIntent = getIntent();
+        Bundle extras = localeIntent.getExtras();
         if (extras != null && extras.getString("locale") != null && !extras.getString("locale").isEmpty()) {
             locale = extras.getString("locale").toLowerCase();
-            // clear the library intent by removing the extended data from the intent
-            // this is done to get the latest extended data of the intent
-            libraryIntent.removeExtra("locale");
-            setIntent(libraryIntent);
         } else {
             // set the default value of the variable on successive calls
             locale = "english";
         }
+        updateStringLocale(this, locale);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         View decorView = this.getWindow().getDecorView();

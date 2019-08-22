@@ -107,14 +107,10 @@ public class MainActivity extends KitKitLoggerActivity {
 
         Log.d(TAG, "onCreate()");
         Util.hideSystemUI(this);
-        Intent libraryIntent = getIntent();
-        Bundle extras = libraryIntent.getExtras();
+        Intent localeIntent = getIntent();
+        Bundle extras = localeIntent.getExtras();
         if (extras != null && extras.getString("locale") != null && !extras.getString("locale").isEmpty()) {
             locale = extras.getString("locale").toLowerCase();
-            // clear the library intent by removing the extended data from the intent
-            // this is done to get the latest extended data of the intent
-            libraryIntent.removeExtra("locale");
-            setIntent(libraryIntent);
         } else {
             // set the default value of the variable on successive calls
             locale = "english";
@@ -175,8 +171,6 @@ public class MainActivity extends KitKitLoggerActivity {
         params = new LayoutParams(viewWidth, LayoutParams.WRAP_CONTENT);
 
         viewPager.setCurrentItem(getIntent().getIntExtra("tab", 0));
-        Log.d("MainActivityLocale", getResources().getConfiguration().locale.toString());
-        Log.d("MainActivityVarLocale", locale);
     }
 
     private boolean isSignLanguageMode() {
