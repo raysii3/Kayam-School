@@ -10,6 +10,7 @@ import io
 import regex
 import xlrd
 
+
 def get_proper_nouns(fin_fname, fout_fname):
     """
     This function get all the possible proper nouns from the TSV file and list
@@ -69,7 +70,7 @@ def merge_proper_nouns_files(fin_files, fout_file):
             print(item, file=f)
 
 
-def replace_proper_nouns(tsv_in, tsv_out, ref_excel, sheet_name="Sheet1"):
+def replace_proper_nouns(tsv_in, tsv_out, ref_excel, mapout_file, sheet_name='Sheet1'):
     """
     This function will change the names in TSV and generate a new file which
     will contains new names
@@ -83,8 +84,10 @@ def replace_proper_nouns(tsv_in, tsv_out, ref_excel, sheet_name="Sheet1"):
     """
     # Reading each line from the mapping file and creating a map for the old name and new name
     # column name for the old name
-    locales = ['en', 'hi']
+    if sheet_name != 'en':
+        locales = ['en', sheet_name]
     names_dict = dict()
+    names_not_used = dict()
     for locale in locales:
         src_key = locale+'_old'
         # key of the target that needed to be changed
@@ -113,13 +116,18 @@ def replace_proper_nouns(tsv_in, tsv_out, ref_excel, sheet_name="Sheet1"):
         for i in range(1, rowCount):
             old_name = sheet.cell_value(i, old_name_index)
             new_name = sheet.cell_value(i, new_name_index)
-            old_name = old_name.strip()
+            old_names = old_name.split(',')
             new_name = new_name.strip()
-            if len(old_name) > 0 and len(new_name):
-                names_dict[old_name] = new_name
-                if(locale == 'en'):
-                    names_dict[old_name.lower()] = new_name.lower()
-
+            for old_name in old_names:
+                old_name = old_name.strip()
+                new_name = new_name.strip()
+                if len(old_name) > 0 and len(new_name) > 0:
+                    names_dict[old_name] = new_name
+                    names_not_used[old_name] = True
+                    if(locale == 'en'):
+                        names_dict[old_name.lower()] = new_name.lower()
+                    if(locale == 'bn'):
+                        names_dict[old_name+u'র'] = new_name+u'র'
     # Reading the rows from the SRC TSV file and updating the cells and writing the new cells into DEST TSV file
     with open(tsv_in, 'r',  newline='', encoding='utf-8-sig') as fin, open(tsv_out, 'w', newline='', encoding='utf-8') as fout:
         reader = csv.reader(fin, delimiter='\t', quoting=csv.QUOTE_NONE)
@@ -130,14 +138,21 @@ def replace_proper_nouns(tsv_in, tsv_out, ref_excel, sheet_name="Sheet1"):
                     break
                 for src_word in names_dict:
                     cell = line[i]
-                    cell = regex.sub(r'(?u)\b'+src_word+r'(?u)\b', names_dict[src_word], cell)
+                    cell = regex.sub(r'\b'+src_word+r'\b', names_dict[src_word], cell)
+                    if (cell != line[i]):
+                        names_not_used[src_word] = False
                     line[i] = cell
             writer.writerow(line)
+    print(tsv_out+": Created")
+    with open(mapout_file, 'w', newline='', encoding='utf-8') as mapout:
+        for src_word in names_not_used:
+            if names_not_used[src_word] is True:
+                mapout.write(src_word+'\n')
 
 
-mapping_file = 'ProposedNames.xlsx'
-locale_list = ['en', 'hi']
+mapping_file = 'ProposedNames_updated.xlsx'
+locale_list = ['bn']
 for locale in locale_list:
-    replace_proper_nouns('original/eggquizliteracy_levels_' + locale + '.tsv', 'test_changed/eggquizliteracy_levels_' + locale + '.tsv', mapping_file)
-    replace_proper_nouns('original/eggquizmath_levels_' + locale + '.tsv', 'test_changed/eggquizmath_levels_' + locale + '.tsv', mapping_file)
-    replace_proper_nouns('original/wordwindow_level_' + locale + '.tsv', 'test_changed/wordwindow_level_' + locale + '.tsv',  mapping_file)
+    replace_proper_nouns('bn_original/eggquizliteracy_levels_' + locale + '.tsv', 'bn_changed/eggquizliteracy_levels_' + locale + '.tsv', mapping_file, 'log/map1.txt', 'bn')
+    replace_proper_nouns('bn_original/eggquizmath_levels_' + locale + '.tsv', 'bn_changed/eggquizmath_levels_' + locale + '.tsv', mapping_file, 'log/map2.txt', 'bn')
+    replace_proper_nouns('bn_original/wordwindow_level_' + locale + '.tsv', 'bn_changed/wordwindow_level_' + locale + '.tsv',  mapping_file, 'log/map3.txt', 'bn')
