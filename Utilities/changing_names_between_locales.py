@@ -1,6 +1,6 @@
 """"
-This script contains functions which help in creating txt file which contains
-proper nouns from tsv, merging proper nouns txt files, and to rename names in TSVs
+This script contains functions which help in creating TXT file which contains
+proper nouns from TSVs, merging proper nouns TXT files, and to rename names in TSVs
 """
 import csv
 from nltk.tokenize import word_tokenize
@@ -87,15 +87,15 @@ def replace_proper_nouns(tsv_in, tsv_out, ref_excel, mapout_file, locale='en'):
     if locale == 'en':
         locales = ['en']
     elif locale == 'ur':
-        locales = ['en_'+locale, locale, 'audio_'+locale]
+        locales = ['en_' + locale, locale, 'audio_' + locale]
     else:
-        locales = ['en_'+locale, locale]
+        locales = ['en_' + locale, locale]
     names_dict = dict()
     names_not_used = dict()
     for locale in locales:
-        src_key = locale+'_old'
+        src_key = locale + '_old'
         # key of the target that needed to be changed
-        target_key = locale+'_new'
+        target_key = locale + '_new'
         # Read the Excel sheet to create a dictionary
         wb = xlrd.open_workbook(ref_excel)
         sheet = wb.sheet_by_name("Names_Mapping")
@@ -140,18 +140,18 @@ def replace_proper_nouns(tsv_in, tsv_out, ref_excel, mapout_file, locale='en'):
             for i in range(len(line)):
                 for src_word in names_dict:
                     cell = line[i]
-                    cell = regex.sub(r'\b'+src_word+r'\b', names_dict[src_word], cell)
+                    cell = regex.sub(r'\b' + src_word + r'\b', names_dict[src_word], cell)
                     if (cell != line[i]):
                         names_not_used[src_word] = False
                     line[i] = cell
             writer.writerow(line)
-    print(tsv_out+": Created")
+    print(tsv_out + ": Created")
     # Create logs for the mapping that were not used
     with open(mapout_file, 'w', newline='', encoding='utf-8') as mapout:
         for src_word in names_not_used:
             # If the name mapping is not used then log them
             if names_not_used[src_word] is True:
-                mapout.write(src_word+'\n')
+                mapout.write(src_word + '\n')
 
 
 # Excel file that stores the mapping for the names
@@ -175,5 +175,5 @@ for locale in locale_list:
         replace_proper_nouns(src_path + file + '_' + locale + '.tsv',
                              dest_path + file + '_'+locale + '.tsv',
                              mapping_file,
-                             log_path+logs[log_index] + '.txt', locale)
+                             log_path + logs[log_index] + '.txt', locale)
         log_index = log_index + 1
