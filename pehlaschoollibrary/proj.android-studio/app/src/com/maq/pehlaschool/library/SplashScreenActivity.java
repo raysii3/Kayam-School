@@ -17,8 +17,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.vending.expansion.downloader.Helpers;
@@ -27,15 +25,13 @@ import java.io.File;
 import java.io.IOException;
 import java.util.zip.ZipFile;
 
-import kitkitschool.DownloadExpansionFile;
 import utils.Zip;
 
-import static com.maq.pehlaschool.library.SelectActivity.locale;
-import static kitkitschool.DownloadExpansionFile.xAPKS;
-
-
+import static com.maq.pehlaschool.library.DownloadExpansionFile.xAPKS;
+import static com.maq.pehlaschool.library.SelectActivity.updateStringLocale;
+import static com.maq.pehlaschool.library.SelectActivity.getLocalefromIntent;
 public class SplashScreenActivity extends AppCompatActivity {
-
+    String locale;
     Intent intent = null;
     String expansionFilePath;
     File expansionFile;
@@ -52,6 +48,10 @@ public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //get the locale from the intent
+        locale = getLocalefromIntent(getIntent());
+        //set the locale of the activity
+        updateStringLocale(this, locale);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         View decorView = this.getWindow().getDecorView();
@@ -59,28 +59,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
         setContentView(R.layout.activity_splash_screen);
 
-        TextView extractionMessageLocale = findViewById(R.id.oneTimeExtractionMessage);
-        TextView extractionMessageEnglish = findViewById(R.id.oneTimeExtractionMessageEnglish);
-        ImageView splashScreenImage = findViewById(R.id.imageView);
-        switch (locale) {
-            case "hindi":
-                splashScreenImage.setImageResource(R.drawable.splash_screen_background_hindi);
-                extractionMessageLocale.setText(getResources().getString(R.string.content_extraction_hindi));
-                extractionMessageEnglish.setText(getResources().getString(R.string.content_extraction));
-                break;
-            case "urdu":
-                splashScreenImage.setImageResource(R.drawable.splash_screen_background_urdu);
-                extractionMessageLocale.setText(getResources().getString(R.string.content_extraction_urdu));
-                extractionMessageEnglish.setText(getResources().getString(R.string.content_extraction));
-                break;
-            case "bengali":
-                splashScreenImage.setImageResource(R.drawable.splash_screen_background_bengali);
-                extractionMessageLocale.setText(getResources().getString(R.string.content_extraction_bengali));
-                extractionMessageEnglish.setText(getResources().getString(R.string.content_extraction));
-                break;
-            default: // Do nothing as English text is set by default
-                break;
-        }
+
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             // Permission is not granted

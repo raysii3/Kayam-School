@@ -2,12 +2,15 @@ package com.maq.pehlaschool.library;
 
 import android.app.Dialog;
 import android.app.DialogFragment;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,16 +22,15 @@ import android.widget.TextView;
 
 import com.maq.kitkitlogger.KitKitLoggerActivity;
 
-import kitkitschool.DownloadExpansionFile;
-
-import static kitkitschool.DownloadExpansionFile.xAPKS;
+import java.util.Locale;
+import static com.maq.pehlaschool.library.DownloadExpansionFile.xAPKS;
 
 /**
  * Created by ingtellect on 9/7/17.
  */
 
 public class SelectActivity extends KitKitLoggerActivity {
-    public static String locale = "english";
+    public String locale = "english";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +50,8 @@ public class SelectActivity extends KitKitLoggerActivity {
             // set the default value of the variable on successive calls
             locale = "english";
         }
-
+        //Update the app locale
+        updateStringLocale(this, locale);
         // Retrieve the stored values of main and patch file version
         int storedMainFileVersion = sharedPref.getInt(getString(R.string.mainFileVersion), defaultFileVersion);
         int storedPatchFileVersion = sharedPref.getInt(getString(R.string.patchFileVersion), defaultFileVersion);
@@ -67,36 +70,11 @@ public class SelectActivity extends KitKitLoggerActivity {
         }
 
         super.onCreate(savedInstanceState);
-
         String TAG = "SelectActivity";
         Log.d(TAG, "onCreate()");
         Util.hideSystemUI(this);
 
         setContentView(R.layout.activity_select);
-
-        TextView titleName = findViewById(R.id.toolbar_title);
-        TextView videoTabName = findViewById(R.id.video_textView);
-        TextView booksTabName = findViewById(R.id.book_textView);
-
-        switch (locale) {
-            case "hindi":
-                titleName.setText(getResources().getString(R.string.app_name_hindi));
-                videoTabName.setText(getResources().getString(R.string.tab_video_hindi));
-                booksTabName.setText(getResources().getString(R.string.tab_book_hindi));
-                break;
-            case "urdu":
-                titleName.setText(getResources().getString(R.string.app_name_urdu));
-                videoTabName.setText(getResources().getString(R.string.tab_video_urdu));
-                booksTabName.setText(getResources().getString(R.string.tab_book_urdu));
-                break;
-            case "bengali":
-                titleName.setText(getResources().getString(R.string.app_name_bengali));
-                videoTabName.setText(getResources().getString(R.string.tab_video_bengali));
-                booksTabName.setText(getResources().getString(R.string.tab_book_bengali));
-                break;
-            default: // Do nothing as English text is set by default
-                break;
-        }
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(R.drawable.library_icon_back);
@@ -111,6 +89,7 @@ public class SelectActivity extends KitKitLoggerActivity {
 
     private void startSplashScreenActivity() {
         Intent intent = new Intent(SelectActivity.this, SplashScreenActivity.class);
+        intent.putExtra("locale", locale);
         startActivity(intent);
         finish();
     }
@@ -137,12 +116,14 @@ public class SelectActivity extends KitKitLoggerActivity {
     public void onClickBook(View v) {
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("tab", 1);
+        intent.putExtra("locale", locale);
         startActivity(intent);
     }
 
     public void onClickVideo(View v) {
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("tab", 0);
+        intent.putExtra("locale", locale);
         startActivity(intent);
 
     }
@@ -232,5 +213,44 @@ public class SelectActivity extends KitKitLoggerActivity {
         }
 
     }
+    // Change the translatable strings as per the locale
+    public static void updateStringLocale( Context context, String locale)
+    {
+        Resources currRes = context.getResources();
+        //get the diplay information
+        DisplayMetrics currDispMetrics = currRes.getDisplayMetrics();
+        //get the current configuration
+        android.content.res.Configuration currConfig = currRes.getConfiguration();
+        //update the locale if there is value in locale
+        //TODO: Remove the switch statement after the intent call update
+        switch (locale) {
+            case "hindi":
+                currConfig.setLocale(new Locale("hi"));
+                break;
+            case "urdu":
+                currConfig.setLocale(new Locale("ur"));
+                break;
+            case "bengali":
+                currConfig.setLocale(new Locale("bn"));
+                break;
+            default: 
+                currConfig.setLocale(new Locale("en"));
+                break;
+        }
+        //set the locale with the updated configuration
+        currRes.updateConfiguration(currConfig, currDispMetrics);
+    }
 
+    // get the value of Locale passed from the caller Activity through Intent
+    public static String getLocalefromIntent(Intent localeIntent){
+        String locale;
+        Bundle extras = localeIntent.getExtras();
+            if (extras != null && extras.getString("locale") != null && !extras.getString("locale").isEmpty()) {
+            locale = extras.getString("locale").toLowerCase();
+        } else {
+                // set the default value of the variable on successive calls
+                locale = "english";
+            }
+            return locale;
+    }
 }

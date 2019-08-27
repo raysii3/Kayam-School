@@ -52,8 +52,8 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 
-import static com.maq.pehlaschool.library.SelectActivity.locale;
-
+import static com.maq.pehlaschool.library.SelectActivity.updateStringLocale;
+import static com.maq.pehlaschool.library.SelectActivity.getLocalefromIntent;
 
 /**
  * Created by ingtellect on 11/18/16.
@@ -61,6 +61,7 @@ import static com.maq.pehlaschool.library.SelectActivity.locale;
 
 public class MainActivity extends KitKitLoggerActivity {
 
+    String locale;
     static boolean useExternalData = false;
     static String appLanguage;
     static String pathExternalAsset = "";
@@ -109,7 +110,8 @@ public class MainActivity extends KitKitLoggerActivity {
 
         Log.d(TAG, "onCreate()");
         Util.hideSystemUI(this);
-
+        //get locale from the intent
+        locale = getLocalefromIntent(getIntent());
         appLanguage = "en-us";
 
         mbSignLanguageMode = isSignLanguageMode();
@@ -118,33 +120,13 @@ public class MainActivity extends KitKitLoggerActivity {
         }
 
         Log.i(TAG, "appLanguage : " + appLanguage + ", mbSignLanguageMode : " + mbSignLanguageMode);
-
+        //update the locale of the activity
+        updateStringLocale(this, locale);
         checkExternalData();
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        TextView titleName = toolbar.findViewById(R.id.toolbar_title_text);
         TabLayout tabLayout = findViewById(R.id.tabLayout);
-
-        switch (locale) {
-            case "hindi":
-                titleName.setText(getResources().getString(R.string.app_name_hindi));
-                tabLayout.getTabAt(0).setText(getResources().getString(R.string.tab_video_hindi));
-                tabLayout.getTabAt(1).setText(getResources().getString(R.string.tab_book_hindi));
-                break;
-            case "urdu":
-                titleName.setText(getResources().getString(R.string.app_name_urdu));
-                tabLayout.getTabAt(0).setText(getResources().getString(R.string.tab_video_urdu));
-                tabLayout.getTabAt(1).setText(getResources().getString(R.string.tab_book_urdu));
-                break;
-            case "bengali":
-                titleName.setText(getResources().getString(R.string.app_name_bengali));
-                tabLayout.getTabAt(0).setText(getResources().getString(R.string.tab_video_bengali));
-                tabLayout.getTabAt(1).setText(getResources().getString(R.string.tab_book_bengali));
-                break;
-            default: // Do nothing as English text is set by default
-                break;
-        }
 
         toolbar.setNavigationIcon(R.drawable.library_icon_back);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -187,7 +169,6 @@ public class MainActivity extends KitKitLoggerActivity {
         params = new LayoutParams(viewWidth, LayoutParams.WRAP_CONTENT);
 
         viewPager.setCurrentItem(getIntent().getIntExtra("tab", 0));
-
     }
 
     private boolean isSignLanguageMode() {

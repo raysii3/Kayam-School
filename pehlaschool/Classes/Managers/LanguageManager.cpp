@@ -31,6 +31,17 @@ void LanguageManager::init()
     auto defaultLang = LanguageType::ENGLISH;
 #endif
     std::string localeCode = "en-US";
+
+    // JNI call to get the language code
+    JniMethodInfo t;
+    bool result = JniHelper::getStaticMethodInfo(t, "org/cocos2dx/cpp/AppActivity", "getLanguageCode", "()Ljava/lang/String;");
+    if (result)
+    {
+        jstring jLanguageCode = (jstring)t.env->CallStaticObjectMethod(t.classID, t.methodID);
+        customLanguageCode = JniHelper::jstring2string(jLanguageCode);
+        t.env->DeleteLocalRef(t.classID);
+        t.env->DeleteLocalRef(jLanguageCode);
+    }
     auto localeType = convertLocaleCodeToType(localeCode);
     if (localeType>=LocaleType_MAX) localeType = en_US;
 
@@ -239,7 +250,7 @@ void LanguageManager::initLocalizationMap()
 
     _localizationMapEnglish["Try and get 8 questions correct!"] = "Try and get 8 questions correct!";
     _localizationMapHindi["Try and get 8 questions correct!"] = "कोशिश करो और आठ प्रशनो का सही जबाब दीजिये!";
-    _localizationMapUrdu["Try and get 8 questions correct!"] = "کوشش کریں اور کم از کم 8 سوالات کا صحیح جواب دیں!";
+    _localizationMapUrdu["Try and get 8 questions correct!"] = "کوشش کریں اور کم از کم 8 سوالات کا صحیح جواب دیں";
     _localizationMapBengali["Try and get 8 questions correct!"] = "চেষ্টা করুন এবং 8 টি প্রশ্ন সঠিক উত্তর দিন !";
     _localizationMapSwahili["Try and get 8 questions correct!"] = "Jaribu na toa majibu sahihi manane!";
 
@@ -348,7 +359,7 @@ void LanguageManager::initLocalizationMap()
     _localizationMapEnglish["Math"] = "Math";
     _localizationMapHindi["Math"] = "गणित";
     _localizationMapUrdu["Math"] = "ریاضی";
-    _localizationMapBengali["Math"] = "ম্যাথ";
+    _localizationMapBengali["Math"] = "গণিত";
     _localizationMapSwahili["Math"] = "Hesabu";
 
     _localizationMapEnglish["TutorialTrace"] = "Line Tracing";

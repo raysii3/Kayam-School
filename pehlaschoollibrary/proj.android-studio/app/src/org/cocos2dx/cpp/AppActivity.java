@@ -83,6 +83,11 @@ public class AppActivity extends Cocos2dxActivity {
         });
     }
 
+    public static void finishActivity() {
+        //function to finish the current activity and return back to the caller activity
+        _activity.finish();
+    }
+
     public static void staticSetFullScreen() {
         _activity.hideSystemUIOnUIThread();
 

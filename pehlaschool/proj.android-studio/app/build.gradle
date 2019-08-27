@@ -94,15 +94,22 @@ android {
     productFlavors {
         english {
             applicationIdSuffix ".english"
+            versionCode 7
+            versionName '3.5.2'
         }
         hindi {
-
+            versionCode 5
+            versionName '3.4.3'
         }
         urdu {
             applicationIdSuffix ".urdu"
+            versionCode 10
+            versionName '3.5.4'
         }
-        bengali{
+        bengali {
             applicationIdSuffix ".bengali"
+            versionCode 8
+            versionName '3.5.3'
         }
     }
     buildTypes {
@@ -136,10 +143,7 @@ dependencies {
     compile project(':libcocos2dx')
     compile project(':pocketsphinx-aar')
     compile project(':models')
-    compile project(':pehlaschoollogger')
     compile project(path: ':downloader_library')
-//    englishCompile project(path: ':kitkitlogger', configuration: 'englishRelease')
-//    swahiliCompile project(path: ':kitkitlogger', configuration: 'swahiliRelease')
     compile 'com.android.support.constraint:constraint-layout:1.1.3'
 //    Used by Launcher
     compile 'com.android.support:appcompat-v7:28.0.0'
