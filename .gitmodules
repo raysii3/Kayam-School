@@ -1,6 +1,6 @@
 [submodule "Pehla-School-Assets"]
 	path = Pehla-School-Assets
 	url = https://github.com/maqsoftware/Pehla-School-Assets.git
-[submodule "Pehla-School-Library-Assets"]
-	path = Pehla-School-Library-Assets
-	url = https://github.com/maqsoftware/Pehla-School-Library-Assets.git
+[submodule "Pehla-School-Assets-Library"]
+	path = Pehla-School-Assets-Library
+	url = https://github.com/maqsoftware/Pehla-School-Assets-Library.git
