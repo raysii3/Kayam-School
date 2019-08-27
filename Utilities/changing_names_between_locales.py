@@ -1,6 +1,6 @@
 """"
-This script contains functions which help in creating TXT file which contains
-proper nouns from TSVs, merging proper nouns TXT files, and to rename names in TSVs
+This script contains functions which help in creating txt file which contains
+proper nouns from tsv, merging proper nouns txt files, and to rename names in TSVs
 """
 import csv
 from nltk.tokenize import word_tokenize
@@ -31,7 +31,6 @@ def get_proper_nouns(fin_fname, fout_fname):
             for cell in row:
                     sentence = cell.replace('^', ' ').replace('_', '')
                     token = word_tokenize(sentence)
-                    # tagged_sent = pos_tag(sentence.split())
                     tagged_sent = pos_tag(token)
                     for word, pos in tagged_sent:
                         if pos == 'NNP':
@@ -77,22 +76,26 @@ def replace_proper_nouns(tsv_in, tsv_out, ref_excel, mapout_file, locale='en'):
     tsv_in: The TSV file where the names are to be changed
     tsv_out: The TSV file that will be generated which will contains the
             changed name
-    map_fname: Excel file for the map mapping
+    ref_excel: Excel file for the map mapping
+    map_fname: This file will contains tab separated two values as the mapping
+            from the old name to new name
+    Example:
+        replace_proper_nouns('wordwindow_level_en.tsv', 'wordwindow_level_en_change.tsv', 'mapping.txt')
     """
     # Reading each line from the mapping file and creating a map for the old name and new name
     # column name for the old name
     if locale == 'en':
         locales = ['en']
     elif locale == 'ur':
-        locales = ['en_' + locale, locale, 'audio_' + locale]
+        locales = ['en_'+locale, locale, 'audio_'+locale]
     else:
-        locales = ['en_' + locale, locale]
+        locales = ['en_'+locale, locale]
     names_dict = dict()
     names_not_used = dict()
     for locale in locales:
-        src_key = locale + '_old'
+        src_key = locale+'_old'
         # key of the target that needed to be changed
-        target_key = locale + '_new'
+        target_key = locale+'_new'
         # Read the Excel sheet to create a dictionary
         wb = xlrd.open_workbook(ref_excel)
         sheet = wb.sheet_by_name("Names_Mapping")
@@ -125,7 +128,7 @@ def replace_proper_nouns(tsv_in, tsv_out, ref_excel, mapout_file, locale='en'):
                 if len(old_name) > 0 and len(new_name) > 0:
                     names_dict[old_name] = new_name
                     names_not_used[old_name] = True
-                    if(locale == 'en'):
+                    if('en' in locale):
                         names_dict[old_name.lower()] = new_name.lower()
                     if(locale == 'bn'):
                         names_dict[old_name+u'র'] = new_name+u'র'
@@ -137,25 +140,33 @@ def replace_proper_nouns(tsv_in, tsv_out, ref_excel, mapout_file, locale='en'):
             for i in range(len(line)):
                 for src_word in names_dict:
                     cell = line[i]
-                    cell = regex.sub(r'\b' + src_word + r'\b', names_dict[src_word], cell)
+                    cell = regex.sub(r'\b'+src_word+r'\b', names_dict[src_word], cell)
                     if (cell != line[i]):
                         names_not_used[src_word] = False
                     line[i] = cell
             writer.writerow(line)
     print(tsv_out+": Created")
-    # Dump the names whose names mapping was not used
+    # Create logs for the mapping that were not used
     with open(mapout_file, 'w', newline='', encoding='utf-8') as mapout:
         for src_word in names_not_used:
+            # If the name mapping is not used then log them
             if names_not_used[src_word] is True:
-                mapout.write(src_word + '\n')
+                mapout.write(src_word+'\n')
 
 
-mapping_file = 'ProposedNames_en_hi_bn_ur.xlsx'
+# Excel file that stores the mapping for the names
+mapping_file = 'names_mapping.xlsx'
+# Locales of TSVs that needed to be udpated
 locale_list = ['ur']
-src_path = 'ur_original/'
+# Source path for the TSVs files
+src_path = 'ur_old/'
+# Destination path where the updated TSVs will be created
 dest_path = 'ur_changed/'
+# TSVs that needed to be updated
 files = ['eggquizliteracy_levels', 'eggquizmath_levels', 'wordwindow_level']
+# Path for the log where unused mapping will be stored
 log_path = 'log/'
+# Logs for the unused mapping
 logs = ['egg_lit_map', 'egg_math_map', 'word_map']
 
 for locale in locale_list:
@@ -164,5 +175,5 @@ for locale in locale_list:
         replace_proper_nouns(src_path + file + '_' + locale + '.tsv',
                              dest_path + file + '_'+locale + '.tsv',
                              mapping_file,
-                             log_path + logs[log_index] + '.txt', locale)
+                             log_path+logs[log_index] + '.txt', locale)
         log_index = log_index + 1
