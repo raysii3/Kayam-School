@@ -36,7 +36,10 @@
         <meta-data
             android:name="android.app.lib_name"
             android:value="MyGame" />
-
+        <!-- Disable SSAID collection -->
+        <meta-data
+            android:name="google_analytics_ssaid_collection_enabled"
+            android:value="false" />
         <activity
             android:name="org.cocos2dx.cpp.AppActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
