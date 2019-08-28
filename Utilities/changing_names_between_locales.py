@@ -1,6 +1,6 @@
 """"
 This script contains functions which help in creating TXT file which contains
-proper nouns from TSVs, merging proper nouns TXT files, and to rename names in TSVs
+proper nouns from TSVs, merging proper nouns from the TXT files, and to rename names in TSVs
 """
 import csv
 from nltk.tokenize import word_tokenize
@@ -13,10 +13,10 @@ import xlrd
 
 def get_proper_nouns(fin_fname, fout_fname):
     """
-    This function get all the possible proper nouns from the TSV file and list
+    This function get all the possible, proper nouns from the TSV file and lists
     them in the the output file.
     fin_fname: TSV file for the proper nouns
-    fout_fname: output file for the listing proper nouns(not in append mode)
+    fout_fname: output file for listing the proper nouns(not in append mode)
                 [*.txt file]
     Example:
         get_proper_nouns('eggquizliteracy_levels_en.tsv','propernouns3.txt')
@@ -47,10 +47,10 @@ def get_proper_nouns(fin_fname, fout_fname):
 
 def merge_proper_nouns_files(fin_files, fout_file):
     """
-    This function get all the  proper nouns and generate fout_file file which
-    will contains all the unique proper nouns
-    fin_files: List of the files which contains proper nouns
-    fout_file: Output file which will finally contains proper nouns(not opened
+    This function get all the, proper nouns and generates fout_file file which
+    will contain all the unique proper nouns
+    fin_files: List of the files which contain proper nouns
+    fout_file: Output file which will finally contain proper nouns(not opened
     in append mode)[*.txt file]
     Example:
         merge_proper_nouns_files(["propernouns.txt", "propernouns2.txt"], 'merged_names2.txt')
@@ -71,14 +71,13 @@ def merge_proper_nouns_files(fin_files, fout_file):
 
 def replace_proper_nouns(tsv_in, tsv_out, ref_excel, mapout_file, locale='en'):
     """
-    This function will change the names in TSV and generate a new file which
-    will contains new names
+    This function will change the names in TSV and will generate a new file which
+    will contain new names
     tsv_in: The TSV file where the names are to be changed
-    tsv_out: The TSV file that will be generated which will contains the
+    tsv_out: The TSV file that will be generated which will contain the
             changed name
     ref_excel: Excel file for the map mapping
-    map_fname: This file will contains tab separated two values as the mapping
-            from the old name to new name
+    map_fname: Log file for unused mapping 
     Example:
         replace_proper_nouns('wordwindow_level_en.tsv', 'wordwindow_level_en_change.tsv', 'mapping.txt')
     """
