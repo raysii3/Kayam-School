@@ -1,6 +1,6 @@
 """"
-This script contains functions which help in creating TXT file which contains
-proper nouns from TSVs, merging proper nouns from the TXT files, and to rename names in TSVs
+This script contains functions which help in creating txt file which contains
+proper nouns from TSVs, merging proper nouns from the txt files, and to rename names in TSVs
 """
 import csv
 from nltk.tokenize import word_tokenize
@@ -13,7 +13,7 @@ import xlrd
 
 def get_proper_nouns(fin_fname, fout_fname):
     """
-    This function get all the possible, proper nouns from the TSV file and lists
+    This function gets all the possible proper nouns from the TSV file and lists
     them in the the output file.
     fin_fname: TSV file for the proper nouns
     fout_fname: output file for listing the proper nouns(not in append mode)
@@ -47,10 +47,10 @@ def get_proper_nouns(fin_fname, fout_fname):
 
 def merge_proper_nouns_files(fin_files, fout_file):
     """
-    This function get all the, proper nouns and generates fout_file file which
+    This function gets all the proper nouns and generates fout_file file which
     will contain all the unique proper nouns
     fin_files: List of the files which contain proper nouns
-    fout_file: Output file which will finally contain proper nouns(not opened
+    fout_file: Output file which will contain proper nouns(not opened
     in append mode)[*.txt file]
     Example:
         merge_proper_nouns_files(["propernouns.txt", "propernouns2.txt"], 'merged_names2.txt')
@@ -76,8 +76,8 @@ def replace_proper_nouns(tsv_in, tsv_out, ref_excel, mapout_file, locale='en'):
     tsv_in: The TSV file where the names are to be changed
     tsv_out: The TSV file that will be generated which will contain the
             changed name
-    ref_excel: Excel file for the map mapping
-    map_fname: Log file for unused mapping 
+    ref_excel: Excel file for the names mapping
+    map_fname: Log file for unused names mapping 
     Example:
         replace_proper_nouns('wordwindow_level_en.tsv', 'wordwindow_level_en_change.tsv', 'mapping.txt')
     """
@@ -149,7 +149,7 @@ def replace_proper_nouns(tsv_in, tsv_out, ref_excel, mapout_file, locale='en'):
     with open(mapout_file, 'w', newline='', encoding='utf-8') as mapout:
         for src_word in names_not_used:
             # If the name mapping is not used then log them
-            if names_not_used[src_word] is True:
+            if names_not_used[src_word]:
                 mapout.write(src_word + '\n')
 
 
@@ -172,7 +172,7 @@ for locale in locale_list:
     log_index = 0
     for file in files:
         replace_proper_nouns(src_path + file + '_' + locale + '.tsv',
-                             dest_path + file + '_'+locale + '.tsv',
+                             dest_path + file + '_'+ locale + '.tsv',
                              mapping_file,
                              log_path + logs[log_index] + '.txt', locale)
         log_index = log_index + 1
