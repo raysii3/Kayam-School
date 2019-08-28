@@ -172,7 +172,7 @@ for locale in locale_list:
     log_index = 0
     for file in files:
         replace_proper_nouns(src_path + file + '_' + locale + '.tsv',
-                             dest_path + file + '_'+ locale + '.tsv',
+                             dest_path + file + '_' + locale + '.tsv',
                              mapping_file,
                              log_path + logs[log_index] + '.txt', locale)
         log_index = log_index + 1
