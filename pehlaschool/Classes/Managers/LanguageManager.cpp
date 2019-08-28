@@ -470,7 +470,7 @@ void LanguageManager::initLocalizationMap()
     _localizationMapBengali["LetterTrace"] = "বর্ণমালা ট্রেস";
     _localizationMapSwahili["LetterTrace"] = "Kufuatisha Herufi";
 
-    _localizationMapEnglish["MovingInsects"] = "Moving Insects";
+    _localizationMapEnglish["MovingInsects"] = "Insect Counting";
     _localizationMapHindi["MovingInsects"] = "कीड़े की गिनती";
     _localizationMapUrdu["MovingInsects"] = "کیڑوں کی گنتی";
     _localizationMapBengali["MovingInsects"] = "বাগ ম্যাথ";
@@ -615,7 +615,7 @@ void LanguageManager::initLocalizationMap()
     _localizationMapSwahili["QuickFacts"] = "Ukweli wa Uhakika";
 
     _localizationMapEnglish["MultiplicationBoard"] = "Multiplication Lamp";
-    _localizationMapHindi["MultiplicationBoard"] = "गुणा पट्ट";
+    _localizationMapHindi["MultiplicationBoard"] = "गुणा बल्ब";
     _localizationMapUrdu["MultiplicationBoard"] = "پہاڑا";
     _localizationMapBengali["MultiplicationBoard"] = "গুণমান ল্যাম্প";
     _localizationMapSwahili["MultiplicationBoard"] = "Taa ya Kuzidishia";
@@ -645,7 +645,7 @@ void LanguageManager::initLocalizationMap()
     _localizationMapSwahili["WordKicker"] = "Mpigo wa Neno";
 
     _localizationMapEnglish["MathKicker"] = "Math Kicker";
-    _localizationMapHindi["MathKicker"] = "मैथ्स किकर";
+    _localizationMapHindi["MathKicker"] = "मैथ किकर";
     _localizationMapUrdu["MathKicker"] = "ریاضی کاککار";
     _localizationMapBengali["MathKicker"] = "স্থানিক কিকের";
     _localizationMapSwahili["MathKicker"] = "Mpigo wa Hisabati";
@@ -668,8 +668,8 @@ void LanguageManager::initLocalizationMap()
     _localizationMapBengali["LRComprehension"] = "কম্প্রিহেনশন";
     _localizationMapSwahili["LRComprehension"] = "Ufahamu";
 
-    _localizationMapEnglish["BookwithQuiz"] = "Book with Quiz";
-    _localizationMapHindi["BookwithQuiz"] = "प्रश्नोत्तरी के साथ बुक करें";
+    _localizationMapEnglish["BookwithQuiz"] = "Book Quiz";
+    _localizationMapHindi["BookwithQuiz"] = "प्रश्नोत्तरी की किताब";
     _localizationMapUrdu["BookwithQuiz"] = "معَمّوں کی کتاب";
     _localizationMapBengali["BookwithQuiz"] = "কুইজ সঙ্গে বুক";
     _localizationMapSwahili["BookwithQuiz"] = "Kitabu Chenye Jaribio";
