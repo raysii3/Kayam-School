@@ -8,6 +8,7 @@ android {
     buildToolsVersion "28.0.3"
 
     dexOptions {
+        javaMaxHeapSize "2g"
         dexInProcess = true
     }
 

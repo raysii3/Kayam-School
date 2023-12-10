@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.content.res.AssetManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
@@ -12,6 +13,7 @@ import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -21,7 +23,10 @@ import com.google.android.vending.expansion.downloader.Helpers;
 import com.maq.pehlaschool.R;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.zip.ZipFile;
 
 import utils.Zip;
@@ -117,7 +122,7 @@ public class SplashScreenActivity extends Activity {
         try {
             for (DownloadExpansionFile.XAPKFile xf : xAPKS) {
                 if (xf.mIsMain && xf.mFileVersion != storedMainFileVersion || !xf.mIsMain && xf.mFileVersion != storedPatchFileVersion) {
-                    expansionFilePath = getExpansionFilePath(xf.mIsMain, xf.mFileVersion);
+                    expansionFilePath = new File(getExternalFilesDir(null), Helpers.getExpansionAPKFileName(this, xf.mIsMain, xf.mFileVersion)).getAbsolutePath();
                     expansionFile = new File(expansionFilePath);
                     expansionZipFile = new ZipFile(expansionFile);
                     zipHandler = new Zip(expansionZipFile, this);
@@ -133,6 +138,46 @@ public class SplashScreenActivity extends Activity {
         } catch (IOException e) {
             System.out.println("Could not extract assets");
             System.out.println("Stack trace:" + e);
+        }
+    }
+
+    private void copyAssets() {
+        AssetManager assetManager = getAssets();
+        String filename = "main.7.com.maq.pehlaschool.english.obb";
+
+        InputStream in = null;
+        OutputStream out = null;
+        try {
+            in = assetManager.open("obb/" + filename);
+            File outFile = new File(getExternalFilesDir(null), filename);
+            out = new FileOutputStream(outFile);
+            copyFile(in, out);
+            Log.e("tag", "Copying asset file: " + filename);
+        } catch (IOException e) {
+            Log.e("tag", "Failed to copy asset file: " + filename, e);
+        } finally {
+            if (in != null) {
+                try {
+                    in.close();
+                } catch (IOException e) {
+                    // NOOP
+                }
+            }
+            if (out != null) {
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    // NOOP
+                }
+            }
+        }
+    }
+
+    private void copyFile(InputStream in, OutputStream out) throws IOException {
+        byte[] buffer = new byte[1024];
+        int read;
+        while ((read = in.read(buffer)) != -1) {
+            out.write(buffer, 0, read);
         }
     }
 
@@ -153,7 +198,7 @@ public class SplashScreenActivity extends Activity {
         try {
             for (DownloadExpansionFile.XAPKFile xf : xAPKS) {
                 if (xf.mIsMain && xf.mFileVersion != storedMainFileVersion || !xf.mIsMain && xf.mFileVersion != storedPatchFileVersion) {
-                    expansionFilePath = getExpansionFilePath(xf.mIsMain, xf.mFileVersion);
+                    expansionFilePath = new File(getExternalFilesDir(null), Helpers.getExpansionAPKFileName(this, xf.mIsMain, xf.mFileVersion)).getAbsolutePath();
                     ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 99);
                     expansionFile = new File(expansionFilePath);
                     zipFile = new ZipFile(expansionFile);
@@ -175,6 +220,7 @@ public class SplashScreenActivity extends Activity {
         @Override
         protected String doInBackground(String... sUrl) {
             if (isStorageSpaceAvailable()) {
+                copyAssets();
                 unzipFile();
             } else {
                 SplashScreenActivity.this.runOnUiThread(new Runnable() {
